@@ -1794,7 +1794,7 @@ footer{ background:var(--navy-deep); color:rgba(250,248,244,.6); padding:52px 0 
 
 ========================================================================== -->
 
-<section class="infographic-stats">
+<section class="infographic-stats" style="background: linear-gradient(to bottom, rgba(6,19,37,0.92), rgba(6,19,37,0.85)), url('./images/imagen-3.jpeg') center/cover fixed no-repeat;">
 
   <div class="wrap">
 
@@ -3093,100 +3093,43 @@ footer{ background:var(--navy-deep); color:rgba(250,248,244,.6); padding:52px 0 
 
 
   // Stat counters
-
-  const counters = document.querySelectorAll('.stat-number b[data-count]');
-
+  const statCards = document.querySelectorAll('.stat-card');
   const countIO = new IntersectionObserver((entries) => {
-
     entries.forEach(entry => {
-
       if (!entry.isIntersecting) return;
-
-      const el = entry.target;
-
-      const target = parseInt(el.dataset.count, 10);
-
-      const suffix = el.dataset.suffix || '';
-
-      const duration = 1400;
-
-      const start = performance.now();
-
-      function tick(now){
-
-        const p = Math.min((now - start) / duration, 1);
-
-        const eased = 1 - Math.pow(1 - p, 3);
-
-        el.textContent = Math.round(eased * target) + suffix;
-
-        if (p < 1) requestAnimationFrame(tick);
-
-      }
-
-      requestAnimationFrame(tick);
-
-      countIO.unobserve(el);
-
+      
+      const bTag = entry.target.querySelector('.stat-number b');
+      if (!bTag || bTag.classList.contains('done')) return;
+      
+      const target = parseInt(bTag.getAttribute('data-count') || 0, 10);
+      const suffix = bTag.getAttribute('data-suffix') || '';
+      const duration = 2000;
+      const increment = target / (duration / 16);
+      let current = 0;
+      
+      const updateCounter = () => {
+        current += increment;
+        if (current < target) {
+          bTag.innerText = Math.ceil(current) + suffix;
+          requestAnimationFrame(updateCounter);
+        } else {
+          bTag.innerText = target + suffix;
+          bTag.classList.add('done');
+        }
+      };
+      updateCounter();
+      
+      // Animate SVGs
+      const ring = entry.target.querySelector('.ring-fill');
+      if(ring) ring.style.strokeDashoffset = '56';
+      const gauge = entry.target.querySelector('.gauge-fill');
+      if(gauge) gauge.style.strokeDashoffset = '56';
+      
+      countIO.unobserve(entry.target);
     });
+  }, { threshold: 0.5 });
 
-  }, { threshold: 0.4 });
-
-  counters.forEach(c => countIO.observe(c));
-
-
-
-  // Contact form -> WhatsApp handoff
-
-  document.getElementById('contactForm').addEventListener('submit', function(e){
-
-    e.preventDefault();
-
-    const name = document.getElementById('cname').value;
-
-    const phone = document.getElementById('cphone').value;
-
-    const service = document.getElementById('cservice').value;
-
-    const msg = document.getElementById('cmsg').value;
-
-    const text = encodeURIComponent(`Hola VADGOD INGS, soy ${name} (tel: ${phone}). Me interesa: ${service}. ${msg}`);
-
-    window.open(`https://wa.me/51999999999?text=${text}`, '_blank');
-
-  });
-
-
-
-  // FAQ accordion (accessible)
-
-  document.querySelectorAll('.faq-question').forEach(btn => {
-
-    btn.addEventListener('click', () => {
-
-      const item = btn.parentElement;
-
-      const isActive = item.classList.contains('is-active');
-
-      document.querySelectorAll('.faq-item').forEach(i => {
-
-        i.classList.remove('is-active');
-
-        i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
-
-      });
-
-      if (!isActive){
-
-        item.classList.add('is-active');
-
-        btn.setAttribute('aria-expanded', 'true');
-
-      }
-
-    });
-
-  });
+  statCards.forEach(card => countIO.observe(card));
 
 
 
