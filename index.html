@@ -546,7 +546,7 @@ nav.links > a:hover::after, nav.links .dropdown > a:hover::after{ width:100%; }
 
    ========================================================================== */
 
-.alianzas{ background:var(--paper); border-top:1px solid rgba(6,19,37,0.1); padding:36px 0; overflow:hidden; }
+.alianzas{ background:var(--navy-deep); border-top:1px solid rgba(250,248,244,.1); padding:36px 0; overflow:hidden; }
 
 .alianzas-track{ display:flex; width:max-content; animation:marquee 42s linear infinite; }
 
@@ -556,15 +556,15 @@ nav.links > a:hover::after, nav.links .dropdown > a:hover::after{ width:100%; }
 
 .alianza-item{ display:flex; align-items:center; gap:12px; flex-shrink:0; }
 
-.alianza-item img { height:42px; max-width:130px; opacity:0.9; filter: drop-shadow(0 0 6px rgba(201,162,39,0.4)); transition: all .3s ease; }
+.alianza-item img{ height:42px; max-width:130px; opacity:.75; transition:opacity .3s ease, transform .3s ease; }
 
-.alianza-item:hover img { opacity:1; filter: drop-shadow(0 0 10px rgba(201,162,39,0.8)); transform:scale(1.05); }
+.alianza-item:hover img{ opacity:1; transform:scale(1.04); }
 
 .alianza-item .fallback-text{
 
   font-family:var(--display); font-size:24px; font-weight:700; text-transform:uppercase; letter-spacing:.04em;
 
-  color:var(--navy);
+  color:rgba(250,248,244,.9);
 
 }
 
@@ -710,7 +710,7 @@ section{ padding:clamp(80px, 9vw, 130px) 0; position:relative; }
 
    ========================================================================== */
 
-.capacitaciones{ background:var(--navy-deep); color:var(--paper); }
+.capacitaciónes{ background:var(--navy-deep); color:var(--paper); }
 
 .cap-grid{ display:grid; grid-template-columns:1.1fr 1fr 1fr; gap:1px; background:rgba(250,248,244,.12); border-radius:var(--radius-m); overflow:hidden; }
 
@@ -930,9 +930,9 @@ section{ padding:clamp(80px, 9vw, 130px) 0; position:relative; }
 
 }
 
-.client-mark img { max-height:42px; max-width:130px; opacity:0.85; filter: drop-shadow(0 0 6px rgba(201,162,39,0.4)) grayscale(100%); transition: all .3s ease; }
+.client-mark img{ max-height:42px; max-width:130px; filter:grayscale(100%) opacity(.55); transition:filter .3s ease; }
 
-.client-mark:hover img { opacity:1; filter: drop-shadow(0 0 10px rgba(201,162,39,0.8)) grayscale(0%); transform: scale(1.05); }
+.client-mark:hover img{ filter:grayscale(0%) opacity(1); }
 
 
 
@@ -1243,6 +1243,27 @@ footer{ background:var(--navy-deep); color:rgba(250,248,244,.6); padding:52px 0 
 
 
 
+
+  <style>
+    /* Added to make the VGI logo pop with a white border/glow */
+    .brand img {
+      filter: drop-shadow(1px 1px 0px rgba(255, 255, 255, 0.8)) 
+              drop-shadow(-1px -1px 0px rgba(255, 255, 255, 0.8)) 
+              drop-shadow(1px -1px 0px rgba(255, 255, 255, 0.8)) 
+              drop-shadow(-1px 1px 0px rgba(255, 255, 255, 0.8))
+              drop-shadow(0px 4px 12px rgba(255, 255, 255, 0.4)) !important;
+      transition: filter 0.3s ease, transform 0.3s ease !important;
+    }
+    .brand:hover img {
+      filter: drop-shadow(1px 1px 0px rgba(255, 255, 255, 1)) 
+              drop-shadow(-1px -1px 0px rgba(255, 255, 255, 1)) 
+              drop-shadow(1px -1px 0px rgba(255, 255, 255, 1)) 
+              drop-shadow(-1px 1px 0px rgba(255, 255, 255, 1))
+              drop-shadow(0px 4px 18px rgba(255, 255, 255, 0.7)) !important;
+      transform: scale(1.03) !important;
+    }
+  </style>
+
 </head>
 
 
@@ -1264,7 +1285,7 @@ footer{ background:var(--navy-deep); color:rgba(250,248,244,.6); padding:52px 0 
 
       <img src="./WhatsApp Image 2026-07-09 at 10.41.46 AM.png" alt="GRUPO VAD GOD ING'S" style="height:70px; width:auto; filter: drop-shadow(0px 4px 18px rgba(201, 162, 39, 0.4)) drop-shadow(0px 2px 4px rgba(0,0,0,0.6)); transition: filter 0.3s ease, transform 0.3s ease;" onmouseover="this.style.filter='drop-shadow(0px 4px 22px rgba(201, 162, 39, 0.7)) drop-shadow(0px 2px 4px rgba(0,0,0,0.6))'; this.style.transform='scale(1.03)'" onmouseout="this.style.filter='drop-shadow(0px 4px 18px rgba(201, 162, 39, 0.4)) drop-shadow(0px 2px 4px rgba(0,0,0,0.6))'; this.style.transform='scale(1)'">
 
-      <span class="brand-text">Grupo Vad God Ing´s<small>Ingeniería civil &amp; construcción</small></span>
+      <span class="brand-text">Grupo Vad God Ing's<small>Ingeniería civil &amp; construcción</small></span>
 
     </a>
 
@@ -1664,7 +1685,7 @@ footer{ background:var(--navy-deep); color:rgba(250,248,244,.6); padding:52px 0 
 
                 <div class="alianza-item">
 
-                    <img src="./storage/aliados/Zlx9PTNbfzQnLo5gGgzXrPj3DrHB1Ksu0GuTLS9N-nobg.webp" alt="ISO 37001">
+                    <img src="./storage/aliados/Zlx9PTNbfzQnLo5gGgzXrPj3DrHB1Ksu0GuTLS9N-transparent.webp" alt="ISO 37001">
 
                     <span class="fallback-text">ISO 37001</span>
 
@@ -1672,7 +1693,7 @@ footer{ background:var(--navy-deep); color:rgba(250,248,244,.6); padding:52px 0 
 
                 <div class="alianza-item">
 
-                    <img src="./storage/aliados/zEyex57sHhCsE7CaJ0HKFFfJctKOFXFJ28E6HFUe-nobg.webp" alt="ISO 14001">
+                    <img src="./storage/aliados/zEyex57sHhCsE7CaJ0HKFFfJctKOFXFJ28E6HFUe-transparent.webp" alt="ISO 14001">
 
                     <span class="fallback-text">ISO 14001</span>
 
@@ -1680,7 +1701,7 @@ footer{ background:var(--navy-deep); color:rgba(250,248,244,.6); padding:52px 0 
 
                 <div class="alianza-item">
 
-                    <img src="./storage/aliados/fvKaovpp4p243ZJGkNfqN83l58BVEFS0TtlDmzGb-nobg.webp" alt="ISO 9001">
+                    <img src="./storage/aliados/fvKaovpp4p243ZJGkNfqN83l58BVEFS0TtlDmzGb-transparent.webp" alt="ISO 9001">
 
                     <span class="fallback-text">ISO 9001</span>
 
@@ -1688,7 +1709,7 @@ footer{ background:var(--navy-deep); color:rgba(250,248,244,.6); padding:52px 0 
 
                 <div class="alianza-item">
 
-                    <img src="./storage/aliados/LMN5XwB1iqhkAyeNHaMfh49tkENleczk6PfvIrD4-nobg.webp" alt="ISO 14001">
+                    <img src="./storage/aliados/LMN5XwB1iqhkAyeNHaMfh49tkENleczk6PfvIrD4-transparent.webp" alt="ISO 14001">
 
                     <span class="fallback-text">ISO 14001</span>
 
@@ -1696,7 +1717,7 @@ footer{ background:var(--navy-deep); color:rgba(250,248,244,.6); padding:52px 0 
 
                 <div class="alianza-item">
 
-                    <img src="./storage/aliados/NOVsTFA7NHgob7VYxW0tebRRr52GCNbqBie1Dx2i-nobg.webp" alt="ISO 45001">
+                    <img src="./storage/aliados/NOVsTFA7NHgob7VYxW0tebRRr52GCNbqBie1Dx2i-transparent.webp" alt="ISO 45001">
 
                     <span class="fallback-text">ISO 45001</span>
 
@@ -1704,7 +1725,7 @@ footer{ background:var(--navy-deep); color:rgba(250,248,244,.6); padding:52px 0 
 
                 <div class="alianza-item">
 
-                    <img src="./storage/aliados/rVe1f7nhZHb2CaJWpPnSWbWVJNM5tUAdSuh129Xt-nobg.webp" alt="CIP">
+                    <img src="./storage/aliados/rVe1f7nhZHb2CaJWpPnSWbWVJNM5tUAdSuh129Xt-transparent.webp" alt="CIP">
 
                     <span class="fallback-text">CIP</span>
 
@@ -1718,7 +1739,7 @@ footer{ background:var(--navy-deep); color:rgba(250,248,244,.6); padding:52px 0 
 
                 <div class="alianza-item">
 
-                    <img src="./storage/aliados/Zlx9PTNbfzQnLo5gGgzXrPj3DrHB1Ksu0GuTLS9N-nobg.webp" alt="ISO 37001">
+                    <img src="./storage/aliados/Zlx9PTNbfzQnLo5gGgzXrPj3DrHB1Ksu0GuTLS9N-transparent.webp" alt="ISO 37001">
 
                     <span class="fallback-text">ISO 37001</span>
 
@@ -1726,7 +1747,7 @@ footer{ background:var(--navy-deep); color:rgba(250,248,244,.6); padding:52px 0 
 
                 <div class="alianza-item">
 
-                    <img src="./storage/aliados/zEyex57sHhCsE7CaJ0HKFFfJctKOFXFJ28E6HFUe-nobg.webp" alt="ISO 14001">
+                    <img src="./storage/aliados/zEyex57sHhCsE7CaJ0HKFFfJctKOFXFJ28E6HFUe-transparent.webp" alt="ISO 14001">
 
                     <span class="fallback-text">ISO 14001</span>
 
@@ -1734,7 +1755,7 @@ footer{ background:var(--navy-deep); color:rgba(250,248,244,.6); padding:52px 0 
 
                 <div class="alianza-item">
 
-                    <img src="./storage/aliados/fvKaovpp4p243ZJGkNfqN83l58BVEFS0TtlDmzGb-nobg.webp" alt="ISO 9001">
+                    <img src="./storage/aliados/fvKaovpp4p243ZJGkNfqN83l58BVEFS0TtlDmzGb-transparent.webp" alt="ISO 9001">
 
                     <span class="fallback-text">ISO 9001</span>
 
@@ -1742,7 +1763,7 @@ footer{ background:var(--navy-deep); color:rgba(250,248,244,.6); padding:52px 0 
 
                 <div class="alianza-item">
 
-                    <img src="./storage/aliados/LMN5XwB1iqhkAyeNHaMfh49tkENleczk6PfvIrD4-nobg.webp" alt="ISO 14001">
+                    <img src="./storage/aliados/LMN5XwB1iqhkAyeNHaMfh49tkENleczk6PfvIrD4-transparent.webp" alt="ISO 14001">
 
                     <span class="fallback-text">ISO 14001</span>
 
@@ -1750,7 +1771,7 @@ footer{ background:var(--navy-deep); color:rgba(250,248,244,.6); padding:52px 0 
 
                 <div class="alianza-item">
 
-                    <img src="./storage/aliados/NOVsTFA7NHgob7VYxW0tebRRr52GCNbqBie1Dx2i-nobg.webp" alt="ISO 45001">
+                    <img src="./storage/aliados/NOVsTFA7NHgob7VYxW0tebRRr52GCNbqBie1Dx2i-transparent.webp" alt="ISO 45001">
 
                     <span class="fallback-text">ISO 45001</span>
 
@@ -1758,7 +1779,7 @@ footer{ background:var(--navy-deep); color:rgba(250,248,244,.6); padding:52px 0 
 
                 <div class="alianza-item">
 
-                    <img src="./storage/aliados/rVe1f7nhZHb2CaJWpPnSWbWVJNM5tUAdSuh129Xt-nobg.webp" alt="CIP">
+                    <img src="./storage/aliados/rVe1f7nhZHb2CaJWpPnSWbWVJNM5tUAdSuh129Xt-transparent.webp" alt="CIP">
 
                     <span class="fallback-text">CIP</span>
 
@@ -2002,7 +2023,7 @@ footer{ background:var(--navy-deep); color:rgba(250,248,244,.6); padding:52px 0 
 
 
 
-      <article class="hoja" onclick="window.location.href='capacitaciones.html'" style="cursor:pointer;">
+      <article class="hoja" onclick="window.location.href='capacitaciónes.html'" style="cursor:pointer;">
 
           <div class="hoja-head"><span>VADGOD / FORMACIÓN</span><b>CURSOS</b></div>
 
@@ -2046,7 +2067,7 @@ footer{ background:var(--navy-deep); color:rgba(250,248,244,.6); padding:52px 0 
 
 ========================================================================== -->
 
-<section id="capacitaciones" class="capacitaciones" data-aos="zoom-in-up">
+<section id="capacitaciónes" class="capacitaciónes" data-aos="zoom-in-up">
 
   <div class="wrap">
 
@@ -2554,50 +2575,50 @@ footer{ background:var(--navy-deep); color:rgba(250,248,244,.6); padding:52px 0 
             <h5 style="font-family:var(--display); font-size:16px; color:var(--navy); margin-bottom:15px; text-transform:uppercase; font-weight:700;">Patrocinadores y Marcas Aliadas</h5>
             <div class="client-marks" style="margin-bottom:30px;">
                 <div class="client-mark" title="Aceros Arequipa">
-                    <img src="./storage/aliados/qdxDX4Is7LXzQiO4274OO4ZoyyoEmvIbcTBmcR0r-nobg.webp" alt="ACEROS AREQUIPA">
+                    <img src="./storage/aliados/qdxDX4Is7LXzQiO4274OO4ZoyyoEmvIbcTBmcR0r-transparent.webp" alt="ACEROS AREQUIPA">
                 </div>
                 <div class="client-mark" title="Cemento Sol">
-                    <img src="./images/Patrocinadores y marcas aliados/CEMNTO SOL-nobg.webp" alt="CEMENTO SOL">
+                    <img src="./images/Patrocinadores y marcas aliados/CEMNTO SOL-transparent.webp" alt="CEMENTO SOL">
                 </div>
                 <div class="client-mark" title="Indeco">
-                    <img src="./images/patrocinadores/INDECO-nobg.webp" alt="INDECO">
+                    <img src="./images/patrocinadores/INDECO-transparent.webp" alt="INDECO">
                 </div>
                 <div class="client-mark" title="Sika">
-                    <img src="./images/patrocinadores/sika-nobg.webp" alt="SIKA">
+                    <img src="./images/patrocinadores/sika-transparent.webp" alt="SIKA">
                 </div>
                 <div class="client-mark" title="Caterpillar">
-                    <img src="./images/patrocinadores/caterpillar-nobg.webp" alt="CATERPILLAR">
+                    <img src="./images/patrocinadores/caterpillar-transparent.webp" alt="CATERPILLAR">
                 </div>
                 <div class="client-mark" title="Nicoll">
-                    <img src="./images/Patrocinadores y marcas aliados/NICOLL-nobg.webp" alt="NICOLL">
+                    <img src="./images/Patrocinadores y marcas aliados/NICOLL-transparent.webp" alt="NICOLL">
                 </div>
                 <div class="client-mark" title="Pavco">
-                    <img src="./images/Patrocinadores y marcas aliados/pavco-nobg.webp" alt="PAVCO">
+                    <img src="./images/Patrocinadores y marcas aliados/pavco-transparent.webp" alt="PAVCO">
                 </div>
                 <div class="client-mark" title="Rotoplas">
                     <img src="./images/Patrocinadores y marcas aliados/ROTOPLAS.svg" alt="ROTOPLAS">
                 </div>
                 <div class="client-mark" title="Cemento Apu">
-                    <img src="./images/Patrocinadores y marcas aliados/CEMENTO APU-nobg.webp" alt="CEMENTO APU">
+                    <img src="./images/Patrocinadores y marcas aliados/CEMENTO APU-transparent.webp" alt="CEMENTO APU">
                 </div>
                 <div class="client-mark" title="Cemex">
-                    <img src="./images/Patrocinadores y marcas aliados/CEMEX-nobg.webp" alt="CEMEX">
+                    <img src="./images/Patrocinadores y marcas aliados/CEMEX-transparent.webp" alt="CEMEX">
                 </div>
                 <div class="client-mark" title="Ladrillos Lark">
-                    <img src="./images/Patrocinadores y marcas aliados/LADRILLOS LARK-nobg.webp" alt="LADRILLOS LARK">
+                    <img src="./images/Patrocinadores y marcas aliados/LADRILLOS LARK-transparent.webp" alt="LADRILLOS LARK">
                 </div>
             </div>
 
             <h5 style="font-family:var(--display); font-size:16px; color:var(--navy); margin-bottom:15px; text-transform:uppercase; font-weight:700;">Certificaciones de Calidad</h5>
             <div class="client-marks">
                 <div class="client-mark" title="Colegio de Ingenieros del Perú">
-                    <img src="./storage/aliados/IUbbSY3xCcy6hNE5Xz17vDL5Z2Oj8CLN9fkKMD5r-nobg.webp" alt="CIP">
+                    <img src="./storage/aliados/IUbbSY3xCcy6hNE5Xz17vDL5Z2Oj8CLN9fkKMD5r-transparent.webp" alt="CIP">
                 </div>
                 <div class="client-mark" title="ISO 37001">
-                    <img src="./CERTIFICACIONES/ISO%2037001-nobg.webp" alt="ISO 37001">
+                    <img src="./CERTIFICACIONES/ISO%2037001.jpg" alt="ISO 37001">
                 </div>
                 <div class="client-mark" title="ISO 9001">
-                    <img src="./images/certificaciones/what-is-iso-9001-compliance-nobg.webp" alt="ISO 9001">
+                    <img src="./images/certificaciones/what-is-iso-9001-compliance-transparent.webp" alt="ISO 9001">
                 </div>
             </div>
         </div>
@@ -2873,7 +2894,7 @@ footer{ background:var(--navy-deep); color:rgba(250,248,244,.6); padding:52px 0 
 
           <img src="./WhatsApp Image 2026-07-09 at 10.41.46 AM.png" alt="GRUPO VAD GOD ING'S" style="height:70px; width:auto; filter: drop-shadow(0px 4px 18px rgba(201, 162, 39, 0.4)) drop-shadow(0px 2px 4px rgba(0,0,0,0.6));">
 
-          <span class="brand-text">Grupo Vad God Ing´s</span>
+          <span class="brand-text">Grupo Vad God Ing's</span>
 
         </div>
 
@@ -2903,7 +2924,7 @@ footer{ background:var(--navy-deep); color:rgba(250,248,244,.6); padding:52px 0 
 
           <h5>Formación</h5>
 
-          <a href="#capacitaciones">Capacitaciones</a>
+          <a href="#capacitaciónes">Capacitaciones</a>
 
           <a href="#contacto">Inscripciones</a>
 
@@ -3001,7 +3022,7 @@ footer{ background:var(--navy-deep); color:rgba(250,248,244,.6); padding:52px 0 
 
       speed: 1500,
 
-    slidesPerView: 1, loop: true,
+    slidesPerúiew: 1, loop: true,
 
     autoplay: { delay: 5000, disableOnInteraction: false },
 
@@ -3015,9 +3036,9 @@ footer{ background:var(--navy-deep); color:rgba(250,248,244,.6); padding:52px 0 
 
       speed: 800,
 
-    slidesPerView: 1, spaceBetween: 20,
+    slidesPerúiew: 1, spaceBetween: 20,
 
-    breakpoints: { 640: { slidesPerView: 2, spaceBetween: 20 }, 1024: { slidesPerView: 3, spaceBetween: 30 } },
+    breakpoints: { 640: { slidesPerúiew: 2, spaceBetween: 20 }, 1024: { slidesPerúiew: 3, spaceBetween: 30 } },
 
     pagination: { el: '.swiper-pagination-obras', clickable: true },
 
@@ -3029,9 +3050,9 @@ footer{ background:var(--navy-deep); color:rgba(250,248,244,.6); padding:52px 0 
 
       speed: 800,
 
-    slidesPerView: 1, spaceBetween: 20,
+    slidesPerúiew: 1, spaceBetween: 20,
 
-    breakpoints: { 640: { slidesPerView: 2, spaceBetween: 20 }, 1024: { slidesPerView: 3, spaceBetween: 30 } },
+    breakpoints: { 640: { slidesPerúiew: 2, spaceBetween: 20 }, 1024: { slidesPerúiew: 3, spaceBetween: 30 } },
 
     pagination: { el: '.swiper-pagination-noticias', clickable: true },
 
