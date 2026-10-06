@@ -1241,41 +1241,7 @@ footer{ background:var(--navy-deep); color:rgba(250,248,244,.6); padding:52px 0 
     }
     </style>
 
-<style>
-  /* BRUTAL ANIMATIONS FOR HERO SLIDER */
-  @keyframes brutalZoom {
-    0% { transform: scale(1.05); opacity: 0; }
-    5% { opacity: 0.4; }
-    100% { transform: scale(1.15); opacity: 0.4; }
-  }
-  @keyframes brutalSlideUp {
-    0% { transform: translateY(60px); opacity: 0; filter: blur(4px); }
-    100% { transform: translateY(0); opacity: 1; filter: blur(0); }
-  }
-  @keyframes brutalFadeIn {
-    0% { opacity: 0; transform: translateY(20px); }
-    100% { opacity: 1; transform: translateY(0); }
-  }
-  
-  .swiper-slide img {
-    opacity: 0 !important; /* Hide by default until active */
-  }
-  
-  .swiper-slide-active img {
-    animation: brutalZoom 10s ease-out forwards !important;
-  }
-  .swiper-slide-active h1 {
-    animation: brutalSlideUp 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-  }
-  .swiper-slide-active p.lede {
-    animation: brutalSlideUp 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.3s forwards;
-    opacity: 0;
-  }
-  .swiper-slide-active .hero-actions {
-    animation: brutalFadeIn 1s ease-out 0.6s forwards;
-    opacity: 0;
-  }
-</style>
+
 
 </head>
 
