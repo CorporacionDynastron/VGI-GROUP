@@ -10,7 +10,7 @@
 
 <title>VADGOD INGS — Ingeniería Civil, Planos & Construcción</title>
 
-<meta name="description" content="VADGOD INGS — Estudio de ingeniería civil: expediente técnico, construcción y capacitación de campo.">
+<meta name="description" content="VADGOD INGS — Estudio de ingeniería civil: gerencia de proyectos, construcción y capacitación de campo.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 
@@ -178,29 +178,17 @@ header.nav .wrap{ display:flex; align-items:center; justify-content:space-betwee
 
 .brand{ display:flex; align-items:center; gap:12px; min-width:0; }
 
-.brand img{ height:52px; width:auto; border-radius:var(--radius-s); flex-shrink:0; }
+.brand img{ height:85px; width:auto; border-radius:var(--radius-s); flex-shrink:0; }
 
-.brand-text{
+.brand-text{ font-family:var(--display); font-weight:800; font-size:42px; color:var(--ink); text-transform:uppercase; letter-spacing:0; line-height:1; }
 
-  font-family:var(--display); font-weight:700; font-size:16.5px; color:var(--gold);
-
-  text-transform:uppercase; letter-spacing:.04em; line-height:1.15;
-
-}
-
-.brand-text small{
-
-  display:block; font-family:var(--mono); font-weight:400; font-size:9px; letter-spacing:.2em;
-
-  color:rgba(250,248,244,.55); margin-top:4px; text-transform:uppercase;
-
-}
+.brand-text small{ display:block; font-family:var(--mono); font-weight:700; font-size:12px; letter-spacing:.08em; color:var(--gold); margin-top:4px; text-transform:uppercase; }
 
 
 
 nav.links{ display:flex; align-items:center; gap:34px; }
 
-nav.links > a{ font-size:14px; font-weight:500; color:var(--ink); position:relative; padding:8px 0; }
+nav.links > a{ font-size:14px; font-weight:600; color:var(--ink); position:relative; padding:8px 0; text-transform:uppercase; letter-spacing:0.04em; }
 
 nav.links > a::after{
 
@@ -211,12 +199,14 @@ nav.links > a::after{
 }
 
 nav.links > a:hover::after, nav.links .dropdown > a:hover::after{ width:100%; }
+nav.links > a.active{ color:var(--gold); }
+nav.links > a.active::after{ width:100%; }
 
 
 
 .dropdown{ position:relative; }
 
-.dropdown > a { font-size:14px; font-weight:500; color:var(--ink); position:relative; padding:8px 0; text-decoration:none; display:flex; align-items:center; }
+.dropdown > a { font-size:14px; font-weight:600; color:var(--ink); position:relative; padding:8px 0; text-decoration:none; display:flex; align-items:center; text-transform:uppercase; letter-spacing:0.04em; }
 
 .dropdown > a::after {
 
@@ -1220,10 +1210,7 @@ footer{ background:var(--navy-deep); color:rgba(250,248,244,.6); padding:52px 0 
 
   <style>
     /* Added to make the VGI logo pop with a light shadow */
-    .brand img {
-      filter: drop-shadow(4px 6px 12px rgba(255, 255, 255, 0.7)) drop-shadow(0px 4px 8px rgba(0,0,0,0.5)) !important;
-      transition: filter 0.3s ease, transform 0.3s ease !important;
-    }
+    .brand img{ height:85px; width:auto; border-radius:var(--radius-s); flex-shrink:0; }
     .brand:hover img {
       filter: drop-shadow(4px 6px 16px rgba(255, 255, 255, 0.9)) drop-shadow(0px 4px 12px rgba(0,0,0,0.7)) !important;
       transform: scale(1.03) !important;
@@ -1249,9 +1236,9 @@ footer{ background:var(--navy-deep); color:rgba(250,248,244,.6); padding:52px 0 
 
     <a href="index.html" class="brand">
 
-      <img src="./WhatsApp Image 2026-07-09 at 10.41.46 AM.png" alt="GRUPO VAD GOD ING'S" style="height:70px; width:auto;">
+      <img src="./WhatsApp Image 2026-07-09 at 10.41.46 AM.png" alt="GRUPO VAD GOD ING'S" >
 
-      <span class="brand-text">Grupo Vad God Ing's<small>Ingeniería civil &amp; construcción</small></span>
+      <span class="brand-text">VGI<small>Construcción y Capacitaciones</small></span>
 
     </a>
 
@@ -1259,7 +1246,7 @@ footer{ background:var(--navy-deep); color:rgba(250,248,244,.6); padding:52px 0 
 
     <nav class="links" id="navLinks">
 
-      <a href="index.html">Inicio</a>
+      <a href="index.html" class="active">Inicio</a>
 
       <a href="#servicios">Servicios</a>
 
@@ -1907,7 +1894,7 @@ footer{ background:var(--navy-deep); color:rgba(250,248,244,.6); padding:52px 0 
 
     <div class="sec-head reveal" data-aos="fade-up">
 
-      <p class="stamp on-light">Expediente técnico</p>
+      <p class="stamp on-light">Gerencia de proyectos</p>
 
       <h2 style="font-family: var(--body); font-weight: 700; line-height: 1.25; letter-spacing: -1px; text-transform: none;">Tres disciplinas, un mismo estándar.</h2>
 
@@ -1929,7 +1916,7 @@ footer{ background:var(--navy-deep); color:rgba(250,248,244,.6); padding:52px 0 
 
             <span class="hoja-num">HOJA 01 DE 03</span>
 
-          <h3>Planos &amp; diseño</h3>
+          <h3>Elaboración de proyectos</h3>
 
           <p>Proyectos arquitectónicos y estructurales con cálculo certificado, listos para tu licencia municipal y tu obra.</p>
 
@@ -1967,7 +1954,7 @@ footer{ background:var(--navy-deep); color:rgba(250,248,244,.6); padding:52px 0 
 
             <span class="hoja-num">HOJA 02 DE 03</span>
 
-          <h3>Construcciones</h3>
+          <h3>Ejecución de obras</h3>
 
           <p>Ejecución integral de obra civil, con supervisión propia, control de calidad y cumplimiento de plazos.</p>
 
@@ -2235,7 +2222,7 @@ footer{ background:var(--navy-deep); color:rgba(250,248,244,.6); padding:52px 0 
 
                   <div style="padding:40px; overflow-y:auto; color:var(--steel); font-size:16px; line-height:1.8; background:var(--paper);">
 
-                      <p>Proyecto de infraestructura recreativa entregado exitosamente . Nuestro equipo se encargó de la construcción integral de losas deportivas, mobiliario urbano y áreas verdes, garantizando espacios seguros para la comunidad.</p>
+                      <p>Entregamos exitosamente el proyecto de infraestructura recreativa . Nuestro equipo se encargó de la construcción integral de losas deportivas, mobiliario urbano y áreas verdes, garantizando espacios seguros para la comunidad.</p>
 
                       <div style="margin-top:40px; text-align:right;">
 
@@ -2510,7 +2497,7 @@ footer{ background:var(--navy-deep); color:rgba(250,248,244,.6); padding:52px 0 
 
             <span class="obra-tag">CONSTRUCCION</span>
 
-            <img src="./storage/obras/LQbDN2fYWVkgnx5zsFM2oIF2A1T3156X5BnszIHu.webp" alt="Obra Culminada! Nueva Infraestructura Vial Entregada con los Más Altos Estándares">
+            <img src="./storage/obras/LQbDN2fYWVkgnx5zsFM2oIF2A1T3156X5BnszIHu.webp" alt="Infraestructura vial entregada con altos estándares de calidad">
 
             <div class="obra-overlay">
 
@@ -2524,7 +2511,7 @@ footer{ background:var(--navy-deep); color:rgba(250,248,244,.6); padding:52px 0 
 
             <div class="meta"><span>EJECUCIÓN</span><span>2023</span></div>
 
-            <h4>Obra Culminada! Nueva Infraestructura Vial Entregada con los Más Altos Estándares</h4>
+            <h4>Infraestructura vial entregada con altos estándares de calidad</h4>
 
           </div>
 
@@ -2558,9 +2545,9 @@ footer{ background:var(--navy-deep); color:rgba(250,248,244,.6); padding:52px 0 
 
       <div>
 
-        <p class="test-quote">"Entregaron la obra <span>antes del plazo</span> y con la documentación impecable, planos as-built incluidos."</p>
+        <p class="test-quote">"Entregamos la obra <span>antes del plazo</span> y con la documentación impecable, planos as-built incluidos."</p>
 
-        <p class="test-who">— Gerente de Proyectos, Constructora asociada</p>
+        
 
       </div>
 
@@ -2676,7 +2663,7 @@ footer{ background:var(--navy-deep); color:rgba(250,248,244,.6); padding:52px 0 
 
         <div class="faq-answer">
 
-          <p>Sí, nuestro servicio de diseño estructural y arquitectónico abarca la elaboración del expediente técnico completo y la gestión para obtener la licencia de construcción municipal sin contratiempos.</p>
+          <p>Sí, nuestro servicio de diseño estructural y arquitectónico abarca la elaboración del gerencia de proyectos completo y la gestión para obtener la licencia de construcción municipal sin contratiempos.</p>
 
         </div>
 
@@ -2888,9 +2875,9 @@ footer{ background:var(--navy-deep); color:rgba(250,248,244,.6); padding:52px 0 
 
         <div class="brand">
 
-          <img src="./WhatsApp Image 2026-07-09 at 10.41.46 AM.png" alt="GRUPO VAD GOD ING'S" style="height:70px; width:auto;">
+          <img src="./WhatsApp Image 2026-07-09 at 10.41.46 AM.png" alt="GRUPO VAD GOD ING'S" >
 
-          <span class="brand-text">Grupo Vad God Ing's</span>
+          <span class="brand-text">VGI<small>Construcción y Capacitaciones</small></span>
 
         </div>
 

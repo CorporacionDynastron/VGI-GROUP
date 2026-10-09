@@ -172,29 +172,17 @@ header.nav .wrap{ display:flex; align-items:center; justify-content:space-betwee
 
 .brand{ display:flex; align-items:center; gap:12px; min-width:0; }
 
-.brand img{ height:52px; width:auto; border-radius:var(--radius-s); flex-shrink:0; }
+.brand img{ height:85px; width:auto; border-radius:var(--radius-s); flex-shrink:0; }
 
-.brand-text{
+.brand-text{ font-family:var(--display); font-weight:800; font-size:42px; color:var(--ink); text-transform:uppercase; letter-spacing:0; line-height:1; }
 
-  font-family:var(--display); font-weight:700; font-size:16.5px; color:var(--gold);
-
-  text-transform:uppercase; letter-spacing:.04em; line-height:1.15;
-
-}
-
-.brand-text small{
-
-  display:block; font-family:var(--mono); font-weight:400; font-size:9px; letter-spacing:.2em;
-
-  color:rgba(250,248,244,.55); margin-top:4px; text-transform:uppercase;
-
-}
+.brand-text small{ display:block; font-family:var(--mono); font-weight:700; font-size:12px; letter-spacing:.08em; color:var(--gold); margin-top:4px; text-transform:uppercase; }
 
 
 
 nav.links{ display:flex; align-items:center; gap:34px; }
 
-nav.links > a{ font-size:14px; font-weight:500; color:var(--ink); position:relative; padding:8px 0; }
+nav.links > a{ font-size:14px; font-weight:600; color:var(--ink); position:relative; padding:8px 0; text-transform:uppercase; letter-spacing:0.04em; }
 
 nav.links > a::after{
 
@@ -205,12 +193,14 @@ nav.links > a::after{
 }
 
 nav.links > a:hover::after, nav.links .dropdown > a:hover::after{ width:100%; }
+nav.links > a.active{ color:var(--gold); }
+nav.links > a.active::after{ width:100%; }
 
 
 
 .dropdown{ position:relative; }
 
-.dropdown > a { font-size:14px; font-weight:500; color:var(--ink); position:relative; padding:8px 0; text-decoration:none; display:flex; align-items:center; }
+.dropdown > a { font-size:14px; font-weight:600; color:var(--ink); position:relative; padding:8px 0; text-decoration:none; display:flex; align-items:center; text-transform:uppercase; letter-spacing:0.04em; }
 
 .dropdown > a::after {
 
@@ -1281,10 +1271,7 @@ footer{background:var(--navy-deep);color:rgba(250,248,244,.6);padding:54px 0 32p
 
   <style>
     /* Added to make the VGI logo pop with a light shadow */
-    .brand img {
-      filter: drop-shadow(4px 6px 12px rgba(255, 255, 255, 0.7)) drop-shadow(0px 4px 8px rgba(0,0,0,0.5)) !important;
-      transition: filter 0.3s ease, transform 0.3s ease !important;
-    }
+    .brand img{ height:85px; width:auto; border-radius:var(--radius-s); flex-shrink:0; }
     .brand:hover img {
       filter: drop-shadow(4px 6px 16px rgba(255, 255, 255, 0.9)) drop-shadow(0px 4px 12px rgba(0,0,0,0.7)) !important;
       transform: scale(1.03) !important;
@@ -1310,7 +1297,7 @@ footer{background:var(--navy-deep);color:rgba(250,248,244,.6);padding:54px 0 32p
 
     <a href="index.html" class="brand">
 
-      <img src="./WhatsApp Image 2026-07-09 at 10.41.46 AM.png" alt="GRUPO VAD GOD ING'S" style="height:52px; width:auto;">
+      <img src="./WhatsApp Image 2026-07-09 at 10.41.46 AM.png" alt="GRUPO VAD GOD ING'S" >
 
       <span class="brand-text" style="font-family:var(--display); font-weight:700; font-size:16.5px; color:var(--gold); text-transform:uppercase; letter-spacing:.04em; line-height:1.15; display:flex; flex-direction:column;">
 
@@ -1334,7 +1321,7 @@ footer{background:var(--navy-deep);color:rgba(250,248,244,.6);padding:54px 0 32p
 
       <div class="dropdown">
 
-        <a href="nosotros.html">
+        <a href="nosotros.html" class="active">
 
           Nosotros
 
@@ -1662,7 +1649,7 @@ footer{background:var(--navy-deep);color:rgba(250,248,244,.6);padding:54px 0 32p
 
         <div class="brand" style="margin-bottom:20px; display:flex; align-items:center; gap:10px;">
 
-          <img src="./WhatsApp Image 2026-07-09 at 10.41.46 AM.png" alt="GRUPO VAD GOD ING'S" style="height:65px; width:auto; border-radius:0px;">
+          <img src="./WhatsApp Image 2026-07-09 at 10.41.46 AM.png" alt="GRUPO VAD GOD ING'S" >
 
           <span style="font-family:var(--display); font-weight:700; font-size:18px; color:var(--gold); text-transform:uppercase; letter-spacing:0.05em; line-height:1.2; max-width:150px;">GRUPO VAD GOD ING´S</span>
 
