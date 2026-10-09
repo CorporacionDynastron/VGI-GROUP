@@ -16,7 +16,7 @@
 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -37,51 +37,29 @@
    ========================================================================== */
 
 :root{
-
-  --navy:        #0a1f3d;
-
-  --navy-deep:   #061325;
-
-  --navy-light:  #16335e;
-
-  --gold:        #c9a227;
-
-  --gold-light:  #e3c468;
-
-  --paper:       #faf8f4;
-
-  --concrete:    #ece7dd;
-
-  --ink:         #161a1f;
-
-  --steel:       #7c8794;
-
-  --line:        rgba(10,31,61,.14);
-
-  --line-soft:   rgba(10,31,61,.07);
-
+  --navy:        #0B0D11;
+  --navy-deep:   #0B0D11;
+  --navy-light:  #11141A;
+  --gold:        #D4AF37;
+  --gold-light:  #E5C158;
+  --gold-burnish:#C59B27;
+  --gold-sheen:  #F3E5AB;
+  --paper:       #1A1D24;
+  --concrete:    #11141A;
+  --ink:         #FFFFFF;
+  --steel:       #9CA3AF;
+  --ivory:       #F1F3F5;
+  --line:        rgba(255, 255, 255, 0.08);
+  --line-soft:   rgba(212, 175, 55, 0.22);
   --ok:          #4caf7d;
 
+  --display: "Syne", sans-serif;
+  --body:    "Inter", sans-serif;
+  --mono:    "JetBrains Mono", monospace;
 
-
-  --display: "Oswald", sans-serif;   /* títulos — trazo condensado, rotulado técnico */
-
-  --body:    "Inter", sans-serif;    /* lectura */
-
-  --mono: 'Inter', 'Roboto', sans-serif; /* SIEMPRE para datos: escalas, fechas, cotas, sellos */
-
-
-
-  --container: 1280px;
-
-  --gutter: clamp(20px, 4vw, 48px);
-
-  --radius-s: 3px;
-
-  --radius-m: 6px;
-
-  --ease: cubic-bezier(.16,.84,.44,1);
-
+  --ease: cubic-bezier(.16,1,.3,1);
+  --radius-m: 0px;
+  --radius-s: 0px;
 }
 
 
@@ -144,7 +122,7 @@ button{ font-family:inherit; cursor:pointer; background:none; border:none; }
 
 .stamp::before{ content:""; width:20px; height:1px; background:var(--gold); flex-shrink:0; }
 
-.stamp.on-light{ color:var(--navy); }
+.stamp.on-light{ color:var(--ivory); }
 
 .stamp.on-light::before{ background:var(--navy); }
 
@@ -190,7 +168,7 @@ header.nav{
 
 }
 
-header.nav.is-scrolled{ background:rgba(6,19,37,.94); padding:12px 0; box-shadow:0 12px 32px rgba(0,0,0,.28); }
+header.nav.is-scrolled{ background:rgba(26,29,36,.94); padding:12px 0; box-shadow:0 12px 32px rgba(0,0,0,.28); }
 
 header.nav .wrap{ display:flex; align-items:center; justify-content:space-between; gap:24px; }
 
@@ -250,7 +228,7 @@ nav.links > a:hover::after, nav.links .dropdown > a:hover::after{ width:100%; }
 
   position:absolute; top:calc(100% + 14px); left:50%; transform:translateX(-50%) translateY(10px);
 
-  min-width:260px; background:rgba(6,19,37,.92); padding:8px;
+  min-width:260px; background:rgba(26,29,36,.94); padding:8px;
 
   backdrop-filter:blur(18px); -webkit-backdrop-filter:blur(18px);
 
@@ -286,7 +264,7 @@ nav.links > a:hover::after, nav.links .dropdown > a:hover::after{ width:100%; }
 
 .dropdown-menu a svg{ width:17px; height:17px; color:var(--gold); flex-shrink:0; }
 
-.dropdown-menu small{ display:block; font-size:11px; color:rgba(250,248,244,.5); margin-top:2px; font-weight:400; }
+.dropdown-menu small{ display:block; font-size:11px; color:var(--steel); margin-top:2px; font-weight:400; }
 
 
 
@@ -302,7 +280,7 @@ nav.links > a:hover::after, nav.links .dropdown > a:hover::after{ width:100%; }
 
 }
 
-.nav-cta.solid{ background:var(--gold); color:var(--navy-deep); }
+.nav-cta.solid{ background:var(--gold); color:var(--ivory); }
 
 .nav-cta.solid:hover{ background:transparent; color:var(--gold); transform:translateY(-1px); }
 
@@ -414,13 +392,13 @@ nav.links > a:hover::after, nav.links .dropdown > a:hover::after{ width:100%; }
 
 }
 
-.btn-gold{ background:var(--gold); color:var(--navy-deep); }
+.btn-gold{ background:var(--gold); color:var(--navy-deep); font-family:var(--mono); padding:16px 28px; border-radius:0px; font-weight:700; }
 
-.btn-gold:hover{ transform:translateY(-2px); box-shadow:0 16px 32px -10px rgba(201,162,39,.55); }
+.btn-gold:hover{ background:var(--gold-light); transform:translateY(-2px); box-shadow:0 0 16px rgba(212, 175, 55, 0.3); color:var(--navy-deep); }
 
-.btn-ghost{ border-color:rgba(250,248,244,.28); color:var(--paper); }
+.btn-ghost{ background:var(--paper); border:1px solid rgba(212, 175, 55, 0.4); color:var(--ivory); font-family:var(--mono); padding:16px 28px; border-radius:0px; }
 
-.btn-ghost:hover{ border-color:var(--gold); color:var(--gold-light); transform:translateY(-2px); }
+.btn-ghost:hover{ border-color:var(--gold); color:var(--gold-sheen); transform:translateY(-2px); box-shadow:0 0 16px rgba(212, 175, 55, 0.3); }
 
 .btn svg{ width:17px; height:17px; }
 
@@ -440,7 +418,7 @@ nav.links > a:hover::after, nav.links .dropdown > a:hover::after{ width:100%; }
 
 .hero-scale b{ display:block; color:var(--gold-light); font-size:26px; font-weight:600; line-height:1; }
 
-.hero-scale span{ display:block; margin-top:8px; font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:rgba(250,248,244,.5); }
+.hero-scale span{ display:block; margin-top:8px; font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--steel); }
 
 
 
@@ -564,7 +542,7 @@ nav.links > a:hover::after, nav.links .dropdown > a:hover::after{ width:100%; }
 
   font-family:var(--display); font-size:24px; font-weight:700; text-transform:uppercase; letter-spacing:.04em;
 
-  color:var(--navy-deep);
+  color:var(--ivory);
 
 }
 
@@ -586,7 +564,7 @@ nav.links > a:hover::after, nav.links .dropdown > a:hover::after{ width:100%; }
 
 
 
-.stat-card { background:rgba(6,19,37,0.4); border:1px solid rgba(250,248,244,0.05); border-radius:16px; padding:40px 20px; display:flex; flex-direction:column; align-items:center; text-align:center; transition:transform 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease; position:relative; overflow:hidden; }
+.stat-card { background:var(--paper); border:1px solid rgba(250,248,244,0.05); border-radius:0px; padding:40px 20px; display:flex; flex-direction:column; align-items:center; text-align:center; transition:transform 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease; position:relative; overflow:hidden; }
 
 .stat-card::before { content:''; position:absolute; top:0; left:0; right:0; height:100%; background-image: linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px); background-size: 20px 20px; opacity:0.3; z-index:0; }
 
@@ -646,7 +624,7 @@ section{ padding:clamp(80px, 9vw, 130px) 0; position:relative; }
 
 .sec-head{ max-width:640px; margin-bottom:60px; }
 
-.sec-head h2{ font-size:clamp(32px,3.6vw,48px); text-transform:uppercase; color:var(--navy); line-height:1.04; margin-top:16px; }
+.sec-head h2{ font-size:clamp(32px,3.6vw,48px); text-transform:uppercase; color:var(--ivory); line-height:1.04; margin-top:16px; }
 
 .sec-head p{ margin-top:16px; font-size:16px; line-height:1.7; color:var(--steel); }
 
@@ -668,7 +646,7 @@ section{ padding:clamp(80px, 9vw, 130px) 0; position:relative; }
 
 .hoja{
 
-  background:#fff; border:1px solid var(--line); border-radius:var(--radius-m); overflow:hidden;
+  background:var(--paper); border:1px solid rgba(255, 255, 255, 0.08); border-radius:var(--radius-m); overflow:hidden;
 
   display:flex; flex-direction:column; transition:border-color .3s ease, transform .3s ease, box-shadow .3s ease;
 
@@ -680,7 +658,7 @@ section{ padding:clamp(80px, 9vw, 130px) 0; position:relative; }
 
   display:flex; justify-content:space-between; align-items:center; padding:15px 24px;
 
-  background:var(--navy); font-family:var(--mono); font-size:10.5px; letter-spacing:.1em; color:rgba(250,248,244,.7);
+  background:var(--navy); font-family:var(--mono); font-size:10.5px; letter-spacing:.1em; color:var(--ivory);
 
 }
 
@@ -690,7 +668,7 @@ section{ padding:clamp(80px, 9vw, 130px) 0; position:relative; }
 
 .hoja-num{ font-family:var(--mono); font-size:12.5px; color:var(--gold); margin-bottom:16px; }
 
-.hoja-body h3{ font-size:25px; color:var(--navy); text-transform:uppercase; margin-bottom:14px; }
+.hoja-body h3{ font-size:25px; color:var(--ivory); text-transform:uppercase; margin-bottom:14px; }
 
 .hoja-body > p{ font-size:14.5px; line-height:1.75; color:var(--steel); margin-bottom:20px; }
 
@@ -760,7 +738,7 @@ section{ padding:clamp(80px, 9vw, 130px) 0; position:relative; }
 
 .proc-step .num{
 
-  width:26px; height:26px; border-radius:50%; background:var(--navy); color:var(--gold-light);
+  width:26px; height:26px; border-radius:0px; background:var(--navy); color:var(--gold-light);
 
   font-family:var(--mono); font-size:11px; display:flex; align-items:center; justify-content:center;
 
@@ -768,7 +746,7 @@ section{ padding:clamp(80px, 9vw, 130px) 0; position:relative; }
 
 }
 
-.proc-step h4{ font-size:18px; color:var(--navy); text-transform:uppercase; margin-bottom:10px; }
+.proc-step h4{ font-size:18px; color:var(--ivory); text-transform:uppercase; margin-bottom:10px; }
 
 .proc-step p{ font-size:13.5px; line-height:1.65; color:var(--steel); }
 
@@ -786,7 +764,7 @@ section{ padding:clamp(80px, 9vw, 130px) 0; position:relative; }
 
 .obra-card{
 
-  border:1px solid var(--line); background:#fff; border-radius:var(--radius-m); overflow:hidden;
+  border:1px solid rgba(255, 255, 255, 0.08); background:var(--paper); border-radius:var(--radius-m); overflow:hidden;
 
   box-shadow:0 6px 15px rgba(0,0,0,.04); transition:transform .4s var(--ease), box-shadow .4s var(--ease);
 
@@ -814,7 +792,7 @@ section{ padding:clamp(80px, 9vw, 130px) 0; position:relative; }
 
 .obra-btn{
 
-  background:var(--gold); color:var(--navy-deep); width:48px; height:48px; border-radius:50%;
+  background:var(--gold); color:var(--ivory); width:48px; height:48px; border-radius:0px;
 
   display:flex; align-items:center; justify-content:center; transform:translateY(18px); opacity:0;
 
@@ -830,7 +808,7 @@ section{ padding:clamp(80px, 9vw, 130px) 0; position:relative; }
 
   position:absolute; top:14px; left:14px; z-index:2; font-family:var(--mono); font-size:10px;
 
-  letter-spacing:.1em; color:var(--navy-deep); background:var(--gold); padding:6px 11px;
+  letter-spacing:.1em; color:var(--ivory); background:var(--gold); padding:6px 11px;
 
   text-transform:uppercase; border-radius:var(--radius-s);
 
@@ -840,7 +818,7 @@ section{ padding:clamp(80px, 9vw, 130px) 0; position:relative; }
 
 .obra-info .meta{ font-family:var(--mono); font-size:11px; color:var(--steel); letter-spacing:.06em; display:flex; justify-content:space-between; margin-bottom:10px; }
 
-.obra-info h4{ font-size:19px; color:var(--navy); line-height:1.3; }
+.obra-info h4{ font-size:19px; color:var(--ivory); line-height:1.3; }
 
 .swiper-pagination-obras,
 
@@ -868,7 +846,7 @@ section{ padding:clamp(80px, 9vw, 130px) 0; position:relative; }
 
 .noticia-card{
 
-  border:1px solid var(--line); background:#fff; border-radius:var(--radius-m); overflow:hidden;
+  border:1px solid rgba(255, 255, 255, 0.08); background:var(--paper); border-radius:var(--radius-m); overflow:hidden;
 
   display:flex; flex-direction:column; height:100%; box-shadow:0 6px 15px rgba(0,0,0,.04);
 
@@ -888,13 +866,13 @@ section{ padding:clamp(80px, 9vw, 130px) 0; position:relative; }
 
 .noticia-date{ font-family:var(--mono); font-size:11px; color:var(--gold); margin-bottom:12px; letter-spacing:.05em; }
 
-.noticia-title{ font-size:17px; color:var(--navy); margin-bottom:12px; line-height:1.4; }
+.noticia-title{ font-size:17px; color:var(--ivory); margin-bottom:12px; line-height:1.4; }
 
 .noticia-desc{ font-size:14px; color:var(--steel); line-height:1.6; margin-bottom:20px; flex-grow:1; }
 
 .noticia-link{
 
-  font-family:var(--mono); font-size:11.5px; color:var(--navy); font-weight:600; text-transform:uppercase;
+  font-family:var(--mono); font-size:11.5px; color:var(--ivory); font-weight:600; text-transform:uppercase;
 
   margin-top:auto; display:flex; align-items:center; gap:6px; transition:color .3s ease;
 
@@ -914,13 +892,13 @@ section{ padding:clamp(80px, 9vw, 130px) 0; position:relative; }
 
 .test-wrap{ display:grid; grid-template-columns:.8fr 1.2fr; gap:56px; align-items:center; }
 
-.test-quote{ font-family:var(--display); font-weight:600; font-size:clamp(22px,2.4vw,30px); color:var(--navy); line-height:1.32; }
+.test-quote{ font-family:var(--display); font-weight:600; font-size:clamp(22px,2.4vw,30px); color:var(--ivory); line-height:1.32; }
 
 .test-quote span{ color:var(--gold); }
 
 .test-who{ margin-top:22px; font-family:var(--mono); font-size:12px; color:var(--steel); }
 
-.client-marks{ display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line); border:1px solid var(--line); border-radius:var(--radius-m); overflow:hidden; }
+.client-marks{ display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line); border:1px solid rgba(255, 255, 255, 0.08); border-radius:var(--radius-m); overflow:hidden; }
 
 .client-mark{
 
@@ -954,7 +932,7 @@ section{ padding:clamp(80px, 9vw, 130px) 0; position:relative; }
 
   width:100%; text-align:left; padding:24px 0; display:flex; justify-content:space-between; align-items:center;
 
-  gap:16px; font-family:var(--body); font-size:16.5px; font-weight:600; color:var(--navy);
+  gap:16px; font-family:var(--body); font-size:16.5px; font-weight:600; color:var(--ivory);
 
 }
 
@@ -1038,7 +1016,7 @@ form.cform{ display:grid; gap:16px; margin-top:10px; background:rgba(6,19,37,0.3
 
 .cform .submit{
 
-  background:var(--gold); color:var(--navy-deep); border-radius:var(--radius-s); border:none;
+  background:var(--gold); color:var(--ivory); border-radius:var(--radius-s); border:none;
 
   padding:12px 24px; font-size:13px; font-weight:600; letter-spacing:.03em; text-transform:uppercase;
 
@@ -1100,7 +1078,7 @@ footer{ background:var(--navy-deep); color:rgba(250,248,244,.6); padding:52px 0 
 
 .wa-float{
 
-  position:relative; width:58px; height:58px; border-radius:50%; background:#25D366;
+  position:relative; width:58px; height:58px; border-radius:0px; background:#25D366;
 
   display:flex; align-items:center; justify-content:center; box-shadow:0 10px 26px rgba(0,0,0,.3);
 
@@ -1114,7 +1092,7 @@ footer{ background:var(--navy-deep); color:rgba(250,248,244,.6); padding:52px 0 
 
 .wa-float::before{
 
-  content:""; position:absolute; inset:0; border-radius:50%; background:#25D366; z-index:-1;
+  content:""; position:absolute; inset:0; border-radius:0px; background:#25D366; z-index:-1;
 
   animation:pulse 2.2s ease-out infinite;
 
@@ -1134,7 +1112,7 @@ footer{ background:var(--navy-deep); color:rgba(250,248,244,.6); padding:52px 0 
 
 .team-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:28px; }
 
-.team-card{ background:#fff; border:1px solid var(--line); border-radius:var(--radius-m); overflow:hidden; }
+.team-card{ background:var(--paper); border:1px solid rgba(255, 255, 255, 0.08); border-radius:var(--radius-m); overflow:hidden; }
 
 .team-card img{ width:100%; height:300px; object-fit:cover; filter:grayscale(100%); transition:transform .4s ease, filter .4s ease; }
 
@@ -1142,7 +1120,7 @@ footer{ background:var(--navy-deep); color:rgba(250,248,244,.6); padding:52px 0 
 
 .team-info{ padding:22px; }
 
-.team-info h4{ font-size:19px; color:var(--navy); text-transform:uppercase; margin-bottom:4px; }
+.team-info h4{ font-size:19px; color:var(--ivory); text-transform:uppercase; margin-bottom:4px; }
 
 .team-info span{ font-family:var(--mono); font-size:11px; color:var(--steel); letter-spacing:.06em; }
 
@@ -2259,13 +2237,13 @@ footer{ background:var(--navy-deep); color:rgba(250,248,244,.6); padding:52px 0 
 
                   </div>
 
-                  <div style="padding:40px; overflow-y:auto; color:var(--steel); font-size:16px; line-height:1.8; background:#fff;">
+                  <div style="padding:40px; overflow-y:auto; color:var(--steel); font-size:16px; line-height:1.8; background:var(--paper);">
 
                       <p>Proyecto de infraestructura recreativa entregado exitosamente . Nuestro equipo se encargó de la construcción integral de losas deportivas, mobiliario urbano y áreas verdes, garantizando espacios seguros para la comunidad.</p>
 
                       <div style="margin-top:40px; text-align:right;">
 
-                          <button onclick="closeHojaModal()" style="background:var(--navy); color:#fff; padding:10px 20px; border:none; border-radius:4px; cursor:pointer;">Cerrar</button>
+                          <button onclick="closeHojaModal()" style="background:var(--navy); color:#fff; padding:10px 20px; border:none; border-radius:0px; cursor:pointer;">Cerrar</button>
 
                       </div>
 
@@ -2317,13 +2295,13 @@ footer{ background:var(--navy-deep); color:rgba(250,248,244,.6); padding:52px 0 
 
                   </div>
 
-                  <div style="padding:40px; overflow-y:auto; color:var(--steel); font-size:16px; line-height:1.8; background:#fff;">
+                  <div style="padding:40px; overflow-y:auto; color:var(--steel); font-size:16px; line-height:1.8; background:var(--paper);">
 
                       <p>Modernización de infraestructura vial . Ejecución de pistas y veredas utilizando concreto premezclado de alta resistencia, cumpliendo con la normativa MTC para garantizar durabilidad ante el tránsito pesado.</p>
 
                       <div style="margin-top:40px; text-align:right;">
 
-                          <button onclick="closeHojaModal()" style="background:var(--navy); color:#fff; padding:10px 20px; border:none; border-radius:4px; cursor:pointer;">Cerrar</button>
+                          <button onclick="closeHojaModal()" style="background:var(--navy); color:#fff; padding:10px 20px; border:none; border-radius:0px; cursor:pointer;">Cerrar</button>
 
                       </div>
 
@@ -2375,13 +2353,13 @@ footer{ background:var(--navy-deep); color:rgba(250,248,244,.6); padding:52px 0 
 
                   </div>
 
-                  <div style="padding:40px; overflow-y:auto; color:var(--steel); font-size:16px; line-height:1.8; background:#fff;">
+                  <div style="padding:40px; overflow-y:auto; color:var(--steel); font-size:16px; line-height:1.8; background:var(--paper);">
 
                       <p>Trabajos de mantenimiento y rehabilitación de infraestructura pública . Nuestro personal técnico aplicó recubrimientos y soluciones de restauración para extender la vida útil de los elementos constructivos.</p>
 
                       <div style="margin-top:40px; text-align:right;">
 
-                          <button onclick="closeHojaModal()" style="background:var(--navy); color:#fff; padding:10px 20px; border:none; border-radius:4px; cursor:pointer;">Cerrar</button>
+                          <button onclick="closeHojaModal()" style="background:var(--navy); color:#fff; padding:10px 20px; border:none; border-radius:0px; cursor:pointer;">Cerrar</button>
 
                       </div>
 
@@ -2591,7 +2569,7 @@ footer{ background:var(--navy-deep); color:rgba(250,248,244,.6); padding:52px 0 
       </div>
 
       <div style="margin-top:40px;">
-            <h5 style="font-family:var(--display); font-size:16px; color:var(--navy); margin-bottom:15px; text-transform:uppercase; font-weight:700;">Patrocinadores y Marcas Aliadas</h5>
+            <h5 style="font-family:var(--display); font-size:16px; color:var(--ivory); margin-bottom:15px; text-transform:uppercase; font-weight:700;">Patrocinadores y Marcas Aliadas</h5>
             <div class="client-marks" style="margin-bottom:30px;">
                 <div class="client-mark" title="Aceros Arequipa">
                     <img src="./storage/aliados/qdxDX4Is7LXzQiO4274OO4ZoyyoEmvIbcTBmcR0r-transparent.webp" alt="ACEROS AREQUIPA">
@@ -2631,7 +2609,7 @@ footer{ background:var(--navy-deep); color:rgba(250,248,244,.6); padding:52px 0 
                 </div>
             </div>
 
-            <h5 style="font-family:var(--display); font-size:16px; color:var(--navy); margin-bottom:15px; text-transform:uppercase; font-weight:700;">Certificaciones de Calidad</h5>
+            <h5 style="font-family:var(--display); font-size:16px; color:var(--ivory); margin-bottom:15px; text-transform:uppercase; font-weight:700;">Certificaciones de Calidad</h5>
             <div class="client-marks">
                 <div class="client-mark" title="Colegio de Ingenieros del Perú">
                     <img src="./storage/aliados/IUbbSY3xCcy6hNE5Xz17vDL5Z2Oj8CLN9fkKMD5r-transparent.webp" alt="CIP">
@@ -3319,9 +3297,9 @@ footer{ background:var(--navy-deep); color:rgba(250,248,244,.6); padding:52px 0 
 
 <div id="hojaModal" style="position:fixed; inset:0; background:rgba(6,19,37,0.85); backdrop-filter:blur(10px); z-index:9999; display:none; align-items:center; justify-content:center; padding:20px; opacity:0; transition:opacity 0.4s ease;">
 
-    <div style="background:#fff; max-width:1000px; width:100%; max-height:90vh; overflow-y:auto; border-radius:12px; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); position:relative; transform:translateY(40px) scale(0.95); transition:all 0.4s cubic-bezier(0.16, 1, 0.3, 1);" id="hojaModalContent">
+    <div style="background:var(--paper); max-width:1000px; width:100%; max-height:90vh; overflow-y:auto; border-radius:0px; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); position:relative; transform:translateY(40px) scale(0.95); transition:all 0.4s cubic-bezier(0.16, 1, 0.3, 1);" id="hojaModalContent">
 
-        <button onclick="closeHojaModal()" style="position:absolute; top:20px; right:20px; background:rgba(255,255,255,0.9); color:var(--navy); border:none; width:40px; height:40px; border-radius:50%; cursor:pointer; z-index:10; display:flex; align-items:center; justify-content:center; font-weight:bold; box-shadow:0 4px 10px rgba(0,0,0,0.1); transition:transform 0.2s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">✕</button>
+        <button onclick="closeHojaModal()" style="position:absolute; top:20px; right:20px; background:var(--navy-light); color:var(--gold); border:1px solid var(--gold); border-radius:0px; border:none; width:40px; height:40px; border-radius:0px; cursor:pointer; z-index:10; display:flex; align-items:center; justify-content:center; font-weight:bold; box-shadow:0 4px 10px rgba(0,0,0,0.1); transition:transform 0.2s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">✕</button>
 
         <div id="hojaModalInject"></div>
 
@@ -3363,7 +3341,7 @@ footer{ background:var(--navy-deep); color:rgba(250,248,244,.6); padding:52px 0 
 
         <div style="flex:1.2; min-width:300px; padding:50px 40px; display:flex; flex-direction:column; justify-content:center;">
 
-            <span style="display:inline-block; padding:6px 14px; background:rgba(201,162,39,0.1); color:var(--gold); border-radius:20px; font-size:12px; font-family:var(--mono); margin-bottom:20px; width:fit-content;">Ejecución Civil</span>
+            <span style="display:inline-block; padding:6px 14px; background:rgba(201,162,39,0.1); color:var(--gold); border-radius:0px; font-size:12px; font-family:var(--mono); margin-bottom:20px; width:fit-content;">Ejecución Civil</span>
 
             <p style="color:var(--steel); font-size:16px; line-height:1.8; margin-bottom:25px;">
 
@@ -3371,7 +3349,7 @@ footer{ background:var(--navy-deep); color:rgba(250,248,244,.6); padding:52px 0 
 
             </p>
 
-            <h4 style="color:var(--navy); font-size:18px; margin-bottom:15px; text-transform:uppercase;">Nuestra Especialidad</h4>
+            <h4 style="color:var(--ivory); font-size:18px; margin-bottom:15px; text-transform:uppercase;">Nuestra Especialidad</h4>
 
             <ul style="list-style:none; padding:0; margin:0 0 30px 0; color:var(--ink); font-size:15px; line-height:1.6;">
 
@@ -3385,7 +3363,7 @@ footer{ background:var(--navy-deep); color:rgba(250,248,244,.6); padding:52px 0 
 
             </ul>
 
-            <a href="https://wa.me/+51 984 515 818?text=Hola,%20deseo%20más%20información%20sobre%20Ejecución%20de%20Obras" target="_blank" style="display:inline-block; background:var(--gold); color:var(--navy); padding:12px 24px; text-decoration:none; font-family:var(--mono); font-size:14px; text-transform:uppercase; font-weight:bold; letter-spacing:1px; width:fit-content; border-radius:4px; transition:background 0.3s;">Hablar con un Ingeniero</a>
+            <a href="https://wa.me/+51 984 515 818?text=Hola,%20deseo%20más%20información%20sobre%20Ejecución%20de%20Obras" target="_blank" style="display:inline-block; background:var(--gold); color:var(--ivory); padding:12px 24px; text-decoration:none; font-family:var(--mono); font-size:14px; text-transform:uppercase; font-weight:bold; letter-spacing:1px; width:fit-content; border-radius:0px; transition:background 0.3s;">Hablar con un Ingeniero</a>
 
         </div>
 
@@ -3415,7 +3393,7 @@ footer{ background:var(--navy-deep); color:rgba(250,248,244,.6); padding:52px 0 
 
         <div style="flex:1.2; min-width:300px; padding:50px 40px; display:flex; flex-direction:column; justify-content:center;">
 
-            <span style="display:inline-block; padding:6px 14px; background:rgba(201,162,39,0.1); color:var(--gold); border-radius:20px; font-size:12px; font-family:var(--mono); margin-bottom:20px; width:fit-content;">Instituto VADGOD</span>
+            <span style="display:inline-block; padding:6px 14px; background:rgba(201,162,39,0.1); color:var(--gold); border-radius:0px; font-size:12px; font-family:var(--mono); margin-bottom:20px; width:fit-content;">Instituto VADGOD</span>
 
             <p style="color:var(--steel); font-size:16px; line-height:1.8; margin-bottom:25px;">
 
@@ -3423,22 +3401,22 @@ footer{ background:var(--navy-deep); color:rgba(250,248,244,.6); padding:52px 0 
 
             </p>
               <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:20px;">
-                  <div style="position:relative; aspect-ratio:16/9; background:#000; overflow:hidden; border-radius:8px;">
+                  <div style="position:relative; aspect-ratio:16/9; background:#000; overflow:hidden; border-radius:0px;">
                       <video src="./05-formacion/VIDEO%205.mp4" controls style="width:100%; height:100%; object-fit:cover;"></video>
                   </div>
-                  <div style="position:relative; aspect-ratio:16/9; background:#000; overflow:hidden; border-radius:8px;">
+                  <div style="position:relative; aspect-ratio:16/9; background:#000; overflow:hidden; border-radius:0px;">
                       <video src="./05-formacion/VIDEO%202.mp4" controls style="width:100%; height:100%; object-fit:cover;"></video>
                   </div>
-                  <div style="position:relative; aspect-ratio:16/9; background:#000; overflow:hidden; border-radius:8px;">
+                  <div style="position:relative; aspect-ratio:16/9; background:#000; overflow:hidden; border-radius:0px;">
                       <img src="./05-formacion/IMAGEN%203.webp" style="width:100%; height:100%; object-fit:cover;">
                   </div>
-                  <div style="position:relative; aspect-ratio:16/9; background:#000; overflow:hidden; border-radius:8px;">
+                  <div style="position:relative; aspect-ratio:16/9; background:#000; overflow:hidden; border-radius:0px;">
                       <img src="./05-formacion/IMAGEN%205.jpeg" style="width:100%; height:100%; object-fit:cover;">
                   </div>
               </div>
         
 
-            <h4 style="color:var(--navy); font-size:18px; margin-bottom:15px; text-transform:uppercase;">Programas Disponibles</h4>
+            <h4 style="color:var(--ivory); font-size:18px; margin-bottom:15px; text-transform:uppercase;">Programas Disponibles</h4>
 
             <ul style="list-style:none; padding:0; margin:0 0 30px 0; color:var(--ink); font-size:15px; line-height:1.6;">
 
@@ -3452,7 +3430,7 @@ footer{ background:var(--navy-deep); color:rgba(250,248,244,.6); padding:52px 0 
 
             </ul>
 
-            <a href="https://wa.me/+51 984 515 818?text=Hola,%20deseo%20matricularme%20en%20sus%20cursos%20de%20capacitación" target="_blank" style="display:inline-block; background:var(--gold); color:var(--navy); padding:12px 24px; text-decoration:none; font-family:var(--mono); font-size:14px; text-transform:uppercase; font-weight:bold; letter-spacing:1px; width:fit-content; border-radius:4px; transition:background 0.3s;">Ver Inscripciones</a>
+            <a href="https://wa.me/+51 984 515 818?text=Hola,%20deseo%20matricularme%20en%20sus%20cursos%20de%20capacitación" target="_blank" style="display:inline-block; background:var(--gold); color:var(--ivory); padding:12px 24px; text-decoration:none; font-family:var(--mono); font-size:14px; text-transform:uppercase; font-weight:bold; letter-spacing:1px; width:fit-content; border-radius:0px; transition:background 0.3s;">Ver Inscripciones</a>
 
         </div>
 

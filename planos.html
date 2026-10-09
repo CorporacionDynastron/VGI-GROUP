@@ -24,41 +24,31 @@
 
   <style>
 
-    :root {
+    :root{
+  --navy:        #0B0D11;
+  --navy-deep:   #0B0D11;
+  --navy-light:  #11141A;
+  --gold:        #D4AF37;
+  --gold-light:  #E5C158;
+  --gold-burnish:#C59B27;
+  --gold-sheen:  #F3E5AB;
+  --paper:       #1A1D24;
+  --concrete:    #11141A;
+  --ink:         #FFFFFF;
+  --steel:       #9CA3AF;
+  --ivory:       #F1F3F5;
+  --line:        rgba(255, 255, 255, 0.08);
+  --line-soft:   rgba(212, 175, 55, 0.22);
+  --ok:          #4caf7d;
 
-      --navy: #061325;
+  --display: "Syne", sans-serif;
+  --body:    "Inter", sans-serif;
+  --mono:    "JetBrains Mono", monospace;
 
-      --navy-deep: #030a14;
-
-      --gold: #C9A227;
-
-      --gold-light: #e8c655;
-
-      --paper: #FAF8F4;
-
-      --concrete: #F2EFEB;
-
-      --steel: #6E7985;
-
-      --ink: #1a1e23;
-
-      --line: rgba(26,30,35,0.08);
-
-      
-
-      --display: 'Cinzel', serif;
-
-      --body: 'Inter', sans-serif;
-
-      --mono: 'JetBrains Mono', monospace;
-
-      
-
-      --radius-s: 4px;
-
-      --ease: cubic-bezier(0.2, 0, 0, 1);
-
-    }
+  --ease: cubic-bezier(.16,1,.3,1);
+  --radius-m: 0px;
+  --radius-s: 0px;
+}
 
     
 
@@ -104,9 +94,9 @@
 
     .btn { display: inline-flex; align-items: center; gap: 10px; padding: 15px 26px; font-size: 13.5px; font-weight: 600; letter-spacing: .03em; text-transform: uppercase; border-radius: var(--radius-s); transition: transform .25s ease, box-shadow .25s ease, background .25s ease; border: 1px solid transparent; }
 
-    .btn-gold { background: var(--gold); color: var(--navy-deep); }
+    .btn-gold{ background:var(--gold); color:var(--navy-deep); font-family:var(--mono); padding:16px 28px; border-radius:0px; font-weight:700; }
 
-    .btn-gold:hover { transform: translateY(-2px); box-shadow: 0 16px 32px -10px rgba(201,162,39,.55); }
+    .btn-gold:hover{ background:var(--gold-light); transform:translateY(-2px); box-shadow:0 0 16px rgba(212, 175, 55, 0.3); color:var(--navy-deep); }
 
 
 
@@ -142,7 +132,7 @@
 
         background: #fff;
 
-        border-radius: 8px;
+        border-radius:0px;
 
         overflow: hidden;
 
@@ -228,7 +218,7 @@
 
     .lightbox.active { display: flex; opacity: 1; }
 
-    .lightbox img { max-width: 90vw; max-height: 85vh; object-fit: contain; border-radius: 4px; box-shadow: 0 10px 40px rgba(0,0,0,0.5); }
+    .lightbox img { max-width: 90vw; max-height: 85vh; object-fit: contain; border-radius:0px; box-shadow: 0 10px 40px rgba(0,0,0,0.5); }
 
     .lightbox-close { position: absolute; top: 30px; right: 40px; color: #fff; font-size: 40px; cursor: pointer; line-height: 1; }
 
@@ -330,7 +320,7 @@
 
       <h1>Planos & Diseño</h1>
 
-      <p style="max-width:700px; margin:0 auto; color:rgba(250,248,244,.7); font-size:18px; line-height: 1.6;">
+      <p style="max-width:700px; margin:0 auto; color:var(--ivory); font-size:18px; line-height: 1.6;">
 
         Desarrollamos proyectos arquitectónicos y estructurales listos para licencia municipal. Explora nuestra galería de diseños conceptuales y renders fotorealistas.
 
