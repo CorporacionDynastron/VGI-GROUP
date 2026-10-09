@@ -1,116 +1,83 @@
 import re
 
-with open("index.html", "r", encoding="utf-8", errors="ignore") as f:
+with open("index.html", "r", encoding="utf-8") as f:
     html = f.read()
 
-# Replace the heroSlides array definition and the switchHeroSlide function
-old_script = """                const heroSlides = [
-                    {
-                        title: "INFRAESTRUCTURA <br><span class='text-primary underline decoration-primary/40 decoration-4 underline-offset-8'>RECREATIVA</span>",
-                        desc: "Recuperacin de espacios pǧblicos. Ejecucin de losas deportivas, ǭreas verdes y zonas de recreacin con estrictos estǭndares de seguridad y durabilidad estructural.",
-                        tag: "FOLIO 04 / PROYECTO 2024",
-                        imgSrc: "./01-recreacion/IMAGEN%204.webp"
-                    },
-                    {
-                        title: "PAVIMENTACI"N <br><span class='text-primary underline decoration-primary/40 decoration-4 underline-offset-8'>DE V?AS</span>",
-                        desc: "Ejecucin de pistas y veredas de concreto de alta resistencia. Movimiento de tierras, compactacin y vaciado con maquinaria especializada bajo normativa tǸcnica MTC.",
-                        tag: "FOLIO 08 / VIALIDAD MTC",
-                        imgSrc: "./02-pistas/IMAGEN%201.webp"
-                    },
-                    {
-                        title: "MANTENIMIENTO <br><span class='text-primary underline decoration-primary/40 decoration-4 underline-offset-8'>ESTRUCTURAL</span>",
-                        desc: "Servicios integrales de mantenimiento preventivo y correctivo en infraestructuras civiles. Preservamos la integridad de las obras con soluciones tǸcnicas precisas.",
-                        tag: "FOLIO 12 / GESTI"N CIV",
-                        imgSrc: "./03-mantenimiento/IMAGEN%205.webp"
-                    }
-                ];
+# I will replace the hero section
+hero_pattern = r'<main.*?</main>' # Wait, no, we just want to replace the first section.
+hero_pattern = r'<!-- HERO SECTION -->.*?<!-- NOSOTROS BRIEFING -->'
+new_hero = """<!-- HERO SECTION -->
+        <section class="relative w-full h-[80vh] min-h-[600px] flex items-center overflow-hidden">
+            <!-- Background Image Slider -->
+            <div class="absolute inset-0 z-0 bg-surface-dim">
+                <img id="hero-bg" src="./images/imagen-3.jpeg" alt="Construccion Civil" 
+                     class="w-full h-full object-cover filter brightness-75 transition-opacity duration-1000 ease-in-out">
+                <div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/80 to-transparent"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
+            </div>
 
-                function switchHeroSlide(index) {
-                    const data = heroSlides[index];
-                    document.getElementById('hero-title').innerHTML = data.title;
-                    document.getElementById('hero-desc').innerText = data.desc;
-                    document.getElementById('hero-tag').innerText = data.tag;
+            <div class="max-w-7xl mx-auto px-gutter relative z-10 w-full flex flex-col justify-center pt-20">
+                <div class="max-w-3xl" data-aos="fade-up">
+                    <div class="flex items-center gap-2 text-primary font-technical-code text-technical-code uppercase mb-4">
+                        <span class="material-symbols-outlined text-sm">engineering</span>
+                        <span id="hero-title">INFRAESTRUCTURA RECREATIVA</span>
+                    </div>
+                    <h1 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-white uppercase tracking-tight font-bold mb-space-md" id="hero-headline">
+                        Diseñamos y construimos <span class="text-primary">el futuro.</span>
+                    </h1>
+                    <p class="font-body-lg text-body-lg text-secondary leading-relaxed mb-space-xl max-w-2xl" id="hero-desc">
+                        Diseñamos y ejecutamos obras de ingeniería civil con precisión milimétrica. Transformamos espacios públicos, garantizando máxima seguridad.
+                    </p>
+                    
+                    <div class="flex flex-wrap items-center gap-4">
+                        <a href="obras.html"
+                            class="inline-flex items-center justify-center bg-primary text-on-primary font-label-caps text-label-caps uppercase px-8 py-4 tracking-wider hover:bg-surface-tint transition-all duration-300 shadow-[0_0_24px_rgba(212,175,55,0.4)]">
+                            Explora nuestras obras <span class="material-symbols-outlined text-sm ml-2">arrow_forward</span>
+                        </a>
+                        <a href="#contacto-tecnico"
+                            class="inline-flex items-center justify-center bg-surface-container-high text-on-surface font-label-caps text-label-caps uppercase px-8 py-4 tracking-wider border border-outline-variant/30 hover:border-primary/50 transition-all duration-300">
+                            <span class="material-symbols-outlined text-sm text-primary mr-2">description</span> Solicitar Cotización
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Slide Controls -->
+                <div class="flex items-center gap-2 mt-12" data-aos="fade-up" data-aos-delay="200">
+                    <button onclick="switchHeroSlide(0)" class="hero-dot w-3 h-3 bg-primary rounded-full transition-all duration-300 shadow-[0_0_10px_rgba(212,175,55,0.5)]"></button>
+                    <button onclick="switchHeroSlide(1)" class="hero-dot w-2 h-2 bg-outline-variant rounded-full hover:bg-primary/50 transition-all duration-300"></button>
+                    <button onclick="switchHeroSlide(2)" class="hero-dot w-2 h-2 bg-outline-variant rounded-full hover:bg-primary/50 transition-all duration-300"></button>
+                </div>
+            </div>
+        </section>
+        <!-- NOSOTROS BRIEFING -->"""
 
-                    const imgEl = document.getElementById('hero-img');
-                    imgEl.src = data.imgSrc;"""
+html = re.sub(r'<!-- HERO SECTION -->.*?<!-- NOSOTROS BRIEFING -->', new_hero, html, flags=re.DOTALL)
 
-# Wait, the unicode chars might cause match failure. Let's use regex.
-pattern = r'const heroSlides = \[.*?function switchHeroSlide\(index\) \{.*?imgEl\.src = data\.imgSrc;'
+# Update the javascript for hero slide
+js_replace = r'const imgEl = document\.getElementById\(\'hero-img\'\);.*?tagEl\.innerText = slide\.tag;'
+new_js = """const imgEl = document.getElementById('hero-bg');
+                    const titleEl = document.getElementById('hero-title');
+                    const headlineEl = document.getElementById('hero-headline');
+                    const descEl = document.getElementById('hero-desc');
 
-new_script = """const heroSlides = [
-                    {
-                        title: "INFRAESTRUCTURA <br><span class='text-primary underline decoration-primary/40 decoration-4 underline-offset-8'>RECREATIVA</span>",
-                        desc: "Recuperación de espacios públicos. Ejecución de losas deportivas, áreas verdes y zonas de recreación con estrictos estándares de seguridad y durabilidad estructural.",
-                        tag: "FOLIO 04 / PROYECTO 2024",
-                        images: [
-                            "./images/imagen-3.jpeg", 
-                            "./01-recreacion/IMAGEN%204.webp", 
-                            "./01-recreacion/IMAGEN%208.webp", 
-                            "./01-recreacion/IMAGEN%2012.webp"
-                        ]
-                    },
-                    {
-                        title: "PAVIMENTACIÓN <br><span class='text-primary underline decoration-primary/40 decoration-4 underline-offset-8'>DE VÍAS</span>",
-                        desc: "Ejecución de pistas y veredas de concreto de alta resistencia. Movimiento de tierras, compactación y vaciado con maquinaria especializada bajo normativa técnica MTC.",
-                        tag: "FOLIO 08 / VIALIDAD MTC",
-                        images: [
-                            "./02-pistas/IMAGEN%201.webp",
-                            "./02-pistas/IMAGEN%205.webp",
-                            "./02-pistas/IMAGEN%2010.webp"
-                        ]
-                    },
-                    {
-                        title: "MANTENIMIENTO <br><span class='text-primary underline decoration-primary/40 decoration-4 underline-offset-8'>ESTRUCTURAL</span>",
-                        desc: "Servicios integrales de mantenimiento preventivo y correctivo en infraestructuras civiles. Preservamos la integridad de las obras con soluciones técnicas precisas.",
-                        tag: "FOLIO 12 / GESTIÓN CIV",
-                        images: [
-                            "./03-mantenimiento/IMAGEN%201.webp",
-                            "./03-mantenimiento/IMAGEN%205.webp",
-                            "./03-mantenimiento/IMAGEN%209.webp"
-                        ]
-                    }
-                ];
-
-                let currentSlideIndex = 0;
-                let currentImageIndex = 0;
-                let imageInterval;
-
-                function startImageRotation() {
-                    clearInterval(imageInterval);
-                    imageInterval = setInterval(() => {
-                        const data = heroSlides[currentSlideIndex];
-                        currentImageIndex = (currentImageIndex + 1) % data.images.length;
-                        const imgEl = document.getElementById('hero-img');
-                        imgEl.style.opacity = 0;
-                        setTimeout(() => {
-                            imgEl.src = data.images[currentImageIndex];
-                            imgEl.style.opacity = 1;
-                        }, 300);
-                    }, 4000);
-                }
-
-                // Initial start
-                setTimeout(startImageRotation, 1000);
-
-                function switchHeroSlide(index) {
-                    currentSlideIndex = index;
-                    currentImageIndex = 0;
-                    const data = heroSlides[index];
-                    document.getElementById('hero-title').innerHTML = data.title;
-                    document.getElementById('hero-desc').innerText = data.desc;
-                    document.getElementById('hero-tag').innerText = data.tag;
-
-                    const imgEl = document.getElementById('hero-img');
                     imgEl.style.opacity = 0;
                     setTimeout(() => {
-                        imgEl.src = data.images[0];
+                        imgEl.src = slide.img;
+                        titleEl.innerText = slide.title;
+                        headlineEl.innerHTML = slide.headline || slide.title;
+                        descEl.innerText = slide.desc;
                         imgEl.style.opacity = 1;
-                    }, 300);
-                    
-                    startImageRotation();"""
+                    }, 500);
 
-html = re.sub(pattern, new_script, html, flags=re.DOTALL)
+                    // Update dots
+                    document.querySelectorAll('.hero-dot').forEach((dot, idx) => {
+                        if(idx === index) {
+                            dot.className = "hero-dot w-3 h-3 bg-primary rounded-full transition-all duration-300 shadow-[0_0_10px_rgba(212,175,55,0.5)]";
+                        } else {
+                            dot.className = "hero-dot w-2 h-2 bg-outline-variant rounded-full hover:bg-primary/50 transition-all duration-300";
+                        }
+                    });"""
+html = re.sub(js_replace, new_js, html, flags=re.DOTALL)
 
 with open("index.html", "w", encoding="utf-8") as f:
     f.write(html)
-print("Updated hero script!")
