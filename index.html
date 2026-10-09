@@ -164,7 +164,7 @@
                                     <img class="w-full h-full object-cover transition-all duration-700"
                                         data-alt="High-contrast modern civil engineering playground and athletic complex under dramatic twilight sky with warm stadium spotlights, crisp geometric concrete walkways, fresh lush turf, perimeter steel safety fence, architectural photography, hyper-realistic, dark graphite and gold ambience."
                                         id="hero-img"
-                                        src="./01-recreacion/IMAGEN%204.webp">
+                                        src="./images/imagen-3.jpeg">
                                     <div
                                         class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-80">
                                     </div>
@@ -1168,30 +1168,72 @@
                         title: "INFRAESTRUCTURA <br><span class='text-primary underline decoration-primary/40 decoration-4 underline-offset-8'>RECREATIVA</span>",
                         desc: "Recuperación de espacios públicos. Ejecución de losas deportivas, áreas verdes y zonas de recreación con estrictos estándares de seguridad y durabilidad estructural.",
                         tag: "FOLIO 04 / PROYECTO 2024",
-                        imgSrc: "./01-recreacion/IMAGEN%204.webp"
+                        images: [
+                            "./images/imagen-3.jpeg", 
+                            "./01-recreacion/IMAGEN%204.webp", 
+                            "./01-recreacion/IMAGEN%208.webp", 
+                            "./01-recreacion/IMAGEN%2012.webp"
+                        ]
                     },
                     {
                         title: "PAVIMENTACIÓN <br><span class='text-primary underline decoration-primary/40 decoration-4 underline-offset-8'>DE VÍAS</span>",
                         desc: "Ejecución de pistas y veredas de concreto de alta resistencia. Movimiento de tierras, compactación y vaciado con maquinaria especializada bajo normativa técnica MTC.",
                         tag: "FOLIO 08 / VIALIDAD MTC",
-                        imgSrc: "./02-pistas/IMAGEN%201.webp"
+                        images: [
+                            "./02-pistas/IMAGEN%201.webp",
+                            "./02-pistas/IMAGEN%205.webp",
+                            "./02-pistas/IMAGEN%2010.webp"
+                        ]
                     },
                     {
                         title: "MANTENIMIENTO <br><span class='text-primary underline decoration-primary/40 decoration-4 underline-offset-8'>ESTRUCTURAL</span>",
                         desc: "Servicios integrales de mantenimiento preventivo y correctivo en infraestructuras civiles. Preservamos la integridad de las obras con soluciones técnicas precisas.",
                         tag: "FOLIO 12 / GESTIÓN CIV",
-                        imgSrc: "./03-mantenimiento/IMAGEN%205.webp"
+                        images: [
+                            "./03-mantenimiento/IMAGEN%201.webp",
+                            "./03-mantenimiento/IMAGEN%205.webp",
+                            "./03-mantenimiento/IMAGEN%209.webp"
+                        ]
                     }
                 ];
 
+                let currentSlideIndex = 0;
+                let currentImageIndex = 0;
+                let imageInterval;
+
+                function startImageRotation() {
+                    clearInterval(imageInterval);
+                    imageInterval = setInterval(() => {
+                        const data = heroSlides[currentSlideIndex];
+                        currentImageIndex = (currentImageIndex + 1) % data.images.length;
+                        const imgEl = document.getElementById('hero-img');
+                        imgEl.style.opacity = 0;
+                        setTimeout(() => {
+                            imgEl.src = data.images[currentImageIndex];
+                            imgEl.style.opacity = 1;
+                        }, 300);
+                    }, 4000);
+                }
+
+                // Initial start
+                setTimeout(startImageRotation, 1000);
+
                 function switchHeroSlide(index) {
+                    currentSlideIndex = index;
+                    currentImageIndex = 0;
                     const data = heroSlides[index];
                     document.getElementById('hero-title').innerHTML = data.title;
                     document.getElementById('hero-desc').innerText = data.desc;
                     document.getElementById('hero-tag').innerText = data.tag;
 
                     const imgEl = document.getElementById('hero-img');
-                    imgEl.src = data.imgSrc;
+                    imgEl.style.opacity = 0;
+                    setTimeout(() => {
+                        imgEl.src = data.images[0];
+                        imgEl.style.opacity = 1;
+                    }, 300);
+                    
+                    startImageRotation();
 
                     // Update tab styles
                     document.querySelectorAll('.hero-tab').forEach((btn, idx) => {
