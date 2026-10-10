@@ -15,38 +15,25 @@ const vgiFooterHTML = `
                         los más altos estándares de calidad.</p>
                     <div class="flex flex-wrap gap-2 font-headline-sm text-sm font-bold tracking-wider text-primary">
                         <div class="flex items-center gap-2 flex-wrap">
-                            <div class="bg-surface-container border border-outline-variant/30 p-2 flex items-center justify-center hover:border-primary/50 transition-all shadow-sm" title="ISO 9001:2015">
-                                <div class="bg-white p-1 rounded flex items-center justify-center h-16 w-20">
-                                    <img src="./CERTIFICACIONES/ISO%209001.png" alt="ISO 9001" class="h-full w-full object-contain">
-                                </div>
+                            <div class="bg-surface-container border border-outline-variant/30 p-2 rounded flex items-center justify-center hover:border-primary/50 transition-all shadow-sm h-20 w-20" title="ISO 9001:2015">
+                                <img src="./CERTIFICACIONES/ISO%209001.png" alt="ISO 9001" class="h-full w-full object-contain">
                             </div>
-                            <div class="bg-surface-container border border-outline-variant/30 p-2 flex items-center justify-center hover:border-primary/50 transition-all shadow-sm" title="ISO 14001:2015">
-                                <div class="bg-white p-1 rounded flex items-center justify-center h-16 w-20">
-                                    <img src="./CERTIFICACIONES/ISO%2014001.png" alt="ISO 14001" class="h-full w-full object-contain">
-                                </div>
+                            <div class="bg-surface-container border border-outline-variant/30 p-2 rounded flex items-center justify-center hover:border-primary/50 transition-all shadow-sm h-20 w-20" title="ISO 14001:2015">
+                                <img src="./CERTIFICACIONES/ISO%2014001.png" alt="ISO 14001" class="h-full w-full object-contain">
                             </div>
-                            <div class="bg-surface-container border border-outline-variant/30 p-2 flex items-center justify-center hover:border-primary/50 transition-all shadow-sm" title="ISO 45001">
-                                <div class="bg-white p-1 rounded flex items-center justify-center h-16 w-28">
-                                    <img src="./CERTIFICACIONES/ISO%2045001.png" alt="ISO 45001" class="h-full w-full object-contain">
-                                </div>
+                            <div class="bg-surface-container border border-outline-variant/30 p-2 rounded flex items-center justify-center hover:border-primary/50 transition-all shadow-sm h-20 w-28" title="ISO 45001">
+                                <img src="./CERTIFICACIONES/ISO%2045001.png" alt="ISO 45001" class="h-full w-full object-contain">
                             </div>
-                            <div class="bg-surface-container border border-outline-variant/30 p-2 flex items-center justify-center hover:border-primary/50 transition-all shadow-sm" title="ISO 37001:2016">
-                                <div class="bg-white p-1 rounded flex items-center justify-center h-16 w-20">
-                                    <img src="./CERTIFICACIONES/ISO%2037001.png" alt="ISO 37001" class="h-full w-full object-contain">
-                                </div>
+                            <div class="bg-surface-container border border-outline-variant/30 p-2 rounded flex items-center justify-center hover:border-primary/50 transition-all shadow-sm h-20 w-20" title="ISO 37001:2016">
+                                <img src="./CERTIFICACIONES/ISO%2037001.png" alt="ISO 37001" class="h-full w-full object-contain">
                             </div>
-                            <div class="bg-surface-container border border-outline-variant/30 p-2 flex items-center justify-center hover:border-primary/50 transition-all shadow-sm" title="ISO 27001">
-                                <div class="bg-white p-1 rounded flex items-center justify-center h-16 w-28">
-                                    <img src="./CERTIFICACIONES/ISO%2027001.png" alt="ISO 27001" class="h-full w-full object-contain">
-                                </div>
+                            <div class="bg-surface-container border border-outline-variant/30 p-2 rounded flex items-center justify-center hover:border-primary/50 transition-all shadow-sm h-20 w-28" title="ISO 27001">
+                                <img src="./CERTIFICACIONES/ISO%2027001.png" alt="ISO 27001" class="h-full w-full object-contain">
                             </div>
-                            <div class="bg-surface-container border border-outline-variant/30 p-2 flex items-center justify-center hover:border-primary/50 transition-all shadow-sm" title="Colegio de Ingenieros del Perú">
-                                <div class="bg-white p-1 rounded flex items-center justify-center h-16 w-20">
-                                    <img src="./CERTIFICACIONES/CIP.png" alt="CIP" class="h-full w-full object-contain">
-                                </div>
+                            <div class="bg-surface-container border border-outline-variant/30 p-2 rounded flex items-center justify-center hover:border-primary/50 transition-all shadow-sm h-20 w-20" title="Colegio de Ingenieros del Perú">
+                                <img src="./CERTIFICACIONES/CIP.png" alt="CIP" class="h-full w-full object-contain">
                             </div>
                         </div>
-                    </div>
                 </div>
                 <div class="lg:col-span-2 flex flex-col">
                     <h3
