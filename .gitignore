@@ -1,1 +1,8 @@
 ﻿BROCHURE VGI A3 - MEJORADO.pdf
+
+# Scripts temporales y archivos de trabajo
+*.py
+diff.txt
+*_template.txt
+build/
+storage/

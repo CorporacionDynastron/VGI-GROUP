@@ -41,7 +41,7 @@ const vgiHeaderHTML = `
                     class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface tracking-wide uppercase py-2 transition-colors"
                     data-path="contacto" href="#contacto-tecnico">Contacto</a></nav>
             <div class="flex items-center gap-space-md"><a
-                    class="inline-flex items-center justify-center bg-primary-container text-on-primary-container font-label-caps text-[13px] uppercase px-6 py-3.5 tracking-wider hover:bg-primary transition-all duration-200 shadow-[0_0_16px_rgba(212,175,55,0.25)] border-t border-primary"
+                    class="inline-flex items-center justify-center bg-primary-container text-on-primary-container font-label-caps text-[15px] uppercase px-6 py-3.5 tracking-wider hover:bg-primary transition-all duration-200 shadow-[0_0_16px_rgba(212,175,55,0.25)] border-t border-primary"
                     data-path="contacto" href="#contacto-tecnico"><span
                         class="material-symbols-outlined text-sm mr-2">engineering</span>Solicitar cotización</a></div>
         </div>
