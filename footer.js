@@ -50,9 +50,9 @@ const vgiFooterHTML = `
                 <h3 class="font-label-caps text-label-caps text-primary uppercase tracking-widest mb-4 pb-2 border-b border-outline-variant/20">Formación Técnica</h3>
                 <ul class="flex flex-col gap-3 font-body-sm text-body-sm">
                     <li><a class="hover:text-primary transition-colors" href="capacitaciones.html">Capacitaciones Especializadas</a></li>
-                    <li><a class="hover:text-primary transition-colors" href="#">Certificaciones Profesionales</a></li>
-                    <li><a class="hover:text-primary transition-colors" href="#">Inscripciones y Convocatorias</a></li>
-                    <li><a class="hover:text-primary transition-colors inline-flex items-center gap-1.5 text-on-surface font-semibold" href="#"><span class="material-symbols-outlined text-sm text-primary">menu_book</span>Libro de Reclamaciones Virtual</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="capacitaciones.html">Certificaciones Profesionales</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="index.html#contacto-tecnico">Inscripciones y Convocatorias</a></li>
+                    <li><a class="hover:text-primary transition-colors inline-flex items-center gap-1.5 text-on-surface font-semibold" href="./LibroReclamacionDigital.jpg" target="_blank" rel="noopener"><span class="material-symbols-outlined text-sm text-primary">menu_book</span>Libro de Reclamaciones Virtual</a></li>
                 </ul>
             </div>
 

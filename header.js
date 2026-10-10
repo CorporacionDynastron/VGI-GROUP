@@ -24,11 +24,11 @@ const vgiHeaderHTML = `
                   </div><div class="relative group">
                       <a class="font-body-sm text-body-sm tracking-wide uppercase py-2 transition-colors flex items-center gap-1 cursor-pointer text-on-surface-variant hover:text-on-surface" data-path="obras" href="obras.html">OBRAS <span class="material-symbols-outlined text-sm">expand_more</span></a>
                       <div class="absolute left-0 top-full mt-0 hidden group-hover:flex flex-col bg-surface-container-high shadow-2xl border border-outline-variant/30 min-w-[320px] z-50">
-                          <a href="obras.html#edificaciones" class="px-5 py-3 hover:bg-surface-container-highest hover:text-primary transition-colors text-[13px] font-label-caps uppercase tracking-wider border-b border-outline-variant/10 flex items-center gap-2">OBRAS DE EDIFICACIONES Y AFINES</a>
-                          <a href="obras.html#viales" class="px-5 py-3 hover:bg-surface-container-highest hover:text-primary transition-colors text-[13px] font-label-caps uppercase tracking-wider border-b border-outline-variant/10 flex items-center gap-2">OBRAS VIALES, PUERTOS Y AFINES</a>
-                          <a href="obras.html#saneamiento" class="px-5 py-3 hover:bg-surface-container-highest hover:text-primary transition-colors text-[13px] font-label-caps uppercase tracking-wider border-b border-outline-variant/10 flex items-center gap-2">OBRAS DE SANEAMIENTO Y AFINES</a>
-                          <a href="obras.html#electromecanicas" class="px-5 py-3 hover:bg-surface-container-highest hover:text-primary transition-colors text-[13px] font-label-caps uppercase tracking-wider border-b border-outline-variant/10 flex items-center gap-2">OBRAS ELECTROMECÁNICAS, ENERGÉTICAS, TELECOM. Y AFINES</a>
-                          <a href="obras.html#represas" class="px-5 py-3 hover:bg-surface-container-highest hover:text-primary transition-colors text-[13px] font-label-caps uppercase tracking-wider border-b border-outline-variant/10 flex items-center gap-2">OBRAS DE REPRESAS, IRRIGACIONES Y AFINES</a>
+                          <a href="obras.html#edificaciones" class="px-5 py-3 hover:bg-surface-container-highest hover:text-primary transition-colors text-[13px] font-headline-sm uppercase tracking-wider border-b border-outline-variant/10 flex items-center gap-2">OBRAS DE EDIFICACIONES Y AFINES</a>
+                          <a href="obras.html#viales" class="px-5 py-3 hover:bg-surface-container-highest hover:text-primary transition-colors text-[13px] font-headline-sm uppercase tracking-wider border-b border-outline-variant/10 flex items-center gap-2">OBRAS VIALES, PUERTOS Y AFINES</a>
+                          <a href="obras.html#saneamiento" class="px-5 py-3 hover:bg-surface-container-highest hover:text-primary transition-colors text-[13px] font-headline-sm uppercase tracking-wider border-b border-outline-variant/10 flex items-center gap-2">OBRAS DE SANEAMIENTO Y AFINES</a>
+                          <a href="obras.html#electromecanicas" class="px-5 py-3 hover:bg-surface-container-highest hover:text-primary transition-colors text-[13px] font-headline-sm uppercase tracking-wider border-b border-outline-variant/10 flex items-center gap-2">OBRAS ELECTROMECÁNICAS, ENERGÉTICAS, TELECOM. Y AFINES</a>
+                          <a href="obras.html#represas" class="px-5 py-3 hover:bg-surface-container-highest hover:text-primary transition-colors text-[13px] font-headline-sm uppercase tracking-wider border-b border-outline-variant/10 flex items-center gap-2">OBRAS DE REPRESAS, IRRIGACIONES Y AFINES</a>
                       </div>
                   </div><div class="relative group">
                       <a class="font-body-sm text-body-sm tracking-wide uppercase py-2 transition-colors flex items-center gap-1 cursor-pointer text-on-surface-variant hover:text-on-surface" data-path="nosotros" href="nosotros.html">NOSOTROS <span class="material-symbols-outlined text-sm">expand_more</span></a>
@@ -39,10 +39,10 @@ const vgiHeaderHTML = `
                       </div>
                   </div><a
                     class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface tracking-wide uppercase py-2 transition-colors"
-                    data-path="contacto" href="#contacto-tecnico">Contacto</a></nav>
+                    data-path="contacto" href="index.html#contacto-tecnico">Contacto</a></nav>
             <div class="flex items-center gap-space-md"><a
                     class="inline-flex items-center justify-center bg-primary-container text-on-primary-container font-label-caps font-extrabold text-[15px] uppercase px-6 py-3.5 tracking-wider hover:bg-primary transition-all duration-200 shadow-[0_0_16px_rgba(212,175,55,0.25)] border-t border-primary"
-                    data-path="contacto" href="#contacto-tecnico"><span
+                    data-path="contacto" href="index.html#contacto-tecnico"><span
                         class="material-symbols-outlined text-sm mr-2">engineering</span>Solicitar cotización</a></div>
         </div>
     
