@@ -3,1127 +3,193 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="web_standard" name="shell-type">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-        rel="stylesheet">
+    <title>Obras - VGI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#F2CA50",
+                        "primary-fixed": "#FFE178",
+                        secondary: "#D1C5B4",
+                        background: "#1c1b1f",
+                        surface: "#1c1b1f",
+                        "surface-dim": "#141317",
+                        "surface-container-lowest": "#0f0e11",
+                        "surface-container-low": "#1c1b1f",
+                        "surface-container": "#201f23",
+                        "surface-container-high": "#2b2a2e",
+                        "surface-container-highest": "#363439",
+                        "on-surface": "#e6e1e5",
+                        "on-surface-variant": "#cac4d0",
+                        "outline": "#938f99",
+                        "outline-variant": "#49454f"
+                    },
+                    fontFamily: {
+                        "headline-lg": ['Syne', 'sans-serif'],
+                        "headline-sm": ['Syne', 'sans-serif'],
+                        "body-md": ['Inter', 'sans-serif'],
+                        "body-sm": ['Inter', 'sans-serif'],
+                    },
+                    spacing: {
+                        "gutter": "2rem",
+                        "gutter-lg": "4rem",
+                        "space-sm": "0.5rem",
+                        "space-md": "1rem",
+                        "space-lg": "2rem",
+                        "space-xl": "4rem",
+                        "space-2xl": "8rem"
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Syne:wght@600;700;800&amp;display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
     <style>
-        @layer base {
-
-            html,
-            body {
-                margin: 0;
-                padding: 0;
-            }
-
-            body {
-                overscroll-behavior: none;
-            }
-
-            main>:first-child {
-                margin-top: 0 !important;
-            }
-
-            main>:last-child {
-                margin-bottom: 0 !important;
-            }
-        }
-
-        ::-webkit-scrollbar {
-            display: none;
-        }
+        body { margin: 0; padding: 0; overscroll-behavior: none; }
     </style>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script
-        id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-tertiary-container": "#554300", "inverse-primary": "#735c00", "tertiary-fixed-dim": "#e7c35a", "surface-container-lowest": "#0c0e12", "surface-dim": "#111317", "secondary-fixed": "#dee2f0", "on-background": "#e2e2e8", "on-surface": "#e2e2e8", "on-tertiary-fixed-variant": "#584400", "on-secondary": "#2b303b", "surface": "#111317", "background": "#111317", "surface-container-high": "#282a2e", "primary-fixed": "#ffe088", "on-error": "#690005", "outline-variant": "#4d4635", "primary": "#FFCC00", "error-container": "#93000a", "secondary-container": "#424752", "error": "#ffb4ab", "on-secondary-fixed": "#171c25", "on-primary-fixed-variant": "#574500", "on-secondary-container": "#b0b5c2", "outline": "#99907c", "surface-tint": "#e9c349", "surface-container-low": "#1a1c20", "primary-fixed-dim": "#e9c349", "on-primary": "#3c2f00", "on-tertiary": "#3d2f00", "on-surface-variant": "#d0c5af", "tertiary-fixed": "#ffe08b", "surface-container-highest": "#333539", "on-secondary-fixed-variant": "#424752", "secondary-fixed-dim": "#c2c6d4", "inverse-on-surface": "#2f3035", "tertiary": "#efcb60", "primary-container": "#FFCC00", "secondary": "#c2c6d4", "on-primary-fixed": "#241a00", "surface-container": "#1e2024", "on-error-container": "#ffdad6", "on-tertiary-fixed": "#241a00", "tertiary-container": "#d2af48", "on-primary-container": "#554300", "surface-variant": "#333539", "surface-bright": "#37393e", "inverse-surface": "#e2e2e8" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter": "1.5rem", "space-sm": "0.5rem", "gutter-lg": "2.5rem", "space-2xl": "4rem", "margin-mobile": "1.25rem", "space-xs": "0.25rem", "space-xl": "2.5rem", "space-lg": "1.5rem", "margin": "2rem", "space-md": "1rem", "gutter-sm": "1rem" }, fontFamily: { "headline-lg": ["Syne"], "body-sm": ["Inter"], "headline-md": ["Syne"], "label-caps": ["JetBrains Mono"], "technical-code": ["JetBrains Mono"], "body-lg": ["Inter"], "body-md": ["Inter"], "headline-lg-mobile": ["Syne"], "headline-xl-mobile": ["Syne"], "headline-xl": ["Syne"], "headline-sm": ["Syne"] }, fontSize: { "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "400" }], "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "600" }], "label-caps": ["11px", { "lineHeight": "14px", "letterSpacing": "0.18em", "fontWeight": "600" }], "technical-code": ["12px", { "lineHeight": "16px", "letterSpacing": "0.12em", "fontWeight": "500" }], "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "400" }], "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0.01em", "fontWeight": "400" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "700" }], "headline-xl-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-xl": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "600" }] } } } };</script>
 </head>
-<body class="bg-surface text-on-surface font-body-md antialiased selection:bg-primary/30 selection:text-primary">
-    <script src="header.js"></script>
+<body class="bg-background font-body-md text-on-surface antialiased min-h-screen">
     
-    <main class="w-full flex flex-col pt-0">
-        <!-- HERO SECTION -->
-        <section class="relative w-full h-[60vh] min-h-[400px] flex flex-col items-center justify-center text-center px-gutter overflow-hidden border-b border-outline-variant/20">
+    <script src="header.js"></script>
+
+    <main class="w-full pt-0 bg-surface min-h-[calc(100vh-20rem)] flex flex-col">
+        <!-- HERO -->
+        <section class="relative w-full h-[50vh] min-h-[400px] flex flex-col items-center justify-center overflow-hidden border-b border-outline-variant/20">
             <div class="absolute inset-0 z-0">
-                <img src="./02-pistas/IMAGEN%201.webp" alt="Obras Ejecutadas" class="w-full h-full object-cover opacity-50 brightness-110 object-center">
+                <img src="./02-pistas/IMAGEN%201.webp" alt="Obras Ejecutadas" class="w-full h-full object-cover opacity-30 brightness-110 object-center">
                 <div class="absolute inset-0 bg-gradient-to-b from-surface/20 via-surface/60 to-surface"></div>
             </div>
-            <div class="relative z-10 max-w-4xl mx-auto" data-aos="fade-up">
-                <div class="font-headline-sm text-sm font-bold tracking-wider text-primary uppercase tracking-widest mb-4">PORTAFOLIO DE EJECUCIÓN</div>
-                <h1 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-white uppercase font-bold tracking-tight mb-space-md">OBRAS ENTREGADAS</h1>
-                <p class="font-body-lg text-body-lg text-secondary max-w-2xl mx-auto leading-relaxed">
-                    Mostramos únicamente proyectos 100% concluidos que reflejan nuestra capacidad técnica, cumplimiento de normativas y rigor en la construcción civil y urbana.
+            
+            <div class="max-w-7xl mx-auto px-gutter relative z-10 w-full flex flex-col justify-center text-center">
+                <h1 class="font-headline-lg text-4xl md:text-6xl text-white uppercase tracking-tight font-bold drop-shadow-lg mb-4">
+                    Nuestras <span class="text-primary">Obras</span>
+                </h1>
+                <p class="font-body-md text-secondary text-lg max-w-2xl mx-auto">
+                    Clasificación general de obras en cartera de VGI.
                 </p>
             </div>
         </section>
 
-        <!-- WORKS SECTION -->
-        <section class="py-space-2xl bg-surface">
-            <div class="max-w-7xl mx-auto px-gutter">
-
-                <div id="edificaciones" class="mb-space-2xl scroll-mt-[120px]" data-aos="fade-up">
-                    <div class="mb-space-xl border-b-2 border-primary/30 pb-4">
-                        <h2 class="font-headline-lg text-3xl md:text-4xl text-primary uppercase font-bold">EDIFICACIONES Y AFINES</h2>
+        <!-- LIST SECTION -->
+        <section class="w-full bg-surface py-space-xl relative">
+            <div class="max-w-4xl mx-auto px-gutter">
+                <div class="flex flex-col gap-6">
+                    <!-- 1 -->
+                    <div class="relative group bg-surface-container-low border border-outline-variant/20 p-8 flex items-center shadow-lg overflow-hidden transition-all duration-300 hover:border-primary/50 hover:bg-surface-container cursor-pointer">
+                        <div class="absolute -left-4 -top-8 text-8xl font-headline-lg font-bold text-primary opacity-[0.03] group-hover:opacity-10 transition-opacity duration-300 pointer-events-none select-none">
+                            01
+                        </div>
+                        <div class="relative z-10 flex items-center gap-6">
+                            <div class="text-4xl font-headline-lg font-bold text-primary drop-shadow-sm">01.</div>
+                            <h2 class="text-xl md:text-2xl font-headline-sm uppercase font-bold text-on-surface group-hover:text-primary transition-colors">Obras de edificaciones y afines</h2>
+                        </div>
                     </div>
-                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./08-multifamiliar/primera-piedra/PRIMERA_PIEDRA_1.webp')">
-                            <img src="./08-multifamiliar/primera-piedra/PRIMERA_PIEDRA_1.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
+                    <!-- 2 -->
+                    <div class="relative group bg-surface-container-low border border-outline-variant/20 p-8 flex items-center shadow-lg overflow-hidden transition-all duration-300 hover:border-primary/50 hover:bg-surface-container cursor-pointer">
+                        <div class="absolute -left-4 -top-8 text-8xl font-headline-lg font-bold text-primary opacity-[0.03] group-hover:opacity-10 transition-opacity duration-300 pointer-events-none select-none">
+                            02
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./08-multifamiliar/primera-piedra/PRIMERA_PIEDRA_2.webp')">
-                            <img src="./08-multifamiliar/primera-piedra/PRIMERA_PIEDRA_2.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
+                        <div class="relative z-10 flex items-center gap-6">
+                            <div class="text-4xl font-headline-lg font-bold text-primary drop-shadow-sm">02.</div>
+                            <h2 class="text-xl md:text-2xl font-headline-sm uppercase font-bold text-on-surface group-hover:text-primary transition-colors">Obras viales, puertos y afines</h2>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./08-multifamiliar/primera-piedra/PRIMERA_PIEDRA_3.webp')">
-                            <img src="./08-multifamiliar/primera-piedra/PRIMERA_PIEDRA_3.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="relative group bg-surface-container-low border border-outline-variant/20 p-8 flex items-center shadow-lg overflow-hidden transition-all duration-300 hover:border-primary/50 hover:bg-surface-container cursor-pointer">
+                        <div class="absolute -left-4 -top-8 text-8xl font-headline-lg font-bold text-primary opacity-[0.03] group-hover:opacity-10 transition-opacity duration-300 pointer-events-none select-none">
+                            03
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./08-multifamiliar/primera-piedra/PRIMERA_PIEDRA_4.webp')">
-                            <img src="./08-multifamiliar/primera-piedra/PRIMERA_PIEDRA_4.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
+                        <div class="relative z-10 flex items-center gap-6">
+                            <div class="text-4xl font-headline-lg font-bold text-primary drop-shadow-sm">03.</div>
+                            <h2 class="text-xl md:text-2xl font-headline-sm uppercase font-bold text-on-surface group-hover:text-primary transition-colors">Obras de saneamiento y afines</h2>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./08-multifamiliar/primera-piedra/PRIMERA_PIEDRA_5.webp')">
-                            <img src="./08-multifamiliar/primera-piedra/PRIMERA_PIEDRA_5.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
+                    </div>
+                    <!-- 4 -->
+                    <div class="relative group bg-surface-container-low border border-outline-variant/20 p-8 flex items-center shadow-lg overflow-hidden transition-all duration-300 hover:border-primary/50 hover:bg-surface-container cursor-pointer">
+                        <div class="absolute -left-4 -top-8 text-8xl font-headline-lg font-bold text-primary opacity-[0.03] group-hover:opacity-10 transition-opacity duration-300 pointer-events-none select-none">
+                            04
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./08-multifamiliar/primera-piedra/PRIMERA_PIEDRA_6.webp')">
-                            <img src="./08-multifamiliar/primera-piedra/PRIMERA_PIEDRA_6.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
+                        <div class="relative z-10 flex items-center gap-6">
+                            <div class="text-4xl font-headline-lg font-bold text-primary drop-shadow-sm">04.</div>
+                            <h2 class="text-xl md:text-2xl font-headline-sm uppercase font-bold text-on-surface group-hover:text-primary transition-colors">Obras electromecánicas, energéticas, telecom. y afines</h2>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./08-multifamiliar/primera-piedra/PRIMERA_PIEDRA_7.webp')">
-                            <img src="./08-multifamiliar/primera-piedra/PRIMERA_PIEDRA_7.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
+                    </div>
+                    <!-- 5 -->
+                    <div class="relative group bg-surface-container-low border border-outline-variant/20 p-8 flex items-center shadow-lg overflow-hidden transition-all duration-300 hover:border-primary/50 hover:bg-surface-container cursor-pointer">
+                        <div class="absolute -left-4 -top-8 text-8xl font-headline-lg font-bold text-primary opacity-[0.03] group-hover:opacity-10 transition-opacity duration-300 pointer-events-none select-none">
+                            05
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_1.webp')">
-                            <img src="./08-multifamiliar/proceso/IMAGEN_1.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_10.webp')">
-                            <img src="./08-multifamiliar/proceso/IMAGEN_10.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_11.webp')">
-                            <img src="./08-multifamiliar/proceso/IMAGEN_11.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_12.webp')">
-                            <img src="./08-multifamiliar/proceso/IMAGEN_12.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_13.webp')">
-                            <img src="./08-multifamiliar/proceso/IMAGEN_13.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_14.webp')">
-                            <img src="./08-multifamiliar/proceso/IMAGEN_14.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_15.webp')">
-                            <img src="./08-multifamiliar/proceso/IMAGEN_15.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_16.webp')">
-                            <img src="./08-multifamiliar/proceso/IMAGEN_16.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_17.webp')">
-                            <img src="./08-multifamiliar/proceso/IMAGEN_17.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_18.webp')">
-                            <img src="./08-multifamiliar/proceso/IMAGEN_18.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_19.webp')">
-                            <img src="./08-multifamiliar/proceso/IMAGEN_19.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_2.webp')">
-                            <img src="./08-multifamiliar/proceso/IMAGEN_2.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_20.webp')">
-                            <img src="./08-multifamiliar/proceso/IMAGEN_20.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_21.webp')">
-                            <img src="./08-multifamiliar/proceso/IMAGEN_21.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_3.webp')">
-                            <img src="./08-multifamiliar/proceso/IMAGEN_3.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_4.webp')">
-                            <img src="./08-multifamiliar/proceso/IMAGEN_4.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_5.webp')">
-                            <img src="./08-multifamiliar/proceso/IMAGEN_5.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_6.webp')">
-                            <img src="./08-multifamiliar/proceso/IMAGEN_6.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_7.webp')">
-                            <img src="./08-multifamiliar/proceso/IMAGEN_7.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_8.webp')">
-                            <img src="./08-multifamiliar/proceso/IMAGEN_8.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_9.webp')">
-                            <img src="./08-multifamiliar/proceso/IMAGEN_9.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./06-planta/IMAGEN%20(1).png')">
-                            <img src="./06-planta/IMAGEN%20(1).png" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./06-planta/IMAGEN%20(10).png')">
-                            <img src="./06-planta/IMAGEN%20(10).png" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./06-planta/IMAGEN%20(11).png')">
-                            <img src="./06-planta/IMAGEN%20(11).png" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./06-planta/IMAGEN%20(12).png')">
-                            <img src="./06-planta/IMAGEN%20(12).png" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./06-planta/IMAGEN%20(13).png')">
-                            <img src="./06-planta/IMAGEN%20(13).png" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./06-planta/IMAGEN%20(2).png')">
-                            <img src="./06-planta/IMAGEN%20(2).png" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./06-planta/IMAGEN%20(3).png')">
-                            <img src="./06-planta/IMAGEN%20(3).png" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./06-planta/IMAGEN%20(4).png')">
-                            <img src="./06-planta/IMAGEN%20(4).png" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./06-planta/IMAGEN%20(5).png')">
-                            <img src="./06-planta/IMAGEN%20(5).png" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./06-planta/IMAGEN%20(6).png')">
-                            <img src="./06-planta/IMAGEN%20(6).png" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./06-planta/IMAGEN%20(7).png')">
-                            <img src="./06-planta/IMAGEN%20(7).png" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./06-planta/IMAGEN%20(8).png')">
-                            <img src="./06-planta/IMAGEN%20(8).png" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./06-planta/IMAGEN%20(9).png')">
-                            <img src="./06-planta/IMAGEN%20(9).png" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
+                        <div class="relative z-10 flex items-center gap-6">
+                            <div class="text-4xl font-headline-lg font-bold text-primary drop-shadow-sm">05.</div>
+                            <h2 class="text-xl md:text-2xl font-headline-sm uppercase font-bold text-on-surface group-hover:text-primary transition-colors">Obras de represas, irrigaciones y afines</h2>
                         </div>
                     </div>
                 </div>
-
-                <div id="viales" class="mb-space-2xl scroll-mt-[120px]" data-aos="fade-up">
-                    <div class="mb-space-xl border-b-2 border-primary/30 pb-4">
-                        <h2 class="font-headline-lg text-3xl md:text-4xl text-primary uppercase font-bold">VIALES, PUERTOS Y AFINES</h2>
-                    </div>
-                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%201.webp')">
-                            <img src="./02-pistas/IMAGEN%201.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%2010.webp')">
-                            <img src="./02-pistas/IMAGEN%2010.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%2011.webp')">
-                            <img src="./02-pistas/IMAGEN%2011.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%2012.webp')">
-                            <img src="./02-pistas/IMAGEN%2012.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%2013.webp')">
-                            <img src="./02-pistas/IMAGEN%2013.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%2014.webp')">
-                            <img src="./02-pistas/IMAGEN%2014.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%2015.webp')">
-                            <img src="./02-pistas/IMAGEN%2015.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%2016.webp')">
-                            <img src="./02-pistas/IMAGEN%2016.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%2017.webp')">
-                            <img src="./02-pistas/IMAGEN%2017.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%2018.webp')">
-                            <img src="./02-pistas/IMAGEN%2018.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%2019.webp')">
-                            <img src="./02-pistas/IMAGEN%2019.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%202.webp')">
-                            <img src="./02-pistas/IMAGEN%202.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%2020.webp')">
-                            <img src="./02-pistas/IMAGEN%2020.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%2021.webp')">
-                            <img src="./02-pistas/IMAGEN%2021.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%2022.webp')">
-                            <img src="./02-pistas/IMAGEN%2022.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%2023.webp')">
-                            <img src="./02-pistas/IMAGEN%2023.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%2024.webp')">
-                            <img src="./02-pistas/IMAGEN%2024.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%2025.webp')">
-                            <img src="./02-pistas/IMAGEN%2025.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%2026.webp')">
-                            <img src="./02-pistas/IMAGEN%2026.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%2027.webp')">
-                            <img src="./02-pistas/IMAGEN%2027.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%2028.webp')">
-                            <img src="./02-pistas/IMAGEN%2028.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%2029.webp')">
-                            <img src="./02-pistas/IMAGEN%2029.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%203.webp')">
-                            <img src="./02-pistas/IMAGEN%203.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%2030.webp')">
-                            <img src="./02-pistas/IMAGEN%2030.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%2031.webp')">
-                            <img src="./02-pistas/IMAGEN%2031.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%2032.webp')">
-                            <img src="./02-pistas/IMAGEN%2032.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%2033.webp')">
-                            <img src="./02-pistas/IMAGEN%2033.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%2034.webp')">
-                            <img src="./02-pistas/IMAGEN%2034.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%2035.webp')">
-                            <img src="./02-pistas/IMAGEN%2035.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%2036.webp')">
-                            <img src="./02-pistas/IMAGEN%2036.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%2037.webp')">
-                            <img src="./02-pistas/IMAGEN%2037.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%2038.webp')">
-                            <img src="./02-pistas/IMAGEN%2038.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%204.webp')">
-                            <img src="./02-pistas/IMAGEN%204.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%205.webp')">
-                            <img src="./02-pistas/IMAGEN%205.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%206.webp')">
-                            <img src="./02-pistas/IMAGEN%206.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%207.webp')">
-                            <img src="./02-pistas/IMAGEN%207.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%208.webp')">
-                            <img src="./02-pistas/IMAGEN%208.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%209.webp')">
-                            <img src="./02-pistas/IMAGEN%209.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="saneamiento" class="mb-space-2xl scroll-mt-[120px]" data-aos="fade-up">
-                    <div class="mb-space-xl border-b-2 border-primary/30 pb-4">
-                        <h2 class="font-headline-lg text-3xl md:text-4xl text-primary uppercase font-bold">SANEAMIENTO Y AFINES</h2>
-                    </div>
-                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./07-saneamiento/saneamiento_1.jpg')">
-                            <img src="./07-saneamiento/saneamiento_1.jpg" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./07-saneamiento/saneamiento_2.jpg')">
-                            <img src="./07-saneamiento/saneamiento_2.jpg" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./07-saneamiento/saneamiento_3.jpg')">
-                            <img src="./07-saneamiento/saneamiento_3.jpg" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./07-saneamiento/tuberia-hdpe/img_1.webp')">
-                            <img src="./07-saneamiento/tuberia-hdpe/img_1.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./07-saneamiento/tuberia-hdpe/img_10.webp')">
-                            <img src="./07-saneamiento/tuberia-hdpe/img_10.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./07-saneamiento/tuberia-hdpe/img_11.webp')">
-                            <img src="./07-saneamiento/tuberia-hdpe/img_11.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./07-saneamiento/tuberia-hdpe/img_12.webp')">
-                            <img src="./07-saneamiento/tuberia-hdpe/img_12.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./07-saneamiento/tuberia-hdpe/img_13.webp')">
-                            <img src="./07-saneamiento/tuberia-hdpe/img_13.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./07-saneamiento/tuberia-hdpe/img_14.webp')">
-                            <img src="./07-saneamiento/tuberia-hdpe/img_14.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./07-saneamiento/tuberia-hdpe/img_15.webp')">
-                            <img src="./07-saneamiento/tuberia-hdpe/img_15.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./07-saneamiento/tuberia-hdpe/img_16.webp')">
-                            <img src="./07-saneamiento/tuberia-hdpe/img_16.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./07-saneamiento/tuberia-hdpe/img_17.webp')">
-                            <img src="./07-saneamiento/tuberia-hdpe/img_17.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./07-saneamiento/tuberia-hdpe/img_2.webp')">
-                            <img src="./07-saneamiento/tuberia-hdpe/img_2.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./07-saneamiento/tuberia-hdpe/img_3.webp')">
-                            <img src="./07-saneamiento/tuberia-hdpe/img_3.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./07-saneamiento/tuberia-hdpe/img_4.webp')">
-                            <img src="./07-saneamiento/tuberia-hdpe/img_4.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./07-saneamiento/tuberia-hdpe/img_5.webp')">
-                            <img src="./07-saneamiento/tuberia-hdpe/img_5.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./07-saneamiento/tuberia-hdpe/img_6.webp')">
-                            <img src="./07-saneamiento/tuberia-hdpe/img_6.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./07-saneamiento/tuberia-hdpe/img_7.webp')">
-                            <img src="./07-saneamiento/tuberia-hdpe/img_7.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./07-saneamiento/tuberia-hdpe/img_8.webp')">
-                            <img src="./07-saneamiento/tuberia-hdpe/img_8.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./07-saneamiento/tuberia-hdpe/img_9.webp')">
-                            <img src="./07-saneamiento/tuberia-hdpe/img_9.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="recreativa" class="mb-space-2xl scroll-mt-[120px]" data-aos="fade-up">
-                    <div class="mb-space-xl border-b-2 border-primary/30 pb-4">
-                        <h2 class="font-headline-lg text-3xl md:text-4xl text-primary uppercase font-bold">INFRAESTRUCTURA RECREATIVA</h2>
-                    </div>
-                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./01-recreacion/IMAGEN%201.webp')">
-                            <img src="./01-recreacion/IMAGEN%201.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./01-recreacion/IMAGEN%2010.webp')">
-                            <img src="./01-recreacion/IMAGEN%2010.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./01-recreacion/IMAGEN%2011.webp')">
-                            <img src="./01-recreacion/IMAGEN%2011.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./01-recreacion/IMAGEN%2012.webp')">
-                            <img src="./01-recreacion/IMAGEN%2012.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./01-recreacion/IMAGEN%2013.webp')">
-                            <img src="./01-recreacion/IMAGEN%2013.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./01-recreacion/IMAGEN%2014.webp')">
-                            <img src="./01-recreacion/IMAGEN%2014.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./01-recreacion/IMAGEN%2015.webp')">
-                            <img src="./01-recreacion/IMAGEN%2015.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./01-recreacion/IMAGEN%2016.webp')">
-                            <img src="./01-recreacion/IMAGEN%2016.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./01-recreacion/IMAGEN%2017.webp')">
-                            <img src="./01-recreacion/IMAGEN%2017.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./01-recreacion/IMAGEN%202.webp')">
-                            <img src="./01-recreacion/IMAGEN%202.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./01-recreacion/IMAGEN%203.webp')">
-                            <img src="./01-recreacion/IMAGEN%203.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./01-recreacion/IMAGEN%204.webp')">
-                            <img src="./01-recreacion/IMAGEN%204.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./01-recreacion/IMAGEN%205.webp')">
-                            <img src="./01-recreacion/IMAGEN%205.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./01-recreacion/IMAGEN%206.webp')">
-                            <img src="./01-recreacion/IMAGEN%206.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./01-recreacion/IMAGEN%207.webp')">
-                            <img src="./01-recreacion/IMAGEN%207.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./01-recreacion/IMAGEN%208.webp')">
-                            <img src="./01-recreacion/IMAGEN%208.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./01-recreacion/IMAGEN%209.webp')">
-                            <img src="./01-recreacion/IMAGEN%209.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./09-recreacional/img_1.webp')">
-                            <img src="./09-recreacional/img_1.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./09-recreacional/img_10.webp')">
-                            <img src="./09-recreacional/img_10.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./09-recreacional/img_2.webp')">
-                            <img src="./09-recreacional/img_2.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./09-recreacional/img_3.webp')">
-                            <img src="./09-recreacional/img_3.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./09-recreacional/img_4.webp')">
-                            <img src="./09-recreacional/img_4.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./09-recreacional/img_5.webp')">
-                            <img src="./09-recreacional/img_5.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./09-recreacional/img_6.webp')">
-                            <img src="./09-recreacional/img_6.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./09-recreacional/img_7.webp')">
-                            <img src="./09-recreacional/img_7.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./09-recreacional/img_8.webp')">
-                            <img src="./09-recreacional/img_8.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./09-recreacional/img_9.webp')">
-                            <img src="./09-recreacional/img_9.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="mantenimiento" class="mb-space-2xl scroll-mt-[120px]" data-aos="fade-up">
-                    <div class="mb-space-xl border-b-2 border-primary/30 pb-4">
-                        <h2 class="font-headline-lg text-3xl md:text-4xl text-primary uppercase font-bold">MANTENIMIENTO DE INFRAESTRUCTURA</h2>
-                    </div>
-                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./03-mantenimiento/IMAGEN%201.webp')">
-                            <img src="./03-mantenimiento/IMAGEN%201.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./03-mantenimiento/IMAGEN%2010.webp')">
-                            <img src="./03-mantenimiento/IMAGEN%2010.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./03-mantenimiento/IMAGEN%2011.webp')">
-                            <img src="./03-mantenimiento/IMAGEN%2011.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./03-mantenimiento/IMAGEN%2012.webp')">
-                            <img src="./03-mantenimiento/IMAGEN%2012.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./03-mantenimiento/IMAGEN%2013.webp')">
-                            <img src="./03-mantenimiento/IMAGEN%2013.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./03-mantenimiento/IMAGEN%2014.webp')">
-                            <img src="./03-mantenimiento/IMAGEN%2014.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./03-mantenimiento/IMAGEN%2015.webp')">
-                            <img src="./03-mantenimiento/IMAGEN%2015.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./03-mantenimiento/IMAGEN%2016.webp')">
-                            <img src="./03-mantenimiento/IMAGEN%2016.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./03-mantenimiento/IMAGEN%202.webp')">
-                            <img src="./03-mantenimiento/IMAGEN%202.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./03-mantenimiento/IMAGEN%203.webp')">
-                            <img src="./03-mantenimiento/IMAGEN%203.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./03-mantenimiento/IMAGEN%204.webp')">
-                            <img src="./03-mantenimiento/IMAGEN%204.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./03-mantenimiento/IMAGEN%205.webp')">
-                            <img src="./03-mantenimiento/IMAGEN%205.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./03-mantenimiento/IMAGEN%206.webp')">
-                            <img src="./03-mantenimiento/IMAGEN%206.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./03-mantenimiento/IMAGEN%207.webp')">
-                            <img src="./03-mantenimiento/IMAGEN%207.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./03-mantenimiento/IMAGEN%208.webp')">
-                            <img src="./03-mantenimiento/IMAGEN%208.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./03-mantenimiento/IMAGEN%209.webp')">
-                            <img src="./03-mantenimiento/IMAGEN%209.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </section>
     </main>
-    
-    <footer
-        class="w-full bg-surface-container-lowest border-t border-outline-variant/40 pt-space-2xl pb-space-lg text-on-surface-variant relative">
-        <div class="max-w-7xl mx-auto px-gutter">
-            <div
-                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter-lg pb-space-2xl border-b border-outline-variant/20">
-                <div class="lg:col-span-4 flex flex-col items-start">
-                    <div class="flex items-center gap-space-md mb-space-md"><img alt="Logo VGI"
-                            class="w-14 h-14 object-cover drop-shadow-[0_0_12px_rgba(242,202,80,0.3)]"
-                            src="./WhatsApp%20Image%202026-07-09%20at%2010.41.46%20AM.png">
-                        <div class="flex flex-col"><span class="font-headline-sm text-headline-md md:text-headline-lg text-primary tracking-wider uppercase leading-none font-bold text-lg md:text-xl drop-shadow-sm" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">VAD GOD ING'S</span><span class="font-body-sm text-body-sm text-white tracking-widest uppercase mt-1 font-semibold text-[10px]">TRAINING <br> & CONSTRUCTION</span></div>
-                    </div>
-                    <p class="font-body-sm text-body-sm text-secondary leading-relaxed mb-space-lg max-w-sm">Ingeniería
-                        civil, construcción y consultoría técnica orientada a la excelencia. Soluciones integrales con
-                        los más altos estándares de calidad.</p>
-                    <div class="flex flex-wrap gap-2 font-headline-sm text-sm font-bold tracking-wider text-primary">
-                        <div class="flex items-center gap-2 flex-wrap">
-                            <div class="bg-white p-1 rounded h-8 w-9 flex items-center justify-center shadow-sm"><img
-                                    src="./storage/aliados/fvKaovpp4p243ZJGkNfqN83l58BVEFS0TtlDmzGb-transparent.webp"
-                                    alt="ISO 9001" class="h-full w-full object-cover"></div>
-                            <div class="bg-white p-1 rounded h-8 w-9 flex items-center justify-center shadow-sm"><img
-                                    src="./storage/aliados/zEyex57sHhCsE7CaJ0HKFFfJctKOFXFJ28E6HFUe-transparent.webp"
-                                    alt="ISO 14001" class="h-full w-full object-cover"></div>
-                            <div class="bg-white p-1 rounded h-8 w-12 flex items-center justify-center shadow-sm"><img
-                                    src="./storage/aliados/NOVsTFA7NHgob7VYxW0tebRRr52GCNbqBie1Dx2i-transparent.webp"
-                                    alt="ISO 45001" class="h-full w-full object-cover"></div>
-                            <div class="bg-white p-1 rounded h-8 w-9 flex items-center justify-center shadow-sm"><img
-                                    src="./storage/aliados/Zlx9PTNbfzQnLo5gGgzXrPj3DrHB1Ksu0GuTLS9N-transparent.webp"
-                                    alt="ISO 37001" class="h-full w-full object-cover"></div>
-                            <div
-                                class="bg-white p-1 rounded h-8 w-9 flex items-center justify-center shadow-sm border border-primary/40">
-                                <img src="./storage/aliados/rVe1f7nhZHb2CaJWpPnSWbWVJNM5tUAdSuh129Xt-transparent.webp"
-                                    alt="CIP Perú" class="h-full w-full object-cover"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="lg:col-span-2 flex flex-col">
-                    <h3
-                        class="font-label-caps text-label-caps text-primary uppercase tracking-widest mb-space-md pb-2 border-b border-outline-variant/20">
-                        Empresa</h3>
-                    <ul class="flex flex-col gap-2 font-body-sm text-body-sm">
-                        <li class=""><div class="relative group">
-                      <a class="font-body-sm text-body-sm tracking-wide uppercase py-2 transition-colors flex items-center gap-1 cursor-pointer text-on-surface-variant hover:text-on-surface" data-path="servicios" href="index.html#servicios">SERVICIOS <span class="material-symbols-outlined text-sm">expand_more</span></a>
-                      <div class="absolute left-0 top-full mt-0 hidden group-hover:flex flex-col bg-surface-container-high shadow-2xl border border-outline-variant/30 min-w-[320px] z-50">
-                          <a href="planos.html" class="px-5 py-3 hover:bg-surface-container-highest hover:text-primary transition-colors text-[13px] font-headline-sm uppercase tracking-wider border-b border-outline-variant/10 flex items-center gap-2">EJECUCION DE PROYECTOS PUBLICOS Y PRIVADOS</a>
-                          <a href="obras.html" class="px-5 py-3 hover:bg-surface-container-highest hover:text-primary transition-colors text-[13px] font-headline-sm uppercase tracking-wider border-b border-outline-variant/10 flex items-center gap-2">EJECUCION DE OBRAS PUBLICAS Y PRIVADAS</a>
-                          <a href="capacitaciones.html" class="px-5 py-3 hover:bg-surface-container-highest hover:text-primary transition-colors text-[13px] font-headline-sm uppercase tracking-wider border-b border-outline-variant/10 flex items-center gap-2">CAPACITACIONES</a>
-                      </div>
-                  </div></li>
-                        <li class=""><a class="font-body-sm text-body-sm tracking-wide uppercase py-2 transition-colors flex items-center gap-1 cursor-pointer text-primary border-b border-primary font-semibold" data-path="obras"
-                                href="#">Obras</a></li>
-                        <li class=""><a class="font-body-sm text-body-sm tracking-wide uppercase py-2 transition-colors flex items-center gap-1 cursor-pointer text-on-surface-variant hover:text-on-surface" data-path="nosotros"
-                                href="nosotros.html">Nosotros</a></li>
-                        <li class=""><a class="font-body-sm text-body-sm tracking-wide uppercase py-2 transition-colors flex items-center gap-1 cursor-pointer text-on-surface-variant hover:text-on-surface" data-path="nosotros"
-                                href="nosotros.html">Historia Corporativa</a></li>
-                        <li class=""><a class="font-body-sm text-body-sm tracking-wide uppercase py-2 transition-colors flex items-center gap-1 cursor-pointer text-on-surface-variant hover:text-on-surface" data-path="nosotros"
-                                href="nosotros.html">Equipo Técnico</a></li>
-                    </ul>
-                </div>
-                <div class="lg:col-span-3 flex flex-col">
-                    <h3
-                        class="font-label-caps text-label-caps text-primary uppercase tracking-widest mb-space-md pb-2 border-b border-outline-variant/20">
-                        Formación Técnica</h3>
-                    <ul class="flex flex-col gap-2 font-body-sm text-body-sm">
-                        <li class=""><a class="hover:text-primary transition-colors" data-path="formacion-tecnica"
-                                href="capacitaciones.html">Capacitaciones Especializadas</a></li>
-                        <li class=""><a class="hover:text-primary transition-colors" data-path="formacion-tecnica"
-                                href="#">Certificaciones Profesionales</a></li>
-                        <li class=""><a class="hover:text-primary transition-colors" data-path="formacion-tecnica"
-                                href="#">Inscripciones y Convocatorias</a></li>
-                        <li class=""><a
-                                class="hover:text-primary transition-colors flex items-center gap-1.5 mt-2 text-on-surface"
-                                data-path="libro-de-reclamaciones" href="#"><span
-                                    class="material-symbols-outlined text-sm text-primary">menu_book</span>Libro de
-                                Reclamaciones Virtual</a></li>
-                    </ul>
-                </div>
-                <div class="lg:col-span-3 flex flex-col">
-                    <h3
-                        class="font-label-caps text-label-caps text-primary uppercase tracking-widest mb-space-md pb-2 border-b border-outline-variant/20">
-                        Contacto Directo</h3>
-                    <div class="flex flex-col gap-3 font-body-sm text-body-sm text-secondary">
-                        <div class="flex items-start gap-2.5"><span
-                                class="material-symbols-outlined text-primary text-base mt-0.5">mail</span><a
-                                class="hover:text-primary transition-colors"
-                                href="mailto:vadgi22@gmail.com">vadgi22@gmail.com</a></div>
-                        <div class="flex items-start gap-2.5"><span
-                                class="material-symbols-outlined text-primary text-base mt-0.5">call</span><a
-                                class="hover:text-primary transition-colors" href="tel:+51984515818">+51 984 515 818</a>
-                        </div>
-                        <div class="flex items-start gap-2.5"><span
-                                class="material-symbols-outlined text-primary text-base mt-0.5">schedule</span><span
-                                class="">Lun - Sáb 9:00 am - 6:00 pm</span></div>
-                        <div class="flex items-start gap-2.5"><span
-                                class="material-symbols-outlined text-primary text-base mt-0.5">location_on</span><span
-                                class="">Sede Principal de Operaciones, Perú</span></div>
-                    </div>
+
+    <!-- FOOTER -->
+    <footer class="w-full bg-surface-container-lowest border-t border-outline-variant/20 pt-space-xl pb-space-lg">
+        <div class="max-w-7xl mx-auto px-gutter grid grid-cols-1 md:grid-cols-4 gap-gutter-lg mb-space-lg">
+            <div class="col-span-1 md:col-span-1">
+                <img src="./WhatsApp Image 2026-07-09 at 10.41.46 AM.png" alt="Logo VGI" class="w-32 h-auto mb-4 drop-shadow-[0_0_16px_rgba(242,202,80,0.25)]">
+                <p class="font-body-sm text-secondary mb-4 leading-relaxed">
+                    Transformando el entorno con ingeniería de precisión, seguridad y excelencia constructiva.
+                </p>
+                <div class="flex flex-col gap-4 mt-6">
+                    <img src="./images/certificaciones/ISO-9001.png" alt="ISO 9001" class="h-24 w-auto object-contain filter grayscale hover:grayscale-0 transition-all">
+                    <img src="./images/certificaciones/ISO-14001.png" alt="ISO 14001" class="h-24 w-auto object-contain filter grayscale hover:grayscale-0 transition-all">
+                    <img src="./images/certificaciones/ISO-45001.png" alt="ISO 45001" class="h-24 w-auto object-contain filter grayscale hover:grayscale-0 transition-all">
                 </div>
             </div>
-            <div
-                class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md font-headline-sm text-sm font-bold tracking-wider text-outline">
-                <div class="flex items-center gap-2 text-center md:text-left"><span class="">© VADGOD INGS. Todos los
-                        derechos reservados.</span><span class="text-outline/40">|</span><span
-                        class="text-primary-fixed-dim">POWERED BY DYNASTRON</span></div>
-                <div class="flex items-center gap-space-lg"><a class="hover:text-on-surface transition-colors"
-                        data-path="terminos-y-condiciones" href="#">Términos y Condiciones</a><a
-                        class="hover:text-on-surface transition-colors" data-path="politicas-de-privacidad"
-                        href="#">Políticas de Privacidad</a><a class="hover:text-on-surface transition-colors"
-                        data-path="uso-de-cookies" href="#">Uso de Cookies</a></div>
+            
+            <div class="col-span-1">
+                <h4 class="font-headline-sm text-on-surface uppercase tracking-wider mb-4 border-b border-primary/30 pb-2">Servicios</h4>
+                <ul class="flex flex-col gap-3 font-body-sm text-secondary">
+                    <li><a href="planos.html" class="hover:text-primary transition-colors">Ejecución de proyectos</a></li>
+                    <li><a href="ejecucion-obras.html" class="hover:text-primary transition-colors">Ejecución de obras</a></li>
+                    <li><a href="capacitaciones.html" class="hover:text-primary transition-colors">Capacitaciones</a></li>
+                </ul>
+            </div>
+            
+            <div class="col-span-1">
+                <h4 class="font-headline-sm text-on-surface uppercase tracking-wider mb-4 border-b border-primary/30 pb-2">Empresa</h4>
+                <ul class="flex flex-col gap-3 font-body-sm text-secondary">
+                    <li><a href="nosotros.html" class="hover:text-primary transition-colors">Nosotros</a></li>
+                    <li><a href="nosotros.html#historia" class="hover:text-primary transition-colors">Nuestra Historia</a></li>
+                    <li><a href="nosotros.html#equipo" class="hover:text-primary transition-colors">El Equipo</a></li>
+                </ul>
+            </div>
+            
+            <div class="col-span-1" id="contacto-tecnico">
+                <h4 class="font-headline-sm text-on-surface uppercase tracking-wider mb-4 border-b border-primary/30 pb-2">Contacto</h4>
+                <ul class="flex flex-col gap-3 font-body-sm text-secondary">
+                    <li class="flex items-start gap-2">
+                        <span class="material-symbols-outlined text-primary text-sm mt-0.5">location_on</span>
+                        <span>Av. Principal 123, Oficina 405, Lima, Perú</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="material-symbols-outlined text-primary text-sm mt-0.5">phone</span>
+                        <span>+51 987 654 321</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="material-symbols-outlined text-primary text-sm mt-0.5">mail</span>
+                        <span>contacto@vgi-grupo.com</span>
+                    </li>
+                </ul>
             </div>
         </div>
+        <div class="max-w-7xl mx-auto px-gutter text-center border-t border-outline-variant/20 pt-space-lg">
+            <p class="font-body-sm text-outline tracking-wider text-xs uppercase">
+                &copy; 2026 Corporación Dynastron / VGI Group. Todos los derechos reservados.
+            </p>
+        </div>
     </footer>
-
-    <!-- Lightbox Modal -->
-    <div id="lightbox" class="fixed inset-0 z-[200] bg-surface/95 hidden flex-col items-center justify-center p-4 backdrop-blur-md opacity-0 transition-opacity duration-300">
-        <button onclick="closeLightbox()" class="absolute top-6 right-6 text-white hover:text-primary transition-colors z-10">
-            <span class="material-symbols-outlined text-4xl">close</span>
-        </button>
-        <img id="lightbox-img" src="" alt="Zoomed Image" class="max-w-full max-h-[85vh] object-contain border border-outline-variant/30 shadow-2xl transform scale-95 transition-transform duration-300">
-    </div>
-
-    <!-- Scripts -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({ once: true, offset: 50, duration: 800 });
-        
-        // Lightbox logic
-        const lightbox = document.getElementById('lightbox');
-        const lightboxImg = document.getElementById('lightbox-img');
-        
-        window.openLightbox = function(src) {
-            lightboxImg.src = src;
-            lightbox.classList.remove('hidden');
-            setTimeout(() => {
-                lightbox.classList.remove('opacity-0');
-                lightboxImg.classList.remove('scale-95');
-                lightboxImg.classList.add('scale-100');
-            }, 10);
-        };
-        
-        window.closeLightbox = function() {
-            lightbox.classList.add('opacity-0');
-            lightboxImg.classList.remove('scale-100');
-            lightboxImg.classList.add('scale-95');
-            setTimeout(() => {
-                lightbox.classList.add('hidden');
-                lightboxImg.src = '';
-            }, 300);
-        };
-        
-        document.addEventListener('keydown', e => {
-            if(e.key === 'Escape' && !lightbox.classList.contains('hidden')) closeLightbox();
-        });
-        lightbox.addEventListener('click', e => {
-            if(e.target === lightbox) closeLightbox();
-        });
-    </script>
 </body>
 </html>

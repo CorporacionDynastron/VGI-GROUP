@@ -18,7 +18,7 @@ const vgiHeaderHTML = `
                       <a class="font-body-sm text-body-sm tracking-wide uppercase py-2 transition-colors flex items-center gap-1 cursor-pointer text-on-surface-variant hover:text-on-surface" data-path="servicios" href="index.html#servicios">SERVICIOS <span class="material-symbols-outlined text-sm">expand_more</span></a>
                       <div class="absolute left-0 top-full mt-0 hidden group-hover:flex flex-col bg-surface-container-high shadow-2xl border border-outline-variant/30 min-w-[320px] z-50">
                           <a href="planos.html" class="px-5 py-3 hover:bg-surface-container-highest hover:text-primary transition-colors text-[13px] font-headline-sm uppercase tracking-wider border-b border-outline-variant/10 flex items-center gap-2">EJECUCION DE PROYECTOS PUBLICOS Y PRIVADOS</a>
-                          <a href="obras.html" class="px-5 py-3 hover:bg-surface-container-highest hover:text-primary transition-colors text-[13px] font-headline-sm uppercase tracking-wider border-b border-outline-variant/10 flex items-center gap-2">EJECUCION DE OBRAS PUBLICAS Y PRIVADAS</a>
+                          <a href="ejecucion-obras.html" class="px-5 py-3 hover:bg-surface-container-highest hover:text-primary transition-colors text-[13px] font-headline-sm uppercase tracking-wider border-b border-outline-variant/10 flex items-center gap-2">EJECUCION DE OBRAS PUBLICAS Y PRIVADAS</a>
                           <a href="capacitaciones.html" class="px-5 py-3 hover:bg-surface-container-highest hover:text-primary transition-colors text-[13px] font-headline-sm uppercase tracking-wider border-b border-outline-variant/10 flex items-center gap-2">CAPACITACIONES</a>
                       </div>
                   </div><div class="relative group">
@@ -64,7 +64,7 @@ window.addEventListener('DOMContentLoaded', () => {
     if (currentPath.includes('index.html') || currentPath === '') activeTarget = 'inicio';
     else if (currentPath.includes('obras.html')) activeTarget = 'obras';
     else if (currentPath.includes('nosotros.html')) activeTarget = 'nosotros';
-    else if (currentPath.includes('planos.html') || currentPath.includes('capacitaciones.html')) activeTarget = 'servicios';
+    else if (currentPath.includes('planos.html') || currentPath.includes('capacitaciones.html') || currentPath.includes('ejecucion-obras.html')) activeTarget = 'servicios';
     
     if (activeTarget) {
         const links = document.querySelectorAll('header nav a');
