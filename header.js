@@ -9,7 +9,7 @@ const vgiHeaderHTML = `
                         src="./WhatsApp%20Image%202026-07-09%20at%2010.41.46%20AM.png">
                     <div class="absolute -bottom-1 -right-1 w-2.5 h-2.5 bg-primary"></div>
                 </div>
-                <div class="flex flex-col justify-center"><span class="font-headline-sm text-headline-md md:text-headline-lg text-primary tracking-wider uppercase leading-none font-bold text-lg md:text-xl drop-shadow-sm" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">VAD GOD ING'S</span><span class="font-body-sm text-body-sm text-white tracking-widest uppercase mt-1 font-semibold text-[10px]">TRAINING <br> & CONSTRUCTION</span></div>
+                <div class="flex flex-col justify-center"><span class="font-headline-sm text-headline-md md:text-headline-lg text-primary tracking-wider uppercase leading-none font-bold text-lg md:text-xl drop-shadow-sm" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">VAD GOD ING'S</span><span class="font-body-sm text-body-sm text-white tracking-widest uppercase mt-1 font-semibold text-[10px]">CONSTRUCTION &<br> TRAINING</span></div>
             </div>
             <nav class="hidden xl:flex items-center gap-space-lg h-full"
                 data-active-classes="text-primary border-b border-primary font-semibold"><a aria-current="page"
@@ -41,7 +41,7 @@ const vgiHeaderHTML = `
                     class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface tracking-wide uppercase py-2 transition-colors"
                     data-path="contacto" href="#contacto-tecnico">Contacto</a></nav>
             <div class="flex items-center gap-space-md"><a
-                    class="inline-flex items-center justify-center bg-primary-container text-on-primary-container font-label-caps text-label-caps uppercase px-6 py-3.5 tracking-wider hover:bg-primary transition-all duration-200 shadow-[0_0_16px_rgba(212,175,55,0.25)] border-t border-primary"
+                    class="inline-flex items-center justify-center bg-primary-container text-on-primary-container font-label-caps text-[13px] uppercase px-6 py-3.5 tracking-wider hover:bg-primary transition-all duration-200 shadow-[0_0_16px_rgba(212,175,55,0.25)] border-t border-primary"
                     data-path="contacto" href="#contacto-tecnico"><span
                         class="material-symbols-outlined text-sm mr-2">engineering</span>Solicitar cotización</a></div>
         </div>

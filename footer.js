@@ -1,16 +1,16 @@
 const vgiFooterHTML = `
 <footer
-        class="w-full bg-surface-container-lowest border-t border-outline-variant/40 pt-space-2xl pb-space-lg text-on-surface-variant relative">
-        <div class="max-w-7xl mx-auto px-gutter">
+        class="w-full bg-surface-container-lowest border-t border-outline-variant/40 pt-16 pb-8 text-on-surface-variant relative">
+        <div class="max-w-7xl mx-auto px-6">
             <div
-                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter-lg pb-space-2xl border-b border-outline-variant/20">
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-16 border-b border-outline-variant/20">
                 <div class="lg:col-span-4 flex flex-col items-start">
-                    <div class="flex items-center gap-space-md mb-space-md"><img alt="Logo VGI"
+                    <div class="flex items-center gap-4 mb-4"><img alt="Logo VGI"
                             class="w-14 h-14 object-cover drop-shadow-[0_0_12px_rgba(242,202,80,0.3)]"
                             src="./WhatsApp%20Image%202026-07-09%20at%2010.41.46%20AM.png">
                         <div class="flex flex-col"><span class="font-headline-sm text-headline-md md:text-headline-lg text-primary tracking-wider uppercase leading-none font-bold text-lg md:text-xl drop-shadow-sm" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">VAD GOD ING'S</span><span class="font-body-sm text-body-sm text-white tracking-widest uppercase mt-1 font-semibold text-[10px]">TRAINING <br> & CONSTRUCTION</span></div>
                     </div>
-                    <p class="font-body-sm text-body-sm text-secondary leading-relaxed mb-space-lg max-w-sm">Ingeniería
+                    <p class="font-body-sm text-body-sm text-secondary leading-relaxed mb-8 max-w-sm">Ingeniería
                         civil, construcción y consultoría técnica orientada a la excelencia. Soluciones integrales con
                         los más altos estándares de calidad.</p>
                     <div class="flex flex-wrap gap-2 font-headline-sm text-sm font-bold tracking-wider text-primary">
@@ -37,7 +37,7 @@ const vgiFooterHTML = `
                 </div>
                 <div class="lg:col-span-2 flex flex-col">
                     <h3
-                        class="font-label-caps text-label-caps text-primary uppercase tracking-widest mb-space-md pb-2 border-b border-outline-variant/20">
+                        class="font-label-caps text-label-caps text-primary uppercase tracking-widest mb-4 pb-2 border-b border-outline-variant/20">
                         Empresa</h3>
                     <ul class="flex flex-col gap-2 font-body-sm text-body-sm">
                         <li class=""><div class="relative group">
@@ -60,7 +60,7 @@ const vgiFooterHTML = `
                 </div>
                 <div class="lg:col-span-3 flex flex-col">
                     <h3
-                        class="font-label-caps text-label-caps text-primary uppercase tracking-widest mb-space-md pb-2 border-b border-outline-variant/20">
+                        class="font-label-caps text-label-caps text-primary uppercase tracking-widest mb-4 pb-2 border-b border-outline-variant/20">
                         Formación Técnica</h3>
                     <ul class="flex flex-col gap-2 font-body-sm text-body-sm">
                         <li class=""><a class="hover:text-primary transition-colors" data-path="formacion-tecnica"
@@ -78,7 +78,7 @@ const vgiFooterHTML = `
                 </div>
                 <div class="lg:col-span-3 flex flex-col">
                     <h3
-                        class="font-label-caps text-label-caps text-primary uppercase tracking-widest mb-space-md pb-2 border-b border-outline-variant/20">
+                        class="font-label-caps text-label-caps text-primary uppercase tracking-widest mb-4 pb-2 border-b border-outline-variant/20">
                         Contacto Directo</h3>
                     <div class="flex flex-col gap-3 font-body-sm text-body-sm text-secondary">
                         <div class="flex items-start gap-2.5"><span
@@ -99,11 +99,11 @@ const vgiFooterHTML = `
                 </div>
             </div>
             <div
-                class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md font-headline-sm text-sm font-bold tracking-wider text-outline">
+                class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 font-headline-sm text-sm font-bold tracking-wider text-outline">
                 <div class="flex items-center gap-2 text-center md:text-left"><span class="">© VADGOD INGS. Todos los
                         derechos reservados.</span><span class="text-outline/40">|</span><span
                         class="text-primary-fixed-dim">POWERED BY DYNASTRON</span></div>
-                <div class="flex items-center gap-space-lg"><a class="hover:text-on-surface transition-colors"
+                <div class="flex items-center gap-8"><a class="hover:text-on-surface transition-colors"
                         data-path="terminos-y-condiciones" href="#">Términos y Condiciones</a><a
                         class="hover:text-on-surface transition-colors" data-path="politicas-de-privacidad"
                         href="#">Políticas de Privacidad</a><a class="hover:text-on-surface transition-colors"
