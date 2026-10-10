@@ -46,58 +46,7 @@
         id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-tertiary-container": "#554300", "inverse-primary": "#735c00", "tertiary-fixed-dim": "#e7c35a", "surface-container-lowest": "#0c0e12", "surface-dim": "#111317", "secondary-fixed": "#dee2f0", "on-background": "#e2e2e8", "on-surface": "#e2e2e8", "on-tertiary-fixed-variant": "#584400", "on-secondary": "#2b303b", "surface": "#111317", "background": "#111317", "surface-container-high": "#282a2e", "primary-fixed": "#ffe088", "on-error": "#690005", "outline-variant": "#4d4635", "primary": "#FFCC00", "error-container": "#93000a", "secondary-container": "#424752", "error": "#ffb4ab", "on-secondary-fixed": "#171c25", "on-primary-fixed-variant": "#574500", "on-secondary-container": "#b0b5c2", "outline": "#99907c", "surface-tint": "#e9c349", "surface-container-low": "#1a1c20", "primary-fixed-dim": "#e9c349", "on-primary": "#3c2f00", "on-tertiary": "#3d2f00", "on-surface-variant": "#d0c5af", "tertiary-fixed": "#ffe08b", "surface-container-highest": "#333539", "on-secondary-fixed-variant": "#424752", "secondary-fixed-dim": "#c2c6d4", "inverse-on-surface": "#2f3035", "tertiary": "#efcb60", "primary-container": "#FFCC00", "secondary": "#c2c6d4", "on-primary-fixed": "#241a00", "surface-container": "#1e2024", "on-error-container": "#ffdad6", "on-tertiary-fixed": "#241a00", "tertiary-container": "#d2af48", "on-primary-container": "#554300", "surface-variant": "#333539", "surface-bright": "#37393e", "inverse-surface": "#e2e2e8" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter": "1.5rem", "space-sm": "0.5rem", "gutter-lg": "2.5rem", "space-2xl": "4rem", "margin-mobile": "1.25rem", "space-xs": "0.25rem", "space-xl": "2.5rem", "space-lg": "1.5rem", "margin": "2rem", "space-md": "1rem", "gutter-sm": "1rem" }, fontFamily: { "headline-lg": ["Syne"], "body-sm": ["Inter"], "headline-md": ["Syne"], "label-caps": ["JetBrains Mono"], "technical-code": ["JetBrains Mono"], "body-lg": ["Inter"], "body-md": ["Inter"], "headline-lg-mobile": ["Syne"], "headline-xl-mobile": ["Syne"], "headline-xl": ["Syne"], "headline-sm": ["Syne"] }, fontSize: { "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "400" }], "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "600" }], "label-caps": ["11px", { "lineHeight": "14px", "letterSpacing": "0.18em", "fontWeight": "600" }], "technical-code": ["12px", { "lineHeight": "16px", "letterSpacing": "0.12em", "fontWeight": "500" }], "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "400" }], "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0.01em", "fontWeight": "400" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "700" }], "headline-xl-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-xl": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "600" }] } } } };</script>
 </head>
 <body class="bg-surface text-on-surface font-body-md antialiased selection:bg-primary/30 selection:text-primary">
-    <header
-        class="relative z-50 w-full bg-surface/100 backdrop-blur-xl border-b border-outline-variant/30 shadow-none">
-        <div class="py-2 max-w-7xl mx-auto px-gutter flex items-center justify-between">
-            <div class="flex items-center gap-3">
-                <div class="relative flex items-center justify-center"><img alt="Logo VGI"
-                        class="w-20 h-20 object-cover drop-shadow-[0_0_16px_rgba(242,202,80,0.35)]"
-                        src="./WhatsApp%20Image%202026-07-09%20at%2010.41.46%20AM.png">
-                    <div class="absolute -bottom-1 -right-1 w-2.5 h-2.5 bg-primary"></div>
-                </div>
-                <div class="flex flex-col justify-center"><span class="font-headline-sm text-headline-md md:text-headline-lg text-primary tracking-wider uppercase leading-none font-bold text-lg md:text-xl drop-shadow-sm" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">VAD GOD ING'S</span><span class="font-body-sm text-body-sm text-white tracking-widest uppercase mt-1 font-semibold text-[10px]">TRAINING <br> & CONSTRUCTION</span></div>
-            </div>
-            <nav class="hidden xl:flex items-center gap-space-lg h-full"
-                data-active-classes="text-primary border-b border-primary font-semibold"><a aria-current="page"
-                    class="tracking-wide uppercase py-2 transition-colors text-on-surface-variant hover:text-on-surface flex items-center gap-1 cursor-pointer"
-                    data-path="inicio" href="index.html">Inicio</a><div class="relative group">
-                      <a class="font-body-sm text-body-sm tracking-wide uppercase py-2 transition-colors flex items-center gap-1 cursor-pointer text-primary border-b border-primary font-semibold" data-path="servicios" href="index.html#servicios">SERVICIOS <span class="material-symbols-outlined text-sm">expand_more</span></a>
-                      <div class="absolute left-0 top-full mt-0 hidden group-hover:flex flex-col bg-surface-container-high shadow-2xl border border-outline-variant/30 min-w-[320px] z-50">
-                          <a href="planos.html" class="px-5 py-3 hover:bg-surface-container-highest hover:text-primary transition-colors text-[13px] font-headline-sm uppercase tracking-wider border-b border-outline-variant/10 flex items-center gap-2">EJECUCION DE PROYECTOS PUBLICOS Y PRIVADOS</a>
-                          <a href="obras.html" class="px-5 py-3 hover:bg-surface-container-highest hover:text-primary transition-colors text-[13px] font-headline-sm uppercase tracking-wider border-b border-outline-variant/10 flex items-center gap-2">EJECUCION DE OBRAS PUBLICAS Y PRIVADAS</a>
-                          <a href="capacitaciones.html" class="px-5 py-3 hover:bg-surface-container-highest text-primary transition-colors text-[13px] font-headline-sm uppercase tracking-wider border-b border-outline-variant/10 flex items-center gap-2">CAPACITACIONES</a>
-                      </div>
-                  </div><div class="relative group">
-                      <a class="font-body-sm text-body-sm tracking-wide uppercase py-2 transition-colors flex items-center gap-1 cursor-pointer text-on-surface-variant hover:text-on-surface" data-path="obras" href="obras.html">OBRAS <span class="material-symbols-outlined text-sm">expand_more</span></a>
-                      <div class="absolute left-0 top-full mt-0 hidden group-hover:flex flex-col bg-surface-container-high shadow-2xl border border-outline-variant/30 min-w-[320px] z-50">
-                          <a href="obras.html" class="px-5 py-3 hover:bg-surface-container-highest hover:text-primary transition-colors text-[13px] font-headline-sm uppercase tracking-wider border-b border-outline-variant/10 flex items-center gap-2">OBRAS DE EDIFICACIONES Y AFINES</a>
-                          <a href="obras.html" class="px-5 py-3 hover:bg-surface-container-highest hover:text-primary transition-colors text-[13px] font-headline-sm uppercase tracking-wider border-b border-outline-variant/10 flex items-center gap-2">OBRAS VIALES, PUERTOS Y AFINES</a>
-                          <a href="obras.html" class="px-5 py-3 hover:bg-surface-container-highest hover:text-primary transition-colors text-[13px] font-headline-sm uppercase tracking-wider border-b border-outline-variant/10 flex items-center gap-2">OBRAS DE SANEAMIENTO Y AFINES</a>
-                          <a href="obras.html" class="px-5 py-3 hover:bg-surface-container-highest hover:text-primary transition-colors text-[13px] font-headline-sm uppercase tracking-wider border-b border-outline-variant/10 flex items-center gap-2">OBRAS ELECTROMECÁNICAS, ENERGÉTICAS, TELECOM. Y AFINES</a>
-                          <a href="obras.html" class="px-5 py-3 hover:bg-surface-container-highest hover:text-primary transition-colors text-[13px] font-headline-sm uppercase tracking-wider border-b border-outline-variant/10 flex items-center gap-2">OBRAS DE REPRESAS, IRRIGACIONES Y AFINES</a>
-                      </div>
-                  </div><div class="relative group">
-                      <a class="font-body-sm text-body-sm tracking-wide uppercase py-2 transition-colors flex items-center gap-1 cursor-pointer text-on-surface-variant hover:text-on-surface" data-path="nosotros" href="nosotros.html">NOSOTROS <span class="material-symbols-outlined text-sm">expand_more</span></a>
-                      <div class="absolute left-0 top-full mt-0 hidden group-hover:flex flex-col bg-surface-container-high shadow-2xl border border-outline-variant/30 min-w-[200px] z-50">
-                          <a href="nosotros.html#historia" class="px-5 py-3 hover:bg-surface-container-highest hover:text-primary transition-colors text-[13px] font-headline-sm uppercase tracking-wider border-b border-outline-variant/10 flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-primary">history_edu</span> Nuestra historia</a>
-                          <a href="nosotros.html#mision" class="px-5 py-3 hover:bg-surface-container-highest hover:text-primary transition-colors text-[13px] font-headline-sm uppercase tracking-wider border-b border-outline-variant/10 flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-primary">visibility</span> Misión y visión</a>
-                          <a href="nosotros.html#equipo" class="px-5 py-3 hover:bg-surface-container-highest hover:text-primary transition-colors text-sm font-label-caps uppercase tracking-wide flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-primary">groups</span> El equipo</a>
-                      </div>
-                  </div><a
-                    class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface tracking-wide uppercase py-2 transition-colors"
-                    data-path="contacto" href="#contacto-tecnico">Contacto</a></nav>
-            <div class="flex items-center gap-space-md"><a
-                    class="inline-flex items-center justify-center bg-primary-container text-on-primary-container font-label-caps text-label-caps uppercase px-6 py-3.5 tracking-wider hover:bg-primary transition-all duration-200 shadow-[0_0_16px_rgba(212,175,55,0.25)] border-t border-primary"
-                    data-path="contacto" href="#contacto-tecnico"><span
-                        class="material-symbols-outlined text-sm mr-2">engineering</span>Solicitar cotización</a></div>
-        </div>
-    
-    
-    <div class="w-full bg-primary text-on-primary font-headline-sm text-center py-2 uppercase tracking-widest text-xs md:text-sm font-bold shadow-[0_4px_12px_rgba(0,0,0,0.3)] border-t border-primary/50 relative z-40">
-        Impulsando el crecimiento con obras de alto impacto
-    </div>
-
-</header>
+    <script src="header.js"></script>
     
     <main class="w-full flex flex-col pt-0">
         <!-- HERO SECTION -->
