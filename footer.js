@@ -15,20 +15,20 @@ const vgiFooterHTML = `
                         los más altos estándares de calidad.</p>
                     <div class="flex flex-wrap gap-2 font-headline-sm text-sm font-bold tracking-wider text-primary">
                         <div class="flex items-center gap-2 flex-wrap">
-                            <div class="bg-white p-1 rounded h-24 w-28 flex items-center justify-center shadow-sm"><img
+                            <div class="bg-white p-1 rounded h-16 w-20 flex items-center justify-center shadow-sm"><img
                                     src="./storage/aliados/fvKaovpp4p243ZJGkNfqN83l58BVEFS0TtlDmzGb-transparent.webp"
                                     alt="ISO 9001" class="h-full w-full object-cover"></div>
-                            <div class="bg-white p-1 rounded h-24 w-28 flex items-center justify-center shadow-sm"><img
+                            <div class="bg-white p-1 rounded h-16 w-20 flex items-center justify-center shadow-sm"><img
                                     src="./storage/aliados/zEyex57sHhCsE7CaJ0HKFFfJctKOFXFJ28E6HFUe-transparent.webp"
                                     alt="ISO 14001" class="h-full w-full object-cover"></div>
-                            <div class="bg-white p-1 rounded h-24 w-40 flex items-center justify-center shadow-sm"><img
+                            <div class="bg-white p-1 rounded h-16 w-28 flex items-center justify-center shadow-sm"><img
                                     src="./storage/aliados/NOVsTFA7NHgob7VYxW0tebRRr52GCNbqBie1Dx2i-transparent.webp"
                                     alt="ISO 45001" class="h-full w-full object-cover"></div>
-                            <div class="bg-white p-1 rounded h-24 w-28 flex items-center justify-center shadow-sm"><img
+                            <div class="bg-white p-1 rounded h-16 w-20 flex items-center justify-center shadow-sm"><img
                                     src="./storage/aliados/Zlx9PTNbfzQnLo5gGgzXrPj3DrHB1Ksu0GuTLS9N-transparent.webp"
                                     alt="ISO 37001" class="h-full w-full object-cover"></div>
                             <div
-                                class="bg-white p-1 rounded h-24 w-28 flex items-center justify-center shadow-sm border border-primary/40">
+                                class="bg-white p-1 rounded h-16 w-20 flex items-center justify-center shadow-sm border border-primary/40">
                                 <img src="./storage/aliados/rVe1f7nhZHb2CaJWpPnSWbWVJNM5tUAdSuh129Xt-transparent.webp"
                                     alt="CIP Perú" class="h-full w-full object-cover"></div>
                         </div>
