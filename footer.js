@@ -15,22 +15,36 @@ const vgiFooterHTML = `
                         los más altos estándares de calidad.</p>
                     <div class="flex flex-wrap gap-2 font-headline-sm text-sm font-bold tracking-wider text-primary">
                         <div class="flex items-center gap-2 flex-wrap">
-                            <div class="bg-white p-1 rounded h-16 w-20 flex items-center justify-center shadow-sm"><img
-                                    src="./storage/aliados/fvKaovpp4p243ZJGkNfqN83l58BVEFS0TtlDmzGb-transparent.webp"
-                                    alt="ISO 9001" class="h-full w-full object-cover"></div>
-                            <div class="bg-white p-1 rounded h-16 w-20 flex items-center justify-center shadow-sm"><img
-                                    src="./storage/aliados/zEyex57sHhCsE7CaJ0HKFFfJctKOFXFJ28E6HFUe-transparent.webp"
-                                    alt="ISO 14001" class="h-full w-full object-cover"></div>
-                            <div class="bg-white p-1 rounded h-16 w-28 flex items-center justify-center shadow-sm"><img
-                                    src="./storage/aliados/NOVsTFA7NHgob7VYxW0tebRRr52GCNbqBie1Dx2i-transparent.webp"
-                                    alt="ISO 45001" class="h-full w-full object-cover"></div>
-                            <div class="bg-white p-1 rounded h-16 w-20 flex items-center justify-center shadow-sm"><img
-                                    src="./storage/aliados/Zlx9PTNbfzQnLo5gGgzXrPj3DrHB1Ksu0GuTLS9N-transparent.webp"
-                                    alt="ISO 37001" class="h-full w-full object-cover"></div>
-                            <div
-                                class="bg-white p-1 rounded h-16 w-20 flex items-center justify-center shadow-sm border border-primary/40">
-                                <img src="./storage/aliados/rVe1f7nhZHb2CaJWpPnSWbWVJNM5tUAdSuh129Xt-transparent.webp"
-                                    alt="CIP Perú" class="h-full w-full object-cover"></div>
+                            <div class="bg-surface-container border border-outline-variant/30 p-2 flex items-center justify-center hover:border-primary/50 transition-all shadow-sm" title="ISO 9001:2015">
+                                <div class="bg-white p-1 rounded flex items-center justify-center h-16 w-auto min-w-[4rem]">
+                                    <img src="./CERTIFICACIONES/ISO%209001.png" alt="ISO 9001" class="h-full w-auto object-contain">
+                                </div>
+                            </div>
+                            <div class="bg-surface-container border border-outline-variant/30 p-2 flex items-center justify-center hover:border-primary/50 transition-all shadow-sm" title="ISO 14001:2015">
+                                <div class="bg-white p-1 rounded flex items-center justify-center h-16 w-auto min-w-[4rem]">
+                                    <img src="./CERTIFICACIONES/ISO%2014001.png" alt="ISO 14001" class="h-full w-auto object-contain">
+                                </div>
+                            </div>
+                            <div class="bg-surface-container border border-outline-variant/30 p-2 flex items-center justify-center hover:border-primary/50 transition-all shadow-sm" title="ISO 45001">
+                                <div class="bg-white p-1 rounded flex items-center justify-center h-16 w-auto min-w-[4rem]">
+                                    <img src="./CERTIFICACIONES/ISO%2045001.png" alt="ISO 45001" class="h-full w-auto object-contain">
+                                </div>
+                            </div>
+                            <div class="bg-surface-container border border-outline-variant/30 p-2 flex items-center justify-center hover:border-primary/50 transition-all shadow-sm" title="ISO 37001:2016">
+                                <div class="bg-white p-1 rounded flex items-center justify-center h-16 w-auto min-w-[4rem]">
+                                    <img src="./CERTIFICACIONES/ISO%2037001.png" alt="ISO 37001" class="h-full w-auto object-contain">
+                                </div>
+                            </div>
+                            <div class="bg-surface-container border border-outline-variant/30 p-2 flex items-center justify-center hover:border-primary/50 transition-all shadow-sm" title="ISO 27001">
+                                <div class="bg-white p-1 rounded flex items-center justify-center h-16 w-auto min-w-[4rem]">
+                                    <img src="./CERTIFICACIONES/ISO%2027001.png" alt="ISO 27001" class="h-full w-auto object-contain">
+                                </div>
+                            </div>
+                            <div class="bg-surface-container border border-outline-variant/30 p-2 flex items-center justify-center hover:border-primary/50 transition-all shadow-sm" title="Colegio de Ingenieros del Perú">
+                                <div class="bg-white p-1 rounded flex items-center justify-center h-16 w-auto min-w-[4rem]">
+                                    <img src="./CERTIFICACIONES/CIP.png" alt="CIP" class="h-full w-auto object-contain">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
