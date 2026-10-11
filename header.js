@@ -1,5 +1,4 @@
-
-const vgiHeaderHTML = `
+﻿const vgiHeaderHTML = `
 <header
         class="relative z-50 w-full bg-surface/100 backdrop-blur-xl border-b border-outline-variant/30 shadow-none">
         <div class="py-2 max-w-7xl mx-auto px-gutter flex items-center justify-between">
@@ -9,7 +8,10 @@ const vgiHeaderHTML = `
                         src="./WhatsApp%20Image%202026-07-09%20at%2010.41.46%20AM.png">
                     <div class="absolute -bottom-1 -right-1 w-2.5 h-2.5 bg-primary"></div>
                 </div>
-                <div class="flex flex-col justify-center"><span class="font-headline-sm text-headline-md md:text-headline-lg text-primary tracking-wider uppercase leading-none font-bold text-lg md:text-xl drop-shadow-sm" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">VAD GOD ING'S</span><span class="font-body-sm text-body-sm text-white tracking-widest uppercase mt-1 font-semibold text-[10px]">CONSTRUCTION &<br> TRAINING</span></div>
+                <div class="flex flex-col justify-center items-start text-left w-max">
+                    <span class="font-headline-sm text-headline-md md:text-headline-lg text-primary uppercase leading-none font-black text-lg md:text-xl drop-shadow-sm block -ml-[2px] tracking-[0.08em]" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">VAD GOD ING'S</span>
+                    <span class="font-body-sm text-body-sm text-white tracking-widest uppercase mt-1 font-semibold text-[10px] block w-full text-justify text-justify-last">CONSTRUCTION &<br> TRAINING</span>
+                </div>
             </div>
             <nav class="hidden xl:flex items-center gap-space-lg h-full"
                 data-active-classes="text-primary border-b border-primary font-semibold"><a aria-current="page"
@@ -24,11 +26,11 @@ const vgiHeaderHTML = `
                   </div><div class="relative group">
                       <a class="font-body-sm text-body-sm tracking-wide uppercase py-2 transition-colors flex items-center gap-1 cursor-pointer text-on-surface-variant hover:text-on-surface" data-path="obras" href="obras.html">OBRAS <span class="material-symbols-outlined text-sm">expand_more</span></a>
                       <div class="absolute left-0 top-full mt-0 hidden group-hover:flex flex-col bg-surface-container-high shadow-2xl border border-outline-variant/30 min-w-[320px] z-50">
-                          <a href="obras.html#edificaciones" class="px-5 py-3 hover:bg-surface-container-highest hover:text-primary transition-colors text-[13px] font-['Saira_Stencil_One'] uppercase tracking-wider border-b border-outline-variant/10 flex items-center gap-2">OBRAS DE EDIFICACIONES Y AFINES</a>
-                          <a href="obras.html#viales" class="px-5 py-3 hover:bg-surface-container-highest hover:text-primary transition-colors text-[13px] font-['Saira_Stencil_One'] uppercase tracking-wider border-b border-outline-variant/10 flex items-center gap-2">OBRAS VIALES, PUERTOS Y AFINES</a>
-                          <a href="obras.html#saneamiento" class="px-5 py-3 hover:bg-surface-container-highest hover:text-primary transition-colors text-[13px] font-['Saira_Stencil_One'] uppercase tracking-wider border-b border-outline-variant/10 flex items-center gap-2">OBRAS DE SANEAMIENTO Y AFINES</a>
-                          <a href="obras.html#electromecanicas" class="px-5 py-3 hover:bg-surface-container-highest hover:text-primary transition-colors text-[13px] font-['Saira_Stencil_One'] uppercase tracking-wider border-b border-outline-variant/10 flex items-center gap-2">OBRAS ELECTROMECÁNICAS Y TELECOM.</a>
-                          <a href="obras.html#represas" class="px-5 py-3 hover:bg-surface-container-highest hover:text-primary transition-colors text-[13px] font-['Saira_Stencil_One'] uppercase tracking-wider border-b border-outline-variant/10 flex items-center gap-2">OBRAS DE REPRESAS, IRRIGACIONES Y AFINES</a>
+                          <a style="font-family: 'Bebas Neue', sans-serif; font-size: 17px; letter-spacing: 1.5px;" href="obras.html#edificaciones" class="px-5 py-3 hover:bg-surface-container-highest hover:text-primary transition-colors   uppercase tracking-wider border-b border-outline-variant/10 flex items-center gap-2">OBRAS DE EDIFICACIONES Y AFINES</a>
+                          <a style="font-family: 'Bebas Neue', sans-serif; font-size: 17px; letter-spacing: 1.5px;" href="obras.html#viales" class="px-5 py-3 hover:bg-surface-container-highest hover:text-primary transition-colors   uppercase tracking-wider border-b border-outline-variant/10 flex items-center gap-2">OBRAS VIALES, PUERTOS Y AFINES</a>
+                          <a style="font-family: 'Bebas Neue', sans-serif; font-size: 17px; letter-spacing: 1.5px;" href="obras.html#saneamiento" class="px-5 py-3 hover:bg-surface-container-highest hover:text-primary transition-colors   uppercase tracking-wider border-b border-outline-variant/10 flex items-center gap-2">OBRAS DE SANEAMIENTO Y AFINES</a>
+                          <a style="font-family: 'Bebas Neue', sans-serif; font-size: 17px; letter-spacing: 1.5px;" href="obras.html#electromecanicas" class="px-5 py-3 hover:bg-surface-container-highest hover:text-primary transition-colors   uppercase tracking-wider border-b border-outline-variant/10 flex items-center gap-2">OBRAS ELECTROMECÁNICAS, ENERGÉTICAS, TELECOM. Y AFINES</a>
+                          <a style="font-family: 'Bebas Neue', sans-serif; font-size: 17px; letter-spacing: 1.5px;" href="obras.html#represas" class="px-5 py-3 hover:bg-surface-container-highest hover:text-primary transition-colors   uppercase tracking-wider border-b border-outline-variant/10 flex items-center gap-2">OBRAS DE REPRESAS, IRRIGACIONES Y AFINES</a>
                       </div>
                   </div><div class="relative group">
                       <a class="font-body-sm text-body-sm tracking-wide uppercase py-2 transition-colors flex items-center gap-1 cursor-pointer text-on-surface-variant hover:text-on-surface" data-path="nosotros" href="nosotros.html">NOSOTROS <span class="material-symbols-outlined text-sm">expand_more</span></a>
@@ -62,7 +64,7 @@ window.addEventListener('DOMContentLoaded', () => {
     let activeTarget = '';
     
     if (currentPath.includes('index.html') || currentPath === '') activeTarget = 'inicio';
-    else if (currentPath.includes('obras.html')) activeTarget = 'obras';
+    else if (currentPath === 'obras.html') activeTarget = 'obras';
     else if (currentPath.includes('nosotros.html')) activeTarget = 'nosotros';
     else if (currentPath.includes('planos.html') || currentPath.includes('capacitaciones.html') || currentPath.includes('ejecucion-obras.html')) activeTarget = 'servicios';
     

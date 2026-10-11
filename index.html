@@ -63,7 +63,9 @@
 <body
     class="bg-background font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen">
     <script src="header.js"></script>
-    <main class="w-full pt-0 bg-surface min-h-[calc(100vh-20rem)]">
+    <main class="w-full pt-0 bg-transparent min-h-[calc(100vh-20rem)]">
+        <!-- Global Fixed Background -->
+        <div class="fixed inset-0 z-[-1] bg-surface"><div class="absolute inset-0 opacity-70" style="background-image: url('./images/imagen-6.jpeg'); background-size: cover; background-attachment: fixed; background-position: center;"></div></div>
         <div class="flex flex-col w-full">
             <!-- HERO SECTION -->
         <section class="relative w-full h-[80vh] min-h-[600px] flex items-center overflow-hidden">
@@ -166,7 +168,7 @@
                 </div>
             </section>
             <!-- KEY STRUCTURAL METRICS SECTION -->
-            <section class="w-full bg-surface-container-lowest py-space-2xl">
+            <section class="w-full bg-surface-container-lowest/80 backdrop-blur-sm py-space-2xl">
                 <div class="max-w-7xl mx-auto px-gutter">
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-gutter">
                         <!-- Metric 1 -->
@@ -245,7 +247,7 @@
                 </div>
             </section>
             <!-- TRES DISCIPLINAS, UN MISMO ESTÁNDAR (TECHNICAL SPEC DOSSIERS) -->
-            <section id="servicios" class="w-full bg-surface py-space-2xl">
+            <section id="servicios" class="w-full bg-surface/80 backdrop-blur-sm py-space-2xl">
                 <div class="max-w-7xl mx-auto px-gutter">
                     <!-- Section Header with Technical Folio Alignment -->
                     <div class="flex flex-col md:flex-row md:items-end justify-between mb-space-2xl">
@@ -384,7 +386,7 @@
                 </div>
             </section>
             <!-- FORMACIÓN TÉCNICA - CAPACITACIONES VGI -->
-              <section class="w-full bg-surface py-space-2xl border-t border-outline-variant/10">
+              <section class="w-full bg-surface/80 backdrop-blur-sm py-space-2xl border-t border-outline-variant/10">
                   <div class="max-w-5xl mx-auto px-gutter">
                       <div class="mb-space-xl text-center" data-aos="fade-up">
                           <div class="flex justify-center items-center gap-2 text-primary font-headline-sm text-sm font-bold tracking-wider uppercase mb-2">
@@ -456,9 +458,8 @@
                   </div>
               </section>
             <!-- METODOLOGIA: DE LA IDEA A LA ENTREGA, EN CUATRO ETAPAS -->
-            <section id="servicios" class="relative w-full bg-surface py-space-2xl overflow-hidden">
-                <!-- Background Image -->
-                <div class="absolute inset-0 opacity-80" style="background-image: url('./images/imagen-6.jpeg'); background-size: cover; background-attachment: fixed; background-position: center; "></div>
+            <section id="servicios" class="relative w-full bg-surface/80 backdrop-blur-sm py-space-2xl overflow-hidden">
+                
                 <div class="absolute inset-0 bg-gradient-to-b from-surface/80 via-surface/60 to-surface"></div>
                 
                 <div class="max-w-7xl mx-auto px-gutter relative z-10">
@@ -534,7 +535,7 @@
                 </div>
             </section>
             <!-- PORTAFOLIO DESTACADO: OBRAS EJECUTADAS -->
-            <section class="w-full bg-surface-container-lowest py-space-2xl" id="obras-destacadas">
+            <section class="w-full bg-surface-container-lowest/80 backdrop-blur-sm py-space-2xl" id="obras-destacadas">
                 <div class="max-w-7xl mx-auto px-gutter">
                     <div class="flex flex-col md:flex-row md:items-end justify-between mb-space-2xl">
                         <div>
@@ -624,7 +625,7 @@
                     </div>
                     </section>
             <!-- TESTIMONIAL & ALLIES / BRAND TRUST SECTION -->
-            <section id="servicios" class="w-full bg-surface py-space-2xl">
+            <section id="servicios" class="w-full bg-surface/80 backdrop-blur-sm py-space-2xl">
                 <div class="max-w-7xl mx-auto px-gutter">
                     <!-- Quote block -->
                     <div class="bg-surface-container-low p-space-xl mb-space-2xl relative overflow-hidden shadow-xl">
@@ -693,7 +694,7 @@
                   </div>
               </section>
             <!-- PREGUNTAS FRECUENTES (TECHNICAL ACCORDION) -->
-            <section class="w-full bg-surface-container-lowest py-space-2xl">
+            <section class="w-full bg-surface-container-lowest/80 backdrop-blur-sm py-space-2xl">
                 <div class="max-w-5xl mx-auto px-gutter">
                     <div class="text-center mb-space-2xl">
                         <div
@@ -777,7 +778,7 @@
                 </div>
             </section>
             <!-- HABLEMOS DE TU PROYECTO: CONTÁCTANOS Y COTIZADOR TÉCNICO -->
-            <section class="relative w-full py-space-2xl overflow-hidden" id="contacto-tecnico">
+            <section class="relative w-full py-space-2xl overflow-hidden bg-surface" id="contacto-tecnico">
                 <!-- Background Image -->
                 <div class="absolute inset-0 opacity-50" style="background-image: url('./images/imagen-5.jpeg'); background-size: cover; background-attachment: fixed; background-position: center; filter: grayscale(80%);"></div>
                 <div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/70 to-surface/20"></div>
