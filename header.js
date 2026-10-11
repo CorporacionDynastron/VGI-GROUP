@@ -1,4 +1,4 @@
-﻿const vgiHeaderHTML = `
+const vgiHeaderHTML = `
 <header
         class="relative z-50 w-full bg-surface/100 backdrop-blur-xl border-b border-outline-variant/30 shadow-none">
         <div class="py-2 max-w-7xl mx-auto px-gutter flex items-center justify-between">
@@ -19,7 +19,7 @@
                     data-path="inicio" href="index.html">Inicio</a><div class="relative group">
                       <a class="font-body-sm text-body-sm tracking-wide uppercase py-2 transition-colors flex items-center gap-1 cursor-pointer text-on-surface-variant hover:text-on-surface" data-path="servicios" href="index.html#servicios">SERVICIOS <span class="material-symbols-outlined text-sm">expand_more</span></a>
                       <div class="absolute left-0 top-full mt-0 hidden group-hover:flex flex-col bg-surface-container-high shadow-2xl border border-outline-variant/30 min-w-[320px] z-50">
-                          <a href="planos.html" class="px-5 py-3 hover:bg-surface-container-highest hover:text-primary transition-colors text-[13px] font-headline-sm uppercase tracking-wider border-b border-outline-variant/10 flex items-center gap-2">EJECUCION DE PROYECTOS PUBLICOS Y PRIVADOS</a>
+                          <a href="planos.html" class="px-5 py-3 hover:bg-surface-container-highest hover:text-primary transition-colors text-[13px] font-headline-sm uppercase tracking-wider border-b border-outline-variant/10 flex items-center gap-2">ELABORACION DE PROYECTOS PUBLICOS Y PRIVADOS</a>
                           <a href="ejecucion-obras.html" class="px-5 py-3 hover:bg-surface-container-highest hover:text-primary transition-colors text-[13px] font-headline-sm uppercase tracking-wider border-b border-outline-variant/10 flex items-center gap-2">EJECUCION DE OBRAS PUBLICAS Y PRIVADAS</a>
                           <a href="capacitaciones.html" class="px-5 py-3 hover:bg-surface-container-highest hover:text-primary transition-colors text-[13px] font-headline-sm uppercase tracking-wider border-b border-outline-variant/10 flex items-center gap-2">CAPACITACIONES</a>
                       </div>
@@ -60,7 +60,8 @@ document.write(vgiHeaderHTML);
 
 // Script to set the active nav link based on the current URL
 window.addEventListener('DOMContentLoaded', () => {
-    const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+    const rawPath = window.location.pathname.split('/').pop() || 'index.html';
+    const currentPath = rawPath.split('?')[0].split('#')[0] || 'index.html';
     let activeTarget = '';
     
     if (currentPath.includes('index.html') || currentPath === '') activeTarget = 'inicio';

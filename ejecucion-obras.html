@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="web_standard" name="shell-type">
+    <title>Ejecución de Obras Públicas y Privadas | VADGOD INGENIEROS</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
         rel="stylesheet">
@@ -17,546 +18,1082 @@
         rel="stylesheet">
     <style>
         @layer base {
-
-            html,
-            body {
+            html, body {
                 margin: 0;
                 padding: 0;
             }
-
             body {
                 overscroll-behavior: none;
             }
-
             main>:first-child {
                 margin-top: 0 !important;
             }
-
             main>:last-child {
                 margin-bottom: 0 !important;
             }
         }
-
         ::-webkit-scrollbar {
             display: none;
         }
     </style>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script
-        id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-tertiary-container": "#554300", "inverse-primary": "#735c00", "tertiary-fixed-dim": "#e7c35a", "surface-container-lowest": "#0c0e12", "surface-dim": "#111317", "secondary-fixed": "#dee2f0", "on-background": "#e2e2e8", "on-surface": "#e2e2e8", "on-tertiary-fixed-variant": "#584400", "on-secondary": "#2b303b", "surface": "#111317", "background": "#111317", "surface-container-high": "#282a2e", "primary-fixed": "#ffe088", "on-error": "#690005", "outline-variant": "#4d4635", "primary": "#FFCC00", "error-container": "#93000a", "secondary-container": "#424752", "error": "#ffb4ab", "on-secondary-fixed": "#171c25", "on-primary-fixed-variant": "#574500", "on-secondary-container": "#b0b5c2", "outline": "#99907c", "surface-tint": "#e9c349", "surface-container-low": "#1a1c20", "primary-fixed-dim": "#e9c349", "on-primary": "#3c2f00", "on-tertiary": "#3d2f00", "on-surface-variant": "#d0c5af", "tertiary-fixed": "#ffe08b", "surface-container-highest": "#333539", "on-secondary-fixed-variant": "#424752", "secondary-fixed-dim": "#c2c6d4", "inverse-on-surface": "#2f3035", "tertiary": "#efcb60", "primary-container": "#FFCC00", "secondary": "#c2c6d4", "on-primary-fixed": "#241a00", "surface-container": "#1e2024", "on-error-container": "#ffdad6", "on-tertiary-fixed": "#241a00", "tertiary-container": "#d2af48", "on-primary-container": "#554300", "surface-variant": "#333539", "surface-bright": "#37393e", "inverse-surface": "#e2e2e8" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter": "1.5rem", "space-sm": "0.5rem", "gutter-lg": "2.5rem", "space-2xl": "4rem", "margin-mobile": "1.25rem", "space-xs": "0.25rem", "space-xl": "2.5rem", "space-lg": "1.5rem", "margin": "2rem", "space-md": "1rem", "gutter-sm": "1rem" }, fontFamily: { "headline-lg": ["Syne"], "body-sm": ["Inter"], "headline-md": ["Syne"], "label-caps": ["Barlow Condensed", "Bahnschrift Condensed", "sans-serif"], "technical-code": ["Barlow Condensed", "Bahnschrift Condensed", "sans-serif"], "body-lg": ["Inter"], "body-md": ["Inter"], "headline-lg-mobile": ["Syne"], "headline-xl-mobile": ["Syne"], "headline-xl": ["Syne"], "headline-sm": ["Syne"] }, fontSize: { "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "400" }], "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "600" }], "label-caps": ["11px", { "lineHeight": "14px", "letterSpacing": "0.18em", "fontWeight": "600" }], "technical-code": ["12px", { "lineHeight": "16px", "letterSpacing": "0.12em", "fontWeight": "500" }], "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "400" }], "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0.01em", "fontWeight": "400" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "700" }], "headline-xl-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-xl": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "600" }] } } } };</script>
+    <script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-tertiary-container": "#554300", "inverse-primary": "#735c00", "tertiary-fixed-dim": "#e7c35a", "surface-container-lowest": "#0c0e12", "surface-dim": "#111317", "secondary-fixed": "#dee2f0", "on-background": "#e2e2e8", "on-surface": "#e2e2e8", "on-tertiary-fixed-variant": "#584400", "on-secondary": "#2b303b", "surface": "#111317", "background": "#111317", "surface-container-high": "#282a2e", "primary-fixed": "#ffe088", "on-error": "#690005", "outline-variant": "#4d4635", "primary": "#FFCC00", "error-container": "#93000a", "secondary-container": "#424752", "error": "#ffb4ab", "on-secondary-fixed": "#171c25", "on-primary-fixed-variant": "#574500", "on-secondary-container": "#b0b5c2", "outline": "#99907c", "surface-tint": "#e9c349", "surface-container-low": "#1a1c20", "primary-fixed-dim": "#e9c349", "on-primary": "#3c2f00", "on-tertiary": "#3d2f00", "on-surface-variant": "#d0c5af", "tertiary-fixed": "#ffe08b", "surface-container-highest": "#333539", "on-secondary-fixed-variant": "#424752", "secondary-fixed-dim": "#c2c6d4", "inverse-on-surface": "#2f3035", "tertiary": "#efcb60", "primary-container": "#FFCC00", "secondary": "#c2c6d4", "on-primary-fixed": "#241a00", "surface-container": "#1e2024", "on-error-container": "#ffdad6", "on-tertiary-fixed": "#241a00", "tertiary-container": "#d2af48", "on-primary-container": "#554300", "surface-variant": "#333539", "surface-bright": "#37393e", "inverse-surface": "#e2e2e8" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter": "1.5rem", "space-sm": "0.5rem", "gutter-lg": "2.5rem", "space-2xl": "4rem", "margin-mobile": "1.25rem", "space-xs": "0.25rem", "space-xl": "2.5rem", "space-lg": "1.5rem", "margin": "2rem", "space-md": "1rem", "gutter-sm": "1rem" }, fontFamily: { "headline-lg": ["Syne"], "body-sm": ["Inter"], "headline-md": ["Syne"], "label-caps": ["Barlow Condensed", "Bahnschrift Condensed", "sans-serif"], "technical-code": ["Barlow Condensed", "Bahnschrift Condensed", "sans-serif"], "body-lg": ["Inter"], "body-md": ["Inter"], "headline-lg-mobile": ["Syne"], "headline-xl-mobile": ["Syne"], "headline-xl": ["Syne"], "headline-sm": ["Syne"] }, fontSize: { "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "400" }], "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "600" }], "label-caps": ["11px", { "lineHeight": "14px", "letterSpacing": "0.18em", "fontWeight": "600" }], "technical-code": ["12px", { "lineHeight": "16px", "letterSpacing": "0.12em", "fontWeight": "500" }], "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "400" }], "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0.01em", "fontWeight": "400" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "700" }], "headline-xl-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-xl": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "600" }] } } } };</script>
 </head>
 <body class="bg-surface text-on-surface font-body-md antialiased selection:bg-primary/30 selection:text-primary">
     <script src="header.js"></script>
     
     <main class="w-full flex flex-col pt-0">
         <!-- HERO SECTION -->
-        <section class="relative w-full h-[60vh] min-h-[400px] flex flex-col items-center justify-center text-center px-gutter overflow-hidden border-b border-outline-variant/20">
+        <section class="relative w-full h-[55vh] min-h-[380px] flex flex-col items-center justify-center text-center px-gutter overflow-hidden border-b border-outline-variant/20">
             <div class="absolute inset-0 z-0">
-                <img src="./01-recreacion/IMAGEN%2011.webp" alt="Obras Ejecutadas" class="w-full h-full object-cover opacity-50 brightness-110 object-center">
-                <div class="absolute inset-0 bg-gradient-to-b from-surface/20 via-surface/60 to-surface"></div>
+                <img src="./01-recreacion/IMAGEN%2011.webp" alt="Obras Ejecutadas" class="w-full h-full object-cover opacity-40 brightness-110 object-center">
+                <div class="absolute inset-0 bg-gradient-to-b from-surface/30 via-surface/70 to-surface"></div>
             </div>
             <div class="relative z-10 max-w-4xl mx-auto" data-aos="fade-up">
-                <div class="font-headline-sm text-sm font-bold tracking-wider text-primary uppercase tracking-widest mb-4">PORTAFOLIO DE EJECUCIÓN</div>
-                <h1 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-white uppercase font-bold tracking-tight mb-space-md">EJECUCION DE OBRAS PUBLICAS Y PRIVADAS</h1>
-                <p class="font-body-lg text-body-lg text-secondary max-w-2xl mx-auto leading-relaxed">
-                    Mostramos únicamente proyectos 100% concluidos que reflejan nuestra capacidad técnica, cumplimiento de normativas y rigor en la construcción civil y urbana.
+                <div class="font-headline-sm text-sm font-bold tracking-wider text-primary uppercase tracking-widest mb-3">PORTAFOLIO DE EJECUCIÓN</div>
+                <h1 class="font-headline-xl text-3xl md:text-5xl text-white uppercase font-bold tracking-tight mb-space-md">EJECUCIÓN DE OBRAS PÚBLICAS Y PRIVADAS</h1>
+                <p class="font-body-lg text-secondary max-w-3xl mx-auto leading-relaxed text-sm md:text-base">
+                    Galería fotográfica de proyectos ejecutados con rigor técnico, cumplimiento de normativas de construcción civil y los más altos estándares de calidad y seguridad.
                 </p>
             </div>
         </section>
 
-        <!-- WORKS SECTION -->
+        <!-- CATEGORIES QUICK NAVIGATION -->
+        <div class="sticky top-[72px] z-40 bg-surface-container/95 backdrop-blur-md border-b border-outline-variant/30 py-3 shadow-lg">
+            <div class="max-w-7xl mx-auto px-gutter overflow-x-auto no-scrollbar flex items-center gap-2">
+                <span class="text-xs font-label-caps text-primary uppercase tracking-wider font-bold whitespace-nowrap mr-2">Especialidades:</span>
+<a href="#multifamiliar" class="text-xs px-3 py-1.5 rounded-full bg-surface-container-high hover:bg-primary hover:text-on-primary transition-colors whitespace-nowrap text-on-surface-variant font-medium border border-outline-variant/20 uppercase tracking-wide">Multifamiliar</a>
+                <a href="#petar" class="text-xs px-3 py-1.5 rounded-full bg-surface-container-high hover:bg-primary hover:text-on-primary transition-colors whitespace-nowrap text-on-surface-variant font-medium border border-outline-variant/20 uppercase tracking-wide">Planta PTAR</a>
+                <a href="#hdpe" class="text-xs px-3 py-1.5 rounded-full bg-surface-container-high hover:bg-primary hover:text-on-primary transition-colors whitespace-nowrap text-on-surface-variant font-medium border border-outline-variant/20 uppercase tracking-wide">Tubería HDPE</a>
+                <a href="#recreacional" class="text-xs px-3 py-1.5 rounded-full bg-surface-container-high hover:bg-primary hover:text-on-primary transition-colors whitespace-nowrap text-on-surface-variant font-medium border border-outline-variant/20 uppercase tracking-wide">Recreación y Losas</a>
+                <a href="#pistas" class="text-xs px-3 py-1.5 rounded-full bg-surface-container-high hover:bg-primary hover:text-on-primary transition-colors whitespace-nowrap text-on-surface-variant font-medium border border-outline-variant/20 uppercase tracking-wide">Pistas y Veredas</a>
+                <a href="#electromecanicas" class="text-xs px-3 py-1.5 rounded-full bg-surface-container-high hover:bg-primary hover:text-on-primary transition-colors whitespace-nowrap text-on-surface-variant font-medium border border-outline-variant/20 uppercase tracking-wide">Electromecánicas</a>
+                <a href="#mantenimiento" class="text-xs px-3 py-1.5 rounded-full bg-surface-container-high hover:bg-primary hover:text-on-primary transition-colors whitespace-nowrap text-on-surface-variant font-medium border border-outline-variant/20 uppercase tracking-wide">Mantenimiento</a>
+                <a href="#primera-piedra" class="text-xs px-3 py-1.5 rounded-full bg-surface-container-high hover:bg-primary hover:text-on-primary transition-colors whitespace-nowrap text-on-surface-variant font-medium border border-outline-variant/20 uppercase tracking-wide">Primera Piedra</a>
+            </div>
+        </div>
+
+        <!-- WORKS GALLERY SECTIONS -->
         <section class="py-space-2xl bg-surface">
             <div class="max-w-7xl mx-auto px-gutter">
-
-                <div id="petar" class="mb-space-2xl scroll-mt-[120px]" data-aos="fade-up">
-                    <div class="mb-space-xl border-b-2 border-primary/30 pb-4">
-                        <h2 class="font-headline-lg text-3xl md:text-4xl text-primary uppercase font-bold">PLANTA DE TRATAMIENTO DE AGUAS RESIDUALES</h2>
+                <div id="multifamiliar" class="mb-space-2xl scroll-mt-[140px]" data-aos="fade-up">
+                    <div class="mb-space-lg border-b-2 border-primary/30 pb-4">
+                        <div class="flex flex-col md:flex-row md:items-end justify-between gap-2">
+                            <div>
+                                <h2 class="font-headline-lg text-2xl md:text-3xl text-primary uppercase font-bold tracking-wide">VIVIENDA E INFRAESTRUCTURA MULTIFAMILIAR</h2>
+                                <p class="text-on-surface-variant text-sm mt-1">Proyectos habitacionales multifamiliares, residenciales y obras civiles de edificación vertical.</p>
+                            </div>
+                            <span class="text-xs text-primary font-technical-code uppercase tracking-widest">29 PROYECTOS / FOTOS</span>
+                        </div>
                     </div>
                     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./06-planta/IMAGEN%20%281%29.png')">
-                            <img src="./06-planta/IMAGEN%20%281%29.png" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./08-multifamiliar/images.jpg')">
+                            <img src="./08-multifamiliar/images.jpg" alt="Obra VIVIENDA E INFRAESTRUCTURA MULTIFAMILIAR" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./06-planta/IMAGEN%20%282%29.png')">
-                            <img src="./06-planta/IMAGEN%20%282%29.png" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./08-multifamiliar/primera-piedra/PRIMERA_PIEDRA_1.webp')">
+                            <img src="./08-multifamiliar/primera-piedra/PRIMERA_PIEDRA_1.webp" alt="Obra VIVIENDA E INFRAESTRUCTURA MULTIFAMILIAR" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./06-planta/IMAGEN%20%283%29.png')">
-                            <img src="./06-planta/IMAGEN%20%283%29.png" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./08-multifamiliar/primera-piedra/PRIMERA_PIEDRA_2.webp')">
+                            <img src="./08-multifamiliar/primera-piedra/PRIMERA_PIEDRA_2.webp" alt="Obra VIVIENDA E INFRAESTRUCTURA MULTIFAMILIAR" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./06-planta/IMAGEN%20%284%29.png')">
-                            <img src="./06-planta/IMAGEN%20%284%29.png" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./08-multifamiliar/primera-piedra/PRIMERA_PIEDRA_3.webp')">
+                            <img src="./08-multifamiliar/primera-piedra/PRIMERA_PIEDRA_3.webp" alt="Obra VIVIENDA E INFRAESTRUCTURA MULTIFAMILIAR" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./06-planta/IMAGEN%20%285%29.png')">
-                            <img src="./06-planta/IMAGEN%20%285%29.png" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./08-multifamiliar/primera-piedra/PRIMERA_PIEDRA_4.webp')">
+                            <img src="./08-multifamiliar/primera-piedra/PRIMERA_PIEDRA_4.webp" alt="Obra VIVIENDA E INFRAESTRUCTURA MULTIFAMILIAR" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./06-planta/IMAGEN%20%286%29.png')">
-                            <img src="./06-planta/IMAGEN%20%286%29.png" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./08-multifamiliar/primera-piedra/PRIMERA_PIEDRA_5.webp')">
+                            <img src="./08-multifamiliar/primera-piedra/PRIMERA_PIEDRA_5.webp" alt="Obra VIVIENDA E INFRAESTRUCTURA MULTIFAMILIAR" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./06-planta/IMAGEN%20%287%29.png')">
-                            <img src="./06-planta/IMAGEN%20%287%29.png" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./08-multifamiliar/primera-piedra/PRIMERA_PIEDRA_6.webp')">
+                            <img src="./08-multifamiliar/primera-piedra/PRIMERA_PIEDRA_6.webp" alt="Obra VIVIENDA E INFRAESTRUCTURA MULTIFAMILIAR" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./06-planta/IMAGEN%20%288%29.png')">
-                            <img src="./06-planta/IMAGEN%20%288%29.png" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./08-multifamiliar/primera-piedra/PRIMERA_PIEDRA_7.webp')">
+                            <img src="./08-multifamiliar/primera-piedra/PRIMERA_PIEDRA_7.webp" alt="Obra VIVIENDA E INFRAESTRUCTURA MULTIFAMILIAR" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./06-planta/IMAGEN%20%289%29.png')">
-                            <img src="./06-planta/IMAGEN%20%289%29.png" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_1.webp')">
+                            <img src="./08-multifamiliar/proceso/IMAGEN_1.webp" alt="Obra VIVIENDA E INFRAESTRUCTURA MULTIFAMILIAR" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./06-planta/IMAGEN%20%2810%29.png')">
-                            <img src="./06-planta/IMAGEN%20%2810%29.png" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_2.webp')">
+                            <img src="./08-multifamiliar/proceso/IMAGEN_2.webp" alt="Obra VIVIENDA E INFRAESTRUCTURA MULTIFAMILIAR" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./06-planta/IMAGEN%20%2811%29.png')">
-                            <img src="./06-planta/IMAGEN%20%2811%29.png" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_3.webp')">
+                            <img src="./08-multifamiliar/proceso/IMAGEN_3.webp" alt="Obra VIVIENDA E INFRAESTRUCTURA MULTIFAMILIAR" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./06-planta/IMAGEN%20%2812%29.png')">
-                            <img src="./06-planta/IMAGEN%20%2812%29.png" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_4.webp')">
+                            <img src="./08-multifamiliar/proceso/IMAGEN_4.webp" alt="Obra VIVIENDA E INFRAESTRUCTURA MULTIFAMILIAR" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./06-planta/IMAGEN%20%2813%29.png')">
-                            <img src="./06-planta/IMAGEN%20%2813%29.png" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                        
-
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./01-recreacion/IMAGEN%201.webp')">
-                            <img src="./01-recreacion/IMAGEN%201.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_5.webp')">
+                            <img src="./08-multifamiliar/proceso/IMAGEN_5.webp" alt="Obra VIVIENDA E INFRAESTRUCTURA MULTIFAMILIAR" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./01-recreacion/IMAGEN%202.webp')">
-                            <img src="./01-recreacion/IMAGEN%202.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_6.webp')">
+                            <img src="./08-multifamiliar/proceso/IMAGEN_6.webp" alt="Obra VIVIENDA E INFRAESTRUCTURA MULTIFAMILIAR" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./01-recreacion/IMAGEN%203.webp')">
-                            <img src="./01-recreacion/IMAGEN%203.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_7.webp')">
+                            <img src="./08-multifamiliar/proceso/IMAGEN_7.webp" alt="Obra VIVIENDA E INFRAESTRUCTURA MULTIFAMILIAR" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./01-recreacion/IMAGEN%204.webp')">
-                            <img src="./01-recreacion/IMAGEN%204.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_8.webp')">
+                            <img src="./08-multifamiliar/proceso/IMAGEN_8.webp" alt="Obra VIVIENDA E INFRAESTRUCTURA MULTIFAMILIAR" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./01-recreacion/IMAGEN%205.webp')">
-                            <img src="./01-recreacion/IMAGEN%205.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_9.webp')">
+                            <img src="./08-multifamiliar/proceso/IMAGEN_9.webp" alt="Obra VIVIENDA E INFRAESTRUCTURA MULTIFAMILIAR" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./01-recreacion/IMAGEN%206.webp')">
-                            <img src="./01-recreacion/IMAGEN%206.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_10.webp')">
+                            <img src="./08-multifamiliar/proceso/IMAGEN_10.webp" alt="Obra VIVIENDA E INFRAESTRUCTURA MULTIFAMILIAR" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./01-recreacion/IMAGEN%207.webp')">
-                            <img src="./01-recreacion/IMAGEN%207.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_11.webp')">
+                            <img src="./08-multifamiliar/proceso/IMAGEN_11.webp" alt="Obra VIVIENDA E INFRAESTRUCTURA MULTIFAMILIAR" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./01-recreacion/IMAGEN%208.webp')">
-                            <img src="./01-recreacion/IMAGEN%208.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_12.webp')">
+                            <img src="./08-multifamiliar/proceso/IMAGEN_12.webp" alt="Obra VIVIENDA E INFRAESTRUCTURA MULTIFAMILIAR" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./01-recreacion/IMAGEN%209.webp')">
-                            <img src="./01-recreacion/IMAGEN%209.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_13.webp')">
+                            <img src="./08-multifamiliar/proceso/IMAGEN_13.webp" alt="Obra VIVIENDA E INFRAESTRUCTURA MULTIFAMILIAR" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./01-recreacion/IMAGEN%2010.webp')">
-                            <img src="./01-recreacion/IMAGEN%2010.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_14.webp')">
+                            <img src="./08-multifamiliar/proceso/IMAGEN_14.webp" alt="Obra VIVIENDA E INFRAESTRUCTURA MULTIFAMILIAR" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./01-recreacion/IMAGEN%2011.webp')">
-                            <img src="./01-recreacion/IMAGEN%2011.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_15.webp')">
+                            <img src="./08-multifamiliar/proceso/IMAGEN_15.webp" alt="Obra VIVIENDA E INFRAESTRUCTURA MULTIFAMILIAR" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./01-recreacion/IMAGEN%2012.webp')">
-                            <img src="./01-recreacion/IMAGEN%2012.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_16.webp')">
+                            <img src="./08-multifamiliar/proceso/IMAGEN_16.webp" alt="Obra VIVIENDA E INFRAESTRUCTURA MULTIFAMILIAR" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./01-recreacion/IMAGEN%2013.webp')">
-                            <img src="./01-recreacion/IMAGEN%2013.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_17.webp')">
+                            <img src="./08-multifamiliar/proceso/IMAGEN_17.webp" alt="Obra VIVIENDA E INFRAESTRUCTURA MULTIFAMILIAR" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./01-recreacion/IMAGEN%2014.webp')">
-                            <img src="./01-recreacion/IMAGEN%2014.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_18.webp')">
+                            <img src="./08-multifamiliar/proceso/IMAGEN_18.webp" alt="Obra VIVIENDA E INFRAESTRUCTURA MULTIFAMILIAR" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./01-recreacion/IMAGEN%2015.webp')">
-                            <img src="./01-recreacion/IMAGEN%2015.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_19.webp')">
+                            <img src="./08-multifamiliar/proceso/IMAGEN_19.webp" alt="Obra VIVIENDA E INFRAESTRUCTURA MULTIFAMILIAR" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./01-recreacion/IMAGEN%2016.webp')">
-                            <img src="./01-recreacion/IMAGEN%2016.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_20.webp')">
+                            <img src="./08-multifamiliar/proceso/IMAGEN_20.webp" alt="Obra VIVIENDA E INFRAESTRUCTURA MULTIFAMILIAR" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./01-recreacion/IMAGEN%2017.webp')">
-                            <img src="./01-recreacion/IMAGEN%2017.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_21.webp')">
+                            <img src="./08-multifamiliar/proceso/IMAGEN_21.webp" alt="Obra VIVIENDA E INFRAESTRUCTURA MULTIFAMILIAR" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div id="multifamiliar" class="mb-space-2xl scroll-mt-[120px]" data-aos="fade-up">
-                    <div class="mb-space-xl border-b-2 border-primary/30 pb-4">
-                        <h2 class="font-headline-lg text-3xl md:text-4xl text-primary uppercase font-bold">INFRAESTRUCTURA MULTIFAMILIAR</h2>
+                <div id="petar" class="mb-space-2xl scroll-mt-[140px]" data-aos="fade-up">
+                    <div class="mb-space-lg border-b-2 border-primary/30 pb-4">
+                        <div class="flex flex-col md:flex-row md:items-end justify-between gap-2">
+                            <div>
+                                <h2 class="font-headline-lg text-2xl md:text-3xl text-primary uppercase font-bold tracking-wide">PLANTA DE TRATAMIENTO DE AGUAS RESIDUALES (PTAR)</h2>
+                                <p class="text-on-surface-variant text-sm mt-1">Infraestructura sanitaria de tratamiento ambiental, lagunas de oxidación y sistemas de decantación.</p>
+                            </div>
+                            <span class="text-xs text-primary font-technical-code uppercase tracking-widest">13 PROYECTOS / FOTOS</span>
+                        </div>
                     </div>
                     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./08-multifamiliar/primera-piedra/PRIMERA_PIEDRA_1.webp')">
-                            <img src="./08-multifamiliar/primera-piedra/PRIMERA_PIEDRA_1.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./06-planta/IMAGEN (1).png')">
+                            <img src="./06-planta/IMAGEN (1).png" alt="Obra PLANTA DE TRATAMIENTO DE AGUAS RESIDUALES (PTAR)" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./08-multifamiliar/primera-piedra/PRIMERA_PIEDRA_2.webp')">
-                            <img src="./08-multifamiliar/primera-piedra/PRIMERA_PIEDRA_2.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./06-planta/IMAGEN (2).png')">
+                            <img src="./06-planta/IMAGEN (2).png" alt="Obra PLANTA DE TRATAMIENTO DE AGUAS RESIDUALES (PTAR)" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./08-multifamiliar/primera-piedra/PRIMERA_PIEDRA_3.webp')">
-                            <img src="./08-multifamiliar/primera-piedra/PRIMERA_PIEDRA_3.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./06-planta/IMAGEN (3).png')">
+                            <img src="./06-planta/IMAGEN (3).png" alt="Obra PLANTA DE TRATAMIENTO DE AGUAS RESIDUALES (PTAR)" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./08-multifamiliar/primera-piedra/PRIMERA_PIEDRA_4.webp')">
-                            <img src="./08-multifamiliar/primera-piedra/PRIMERA_PIEDRA_4.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./06-planta/IMAGEN (4).png')">
+                            <img src="./06-planta/IMAGEN (4).png" alt="Obra PLANTA DE TRATAMIENTO DE AGUAS RESIDUALES (PTAR)" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./08-multifamiliar/primera-piedra/PRIMERA_PIEDRA_5.webp')">
-                            <img src="./08-multifamiliar/primera-piedra/PRIMERA_PIEDRA_5.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./06-planta/IMAGEN (5).png')">
+                            <img src="./06-planta/IMAGEN (5).png" alt="Obra PLANTA DE TRATAMIENTO DE AGUAS RESIDUALES (PTAR)" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./08-multifamiliar/primera-piedra/PRIMERA_PIEDRA_6.webp')">
-                            <img src="./08-multifamiliar/primera-piedra/PRIMERA_PIEDRA_6.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./06-planta/IMAGEN (6).png')">
+                            <img src="./06-planta/IMAGEN (6).png" alt="Obra PLANTA DE TRATAMIENTO DE AGUAS RESIDUALES (PTAR)" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./08-multifamiliar/primera-piedra/PRIMERA_PIEDRA_7.webp')">
-                            <img src="./08-multifamiliar/primera-piedra/PRIMERA_PIEDRA_7.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./06-planta/IMAGEN (7).png')">
+                            <img src="./06-planta/IMAGEN (7).png" alt="Obra PLANTA DE TRATAMIENTO DE AGUAS RESIDUALES (PTAR)" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_1.webp')">
-                            <img src="./08-multifamiliar/proceso/IMAGEN_1.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./06-planta/IMAGEN (8).png')">
+                            <img src="./06-planta/IMAGEN (8).png" alt="Obra PLANTA DE TRATAMIENTO DE AGUAS RESIDUALES (PTAR)" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_10.webp')">
-                            <img src="./08-multifamiliar/proceso/IMAGEN_10.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./06-planta/IMAGEN (9).png')">
+                            <img src="./06-planta/IMAGEN (9).png" alt="Obra PLANTA DE TRATAMIENTO DE AGUAS RESIDUALES (PTAR)" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_11.webp')">
-                            <img src="./08-multifamiliar/proceso/IMAGEN_11.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./06-planta/IMAGEN (10).png')">
+                            <img src="./06-planta/IMAGEN (10).png" alt="Obra PLANTA DE TRATAMIENTO DE AGUAS RESIDUALES (PTAR)" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_12.webp')">
-                            <img src="./08-multifamiliar/proceso/IMAGEN_12.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./06-planta/IMAGEN (11).png')">
+                            <img src="./06-planta/IMAGEN (11).png" alt="Obra PLANTA DE TRATAMIENTO DE AGUAS RESIDUALES (PTAR)" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_13.webp')">
-                            <img src="./08-multifamiliar/proceso/IMAGEN_13.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./06-planta/IMAGEN (12).png')">
+                            <img src="./06-planta/IMAGEN (12).png" alt="Obra PLANTA DE TRATAMIENTO DE AGUAS RESIDUALES (PTAR)" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_14.webp')">
-                            <img src="./08-multifamiliar/proceso/IMAGEN_14.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_15.webp')">
-                            <img src="./08-multifamiliar/proceso/IMAGEN_15.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_16.webp')">
-                            <img src="./08-multifamiliar/proceso/IMAGEN_16.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_17.webp')">
-                            <img src="./08-multifamiliar/proceso/IMAGEN_17.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_18.webp')">
-                            <img src="./08-multifamiliar/proceso/IMAGEN_18.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_19.webp')">
-                            <img src="./08-multifamiliar/proceso/IMAGEN_19.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_2.webp')">
-                            <img src="./08-multifamiliar/proceso/IMAGEN_2.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_20.webp')">
-                            <img src="./08-multifamiliar/proceso/IMAGEN_20.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_21.webp')">
-                            <img src="./08-multifamiliar/proceso/IMAGEN_21.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_3.webp')">
-                            <img src="./08-multifamiliar/proceso/IMAGEN_3.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_4.webp')">
-                            <img src="./08-multifamiliar/proceso/IMAGEN_4.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_5.webp')">
-                            <img src="./08-multifamiliar/proceso/IMAGEN_5.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_6.webp')">
-                            <img src="./08-multifamiliar/proceso/IMAGEN_6.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_7.webp')">
-                            <img src="./08-multifamiliar/proceso/IMAGEN_7.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_8.webp')">
-                            <img src="./08-multifamiliar/proceso/IMAGEN_8.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./08-multifamiliar/proceso/IMAGEN_9.webp')">
-                            <img src="./08-multifamiliar/proceso/IMAGEN_9.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./06-planta/IMAGEN (13).png')">
+                            <img src="./06-planta/IMAGEN (13).png" alt="Obra PLANTA DE TRATAMIENTO DE AGUAS RESIDUALES (PTAR)" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div id="mantenimiento" class="mb-space-2xl scroll-mt-[120px]" data-aos="fade-up">
-                    <div class="mb-space-xl border-b-2 border-primary/30 pb-4">
-                        <h2 class="font-headline-lg text-3xl md:text-4xl text-primary uppercase font-bold">MANTENIMIENTO DE INFRAESTRUCTURA</h2>
+                <div id="hdpe" class="mb-space-2xl scroll-mt-[140px]" data-aos="fade-up">
+                    <div class="mb-space-lg border-b-2 border-primary/30 pb-4">
+                        <div class="flex flex-col md:flex-row md:items-end justify-between gap-2">
+                            <div>
+                                <h2 class="font-headline-lg text-2xl md:text-3xl text-primary uppercase font-bold tracking-wide">INSTALACIÓN DE TUBERÍA HDPE Y SANEAMIENTO</h2>
+                                <p class="text-on-surface-variant text-sm mt-1">Tendido de tuberías de polietileno de alta densidad (HDPE), termofusión y redes hidráulicas principales.</p>
+                            </div>
+                            <span class="text-xs text-primary font-technical-code uppercase tracking-widest">18 PROYECTOS / FOTOS</span>
+                        </div>
                     </div>
                     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./03-mantenimiento/IMAGEN%201.webp')">
-                            <img src="./03-mantenimiento/IMAGEN%201.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./07-saneamiento/tuberia-hdpe/img_1.webp')">
+                            <img src="./07-saneamiento/tuberia-hdpe/img_1.webp" alt="Obra INSTALACIÓN DE TUBERÍA HDPE Y SANEAMIENTO" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./03-mantenimiento/IMAGEN%2010.webp')">
-                            <img src="./03-mantenimiento/IMAGEN%2010.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./07-saneamiento/tuberia-hdpe/img_2.webp')">
+                            <img src="./07-saneamiento/tuberia-hdpe/img_2.webp" alt="Obra INSTALACIÓN DE TUBERÍA HDPE Y SANEAMIENTO" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./03-mantenimiento/IMAGEN%2011.webp')">
-                            <img src="./03-mantenimiento/IMAGEN%2011.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./07-saneamiento/tuberia-hdpe/img_3.webp')">
+                            <img src="./07-saneamiento/tuberia-hdpe/img_3.webp" alt="Obra INSTALACIÓN DE TUBERÍA HDPE Y SANEAMIENTO" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./03-mantenimiento/IMAGEN%2012.webp')">
-                            <img src="./03-mantenimiento/IMAGEN%2012.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./07-saneamiento/tuberia-hdpe/img_4.webp')">
+                            <img src="./07-saneamiento/tuberia-hdpe/img_4.webp" alt="Obra INSTALACIÓN DE TUBERÍA HDPE Y SANEAMIENTO" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./03-mantenimiento/IMAGEN%2013.webp')">
-                            <img src="./03-mantenimiento/IMAGEN%2013.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./07-saneamiento/tuberia-hdpe/img_5.webp')">
+                            <img src="./07-saneamiento/tuberia-hdpe/img_5.webp" alt="Obra INSTALACIÓN DE TUBERÍA HDPE Y SANEAMIENTO" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./03-mantenimiento/IMAGEN%2014.webp')">
-                            <img src="./03-mantenimiento/IMAGEN%2014.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./07-saneamiento/tuberia-hdpe/img_6.webp')">
+                            <img src="./07-saneamiento/tuberia-hdpe/img_6.webp" alt="Obra INSTALACIÓN DE TUBERÍA HDPE Y SANEAMIENTO" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./03-mantenimiento/IMAGEN%2015.webp')">
-                            <img src="./03-mantenimiento/IMAGEN%2015.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./07-saneamiento/tuberia-hdpe/img_7.webp')">
+                            <img src="./07-saneamiento/tuberia-hdpe/img_7.webp" alt="Obra INSTALACIÓN DE TUBERÍA HDPE Y SANEAMIENTO" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./03-mantenimiento/IMAGEN%2016.webp')">
-                            <img src="./03-mantenimiento/IMAGEN%2016.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./07-saneamiento/tuberia-hdpe/img_8.webp')">
+                            <img src="./07-saneamiento/tuberia-hdpe/img_8.webp" alt="Obra INSTALACIÓN DE TUBERÍA HDPE Y SANEAMIENTO" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./03-mantenimiento/IMAGEN%202.webp')">
-                            <img src="./03-mantenimiento/IMAGEN%202.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./07-saneamiento/tuberia-hdpe/img_9.webp')">
+                            <img src="./07-saneamiento/tuberia-hdpe/img_9.webp" alt="Obra INSTALACIÓN DE TUBERÍA HDPE Y SANEAMIENTO" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./03-mantenimiento/IMAGEN%203.webp')">
-                            <img src="./03-mantenimiento/IMAGEN%203.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./07-saneamiento/tuberia-hdpe/img_10.webp')">
+                            <img src="./07-saneamiento/tuberia-hdpe/img_10.webp" alt="Obra INSTALACIÓN DE TUBERÍA HDPE Y SANEAMIENTO" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./03-mantenimiento/IMAGEN%204.webp')">
-                            <img src="./03-mantenimiento/IMAGEN%204.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./07-saneamiento/tuberia-hdpe/img_11.webp')">
+                            <img src="./07-saneamiento/tuberia-hdpe/img_11.webp" alt="Obra INSTALACIÓN DE TUBERÍA HDPE Y SANEAMIENTO" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./03-mantenimiento/IMAGEN%205.webp')">
-                            <img src="./03-mantenimiento/IMAGEN%205.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./07-saneamiento/tuberia-hdpe/img_12.webp')">
+                            <img src="./07-saneamiento/tuberia-hdpe/img_12.webp" alt="Obra INSTALACIÓN DE TUBERÍA HDPE Y SANEAMIENTO" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./03-mantenimiento/IMAGEN%206.webp')">
-                            <img src="./03-mantenimiento/IMAGEN%206.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./07-saneamiento/tuberia-hdpe/img_13.webp')">
+                            <img src="./07-saneamiento/tuberia-hdpe/img_13.webp" alt="Obra INSTALACIÓN DE TUBERÍA HDPE Y SANEAMIENTO" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./03-mantenimiento/IMAGEN%207.webp')">
-                            <img src="./03-mantenimiento/IMAGEN%207.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./07-saneamiento/tuberia-hdpe/img_14.webp')">
+                            <img src="./07-saneamiento/tuberia-hdpe/img_14.webp" alt="Obra INSTALACIÓN DE TUBERÍA HDPE Y SANEAMIENTO" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./03-mantenimiento/IMAGEN%208.webp')">
-                            <img src="./03-mantenimiento/IMAGEN%208.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./07-saneamiento/tuberia-hdpe/img_15.webp')">
+                            <img src="./07-saneamiento/tuberia-hdpe/img_15.webp" alt="Obra INSTALACIÓN DE TUBERÍA HDPE Y SANEAMIENTO" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./03-mantenimiento/IMAGEN%209.webp')">
-                            <img src="./03-mantenimiento/IMAGEN%209.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./07-saneamiento/tuberia-hdpe/img_16.webp')">
+                            <img src="./07-saneamiento/tuberia-hdpe/img_16.webp" alt="Obra INSTALACIÓN DE TUBERÍA HDPE Y SANEAMIENTO" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./07-saneamiento/tuberia-hdpe/img_17.webp')">
+                            <img src="./07-saneamiento/tuberia-hdpe/img_17.webp" alt="Obra INSTALACIÓN DE TUBERÍA HDPE Y SANEAMIENTO" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./07-saneamiento/tuberia-hdpe/PETAR.jpg')">
+                            <img src="./07-saneamiento/tuberia-hdpe/PETAR.jpg" alt="Obra INSTALACIÓN DE TUBERÍA HDPE Y SANEAMIENTO" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div id="pistas" class="mb-space-2xl scroll-mt-[120px]" data-aos="fade-up">
-                    <div class="mb-space-xl border-b-2 border-primary/30 pb-4">
-                        <h2 class="font-headline-lg text-3xl md:text-4xl text-primary uppercase font-bold">INFRAESTRUCTURA VIAL: PISTAS Y VEREDAS</h2>
+                <div id="recreacional" class="mb-space-2xl scroll-mt-[140px]" data-aos="fade-up">
+                    <div class="mb-space-lg border-b-2 border-primary/30 pb-4">
+                        <div class="flex flex-col md:flex-row md:items-end justify-between gap-2">
+                            <div>
+                                <h2 class="font-headline-lg text-2xl md:text-3xl text-primary uppercase font-bold tracking-wide">INFRAESTRUCTURA RECREATIVA Y LOSAS DEPORTIVAS</h2>
+                                <p class="text-on-surface-variant text-sm mt-1">Complejos deportivos multidisciplinarios, losas de concreto pulido, parques recreativos y áreas públicas.</p>
+                            </div>
+                            <span class="text-xs text-primary font-technical-code uppercase tracking-widest">27 PROYECTOS / FOTOS</span>
+                        </div>
                     </div>
                     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%201.webp')">
-                            <img src="./02-pistas/IMAGEN%201.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./01-recreacion/IMAGEN 1.webp')">
+                            <img src="./01-recreacion/IMAGEN 1.webp" alt="Obra INFRAESTRUCTURA RECREATIVA Y LOSAS DEPORTIVAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%202.webp')">
-                            <img src="./02-pistas/IMAGEN%202.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./01-recreacion/IMAGEN 2.webp')">
+                            <img src="./01-recreacion/IMAGEN 2.webp" alt="Obra INFRAESTRUCTURA RECREATIVA Y LOSAS DEPORTIVAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%203.webp')">
-                            <img src="./02-pistas/IMAGEN%203.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./01-recreacion/IMAGEN 3.webp')">
+                            <img src="./01-recreacion/IMAGEN 3.webp" alt="Obra INFRAESTRUCTURA RECREATIVA Y LOSAS DEPORTIVAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%205.webp')">
-                            <img src="./02-pistas/IMAGEN%205.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./01-recreacion/IMAGEN 4.webp')">
+                            <img src="./01-recreacion/IMAGEN 4.webp" alt="Obra INFRAESTRUCTURA RECREATIVA Y LOSAS DEPORTIVAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%206.webp')">
-                            <img src="./02-pistas/IMAGEN%206.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./01-recreacion/IMAGEN 5.webp')">
+                            <img src="./01-recreacion/IMAGEN 5.webp" alt="Obra INFRAESTRUCTURA RECREATIVA Y LOSAS DEPORTIVAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%207.webp')">
-                            <img src="./02-pistas/IMAGEN%207.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./01-recreacion/IMAGEN 6.webp')">
+                            <img src="./01-recreacion/IMAGEN 6.webp" alt="Obra INFRAESTRUCTURA RECREATIVA Y LOSAS DEPORTIVAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%209.webp')">
-                            <img src="./02-pistas/IMAGEN%209.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./01-recreacion/IMAGEN 7.webp')">
+                            <img src="./01-recreacion/IMAGEN 7.webp" alt="Obra INFRAESTRUCTURA RECREATIVA Y LOSAS DEPORTIVAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%2010.webp')">
-                            <img src="./02-pistas/IMAGEN%2010.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./01-recreacion/IMAGEN 8.webp')">
+                            <img src="./01-recreacion/IMAGEN 8.webp" alt="Obra INFRAESTRUCTURA RECREATIVA Y LOSAS DEPORTIVAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%2011.webp')">
-                            <img src="./02-pistas/IMAGEN%2011.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./01-recreacion/IMAGEN 9.webp')">
+                            <img src="./01-recreacion/IMAGEN 9.webp" alt="Obra INFRAESTRUCTURA RECREATIVA Y LOSAS DEPORTIVAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%2012.webp')">
-                            <img src="./02-pistas/IMAGEN%2012.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./01-recreacion/IMAGEN 10.webp')">
+                            <img src="./01-recreacion/IMAGEN 10.webp" alt="Obra INFRAESTRUCTURA RECREATIVA Y LOSAS DEPORTIVAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%2014.webp')">
-                            <img src="./02-pistas/IMAGEN%2014.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./01-recreacion/IMAGEN 11.webp')">
+                            <img src="./01-recreacion/IMAGEN 11.webp" alt="Obra INFRAESTRUCTURA RECREATIVA Y LOSAS DEPORTIVAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%2016.webp')">
-                            <img src="./02-pistas/IMAGEN%2016.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./01-recreacion/IMAGEN 12.webp')">
+                            <img src="./01-recreacion/IMAGEN 12.webp" alt="Obra INFRAESTRUCTURA RECREATIVA Y LOSAS DEPORTIVAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%2021.webp')">
-                            <img src="./02-pistas/IMAGEN%2021.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./01-recreacion/IMAGEN 13.webp')">
+                            <img src="./01-recreacion/IMAGEN 13.webp" alt="Obra INFRAESTRUCTURA RECREATIVA Y LOSAS DEPORTIVAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%2022.webp')">
-                            <img src="./02-pistas/IMAGEN%2022.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./01-recreacion/IMAGEN 14.webp')">
+                            <img src="./01-recreacion/IMAGEN 14.webp" alt="Obra INFRAESTRUCTURA RECREATIVA Y LOSAS DEPORTIVAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%2023.webp')">
-                            <img src="./02-pistas/IMAGEN%2023.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./01-recreacion/IMAGEN 15.webp')">
+                            <img src="./01-recreacion/IMAGEN 15.webp" alt="Obra INFRAESTRUCTURA RECREATIVA Y LOSAS DEPORTIVAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%2024.webp')">
-                            <img src="./02-pistas/IMAGEN%2024.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./01-recreacion/IMAGEN 16.webp')">
+                            <img src="./01-recreacion/IMAGEN 16.webp" alt="Obra INFRAESTRUCTURA RECREATIVA Y LOSAS DEPORTIVAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%2025.webp')">
-                            <img src="./02-pistas/IMAGEN%2025.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./01-recreacion/IMAGEN 17.webp')">
+                            <img src="./01-recreacion/IMAGEN 17.webp" alt="Obra INFRAESTRUCTURA RECREATIVA Y LOSAS DEPORTIVAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%2026.webp')">
-                            <img src="./02-pistas/IMAGEN%2026.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./09-recreacional/img_1.webp')">
+                            <img src="./09-recreacional/img_1.webp" alt="Obra INFRAESTRUCTURA RECREATIVA Y LOSAS DEPORTIVAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%2027.webp')">
-                            <img src="./02-pistas/IMAGEN%2027.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./09-recreacional/img_2.webp')">
+                            <img src="./09-recreacional/img_2.webp" alt="Obra INFRAESTRUCTURA RECREATIVA Y LOSAS DEPORTIVAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%2028.webp')">
-                            <img src="./02-pistas/IMAGEN%2028.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./09-recreacional/img_3.webp')">
+                            <img src="./09-recreacional/img_3.webp" alt="Obra INFRAESTRUCTURA RECREATIVA Y LOSAS DEPORTIVAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%2029.webp')">
-                            <img src="./02-pistas/IMAGEN%2029.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./09-recreacional/img_4.webp')">
+                            <img src="./09-recreacional/img_4.webp" alt="Obra INFRAESTRUCTURA RECREATIVA Y LOSAS DEPORTIVAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%2030.webp')">
-                            <img src="./02-pistas/IMAGEN%2030.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./09-recreacional/img_5.webp')">
+                            <img src="./09-recreacional/img_5.webp" alt="Obra INFRAESTRUCTURA RECREATIVA Y LOSAS DEPORTIVAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%2031.webp')">
-                            <img src="./02-pistas/IMAGEN%2031.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./09-recreacional/img_6.webp')">
+                            <img src="./09-recreacional/img_6.webp" alt="Obra INFRAESTRUCTURA RECREATIVA Y LOSAS DEPORTIVAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%2032.webp')">
-                            <img src="./02-pistas/IMAGEN%2032.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./09-recreacional/img_7.webp')">
+                            <img src="./09-recreacional/img_7.webp" alt="Obra INFRAESTRUCTURA RECREATIVA Y LOSAS DEPORTIVAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%2033.webp')">
-                            <img src="./02-pistas/IMAGEN%2033.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./09-recreacional/img_8.webp')">
+                            <img src="./09-recreacional/img_8.webp" alt="Obra INFRAESTRUCTURA RECREATIVA Y LOSAS DEPORTIVAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%2034.webp')">
-                            <img src="./02-pistas/IMAGEN%2034.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./09-recreacional/img_9.webp')">
+                            <img src="./09-recreacional/img_9.webp" alt="Obra INFRAESTRUCTURA RECREATIVA Y LOSAS DEPORTIVAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%2035.webp')">
-                            <img src="./02-pistas/IMAGEN%2035.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./09-recreacional/img_10.webp')">
+                            <img src="./09-recreacional/img_10.webp" alt="Obra INFRAESTRUCTURA RECREATIVA Y LOSAS DEPORTIVAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%2036.webp')">
-                            <img src="./02-pistas/IMAGEN%2036.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%2037.webp')">
-                            <img src="./02-pistas/IMAGEN%2037.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%2038.webp')">
-                            <img src="./02-pistas/IMAGEN%2038.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                        
-
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%204.webp')">
-                            <img src="./02-pistas/IMAGEN%204.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%208.webp')">
-                            <img src="./02-pistas/IMAGEN%208.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%2013.webp')">
-                            <img src="./02-pistas/IMAGEN%2013.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%2015.webp')">
-                            <img src="./02-pistas/IMAGEN%2015.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%2017.webp')">
-                            <img src="./02-pistas/IMAGEN%2017.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%2018.webp')">
-                            <img src="./02-pistas/IMAGEN%2018.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%2019.webp')">
-                            <img src="./02-pistas/IMAGEN%2019.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                        </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./02-pistas/IMAGEN%2020.webp')">
-                            <img src="./02-pistas/IMAGEN%2020.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                    
-
-
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./07-saneamiento/tuberia-hdpe/img_1.webp')">
-                            <img src="./07-saneamiento/tuberia-hdpe/img_1.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                        </div>
-
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./07-saneamiento/tuberia-hdpe/img_10.webp')">
-                            <img src="./07-saneamiento/tuberia-hdpe/img_10.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                        </div>
-
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./07-saneamiento/tuberia-hdpe/img_11.webp')">
-                            <img src="./07-saneamiento/tuberia-hdpe/img_11.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                        </div>
-
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./07-saneamiento/tuberia-hdpe/img_12.webp')">
-                            <img src="./07-saneamiento/tuberia-hdpe/img_12.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                        </div>
-
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./07-saneamiento/tuberia-hdpe/img_13.webp')">
-                            <img src="./07-saneamiento/tuberia-hdpe/img_13.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                        </div>
-
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./07-saneamiento/tuberia-hdpe/img_14.webp')">
-                            <img src="./07-saneamiento/tuberia-hdpe/img_14.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                        </div>
-
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./07-saneamiento/tuberia-hdpe/img_15.webp')">
-                            <img src="./07-saneamiento/tuberia-hdpe/img_15.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                        </div>
-
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./07-saneamiento/tuberia-hdpe/img_16.webp')">
-                            <img src="./07-saneamiento/tuberia-hdpe/img_16.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                        </div>
-
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./07-saneamiento/tuberia-hdpe/img_17.webp')">
-                            <img src="./07-saneamiento/tuberia-hdpe/img_17.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                        </div>
-
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./07-saneamiento/tuberia-hdpe/img_2.webp')">
-                            <img src="./07-saneamiento/tuberia-hdpe/img_2.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                        </div>
-
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./07-saneamiento/tuberia-hdpe/img_3.webp')">
-                            <img src="./07-saneamiento/tuberia-hdpe/img_3.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                        </div>
-
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./07-saneamiento/tuberia-hdpe/img_4.webp')">
-                            <img src="./07-saneamiento/tuberia-hdpe/img_4.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                        </div>
-
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./07-saneamiento/tuberia-hdpe/img_5.webp')">
-                            <img src="./07-saneamiento/tuberia-hdpe/img_5.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                        </div>
-
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./07-saneamiento/tuberia-hdpe/img_6.webp')">
-                            <img src="./07-saneamiento/tuberia-hdpe/img_6.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                        </div>
-
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./07-saneamiento/tuberia-hdpe/img_7.webp')">
-                            <img src="./07-saneamiento/tuberia-hdpe/img_7.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                        </div>
-
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./07-saneamiento/tuberia-hdpe/img_8.webp')">
-                            <img src="./07-saneamiento/tuberia-hdpe/img_8.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                        </div>
-
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./07-saneamiento/tuberia-hdpe/img_9.webp')">
-                            <img src="./07-saneamiento/tuberia-hdpe/img_9.webp" alt="Obra" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                        </div>
-    </div>
                     </div>
                 </div>
 
-                
-                </div>
-
-                <div id="recreacional" class="mb-space-2xl scroll-mt-[120px]" data-aos="fade-up">
-                    <div class="mb-space-xl border-b-2 border-primary/30 pb-4">
-                        <h2 class="font-headline-lg text-3xl md:text-4xl text-primary uppercase font-bold">INFRAESTRUCTURA RECREACIONAL</h2>
+                <div id="pistas" class="mb-space-2xl scroll-mt-[140px]" data-aos="fade-up">
+                    <div class="mb-space-lg border-b-2 border-primary/30 pb-4">
+                        <div class="flex flex-col md:flex-row md:items-end justify-between gap-2">
+                            <div>
+                                <h2 class="font-headline-lg text-2xl md:text-3xl text-primary uppercase font-bold tracking-wide">INFRAESTRUCTURA VIAL: PISTAS Y VEREDAS</h2>
+                                <p class="text-on-surface-variant text-sm mt-1">Pavimentación rígida y flexible, sardineles peraltados, veredas peatonales y señalización vial urbana.</p>
+                            </div>
+                            <span class="text-xs text-primary font-technical-code uppercase tracking-widest">38 PROYECTOS / FOTOS</span>
+                        </div>
                     </div>
                     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./09-recreacional/img_1.webp')">
-                            <img src="./09-recreacional/img_1.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./02-pistas/IMAGEN 1.webp')">
+                            <img src="./02-pistas/IMAGEN 1.webp" alt="Obra INFRAESTRUCTURA VIAL: PISTAS Y VEREDAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./09-recreacional/img_2.webp')">
-                            <img src="./09-recreacional/img_2.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./02-pistas/IMAGEN 2.webp')">
+                            <img src="./02-pistas/IMAGEN 2.webp" alt="Obra INFRAESTRUCTURA VIAL: PISTAS Y VEREDAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./09-recreacional/img_3.webp')">
-                            <img src="./09-recreacional/img_3.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./02-pistas/IMAGEN 3.webp')">
+                            <img src="./02-pistas/IMAGEN 3.webp" alt="Obra INFRAESTRUCTURA VIAL: PISTAS Y VEREDAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./09-recreacional/img_4.webp')">
-                            <img src="./09-recreacional/img_4.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./02-pistas/IMAGEN 4.webp')">
+                            <img src="./02-pistas/IMAGEN 4.webp" alt="Obra INFRAESTRUCTURA VIAL: PISTAS Y VEREDAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./09-recreacional/img_5.webp')">
-                            <img src="./09-recreacional/img_5.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./02-pistas/IMAGEN 5.webp')">
+                            <img src="./02-pistas/IMAGEN 5.webp" alt="Obra INFRAESTRUCTURA VIAL: PISTAS Y VEREDAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./09-recreacional/img_6.webp')">
-                            <img src="./09-recreacional/img_6.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./02-pistas/IMAGEN 6.webp')">
+                            <img src="./02-pistas/IMAGEN 6.webp" alt="Obra INFRAESTRUCTURA VIAL: PISTAS Y VEREDAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./09-recreacional/img_7.webp')">
-                            <img src="./09-recreacional/img_7.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./02-pistas/IMAGEN 7.webp')">
+                            <img src="./02-pistas/IMAGEN 7.webp" alt="Obra INFRAESTRUCTURA VIAL: PISTAS Y VEREDAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./09-recreacional/img_8.webp')">
-                            <img src="./09-recreacional/img_8.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./02-pistas/IMAGEN 8.webp')">
+                            <img src="./02-pistas/IMAGEN 8.webp" alt="Obra INFRAESTRUCTURA VIAL: PISTAS Y VEREDAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./09-recreacional/img_9.webp')">
-                            <img src="./09-recreacional/img_9.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./02-pistas/IMAGEN 9.webp')">
+                            <img src="./02-pistas/IMAGEN 9.webp" alt="Obra INFRAESTRUCTURA VIAL: PISTAS Y VEREDAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
-                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64" onclick="openLightbox('./09-recreacional/img_10.webp')">
-                            <img src="./09-recreacional/img_10.webp" alt="Obra" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./02-pistas/IMAGEN 10.webp')">
+                            <img src="./02-pistas/IMAGEN 10.webp" alt="Obra INFRAESTRUCTURA VIAL: PISTAS Y VEREDAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./02-pistas/IMAGEN 11.webp')">
+                            <img src="./02-pistas/IMAGEN 11.webp" alt="Obra INFRAESTRUCTURA VIAL: PISTAS Y VEREDAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./02-pistas/IMAGEN 12.webp')">
+                            <img src="./02-pistas/IMAGEN 12.webp" alt="Obra INFRAESTRUCTURA VIAL: PISTAS Y VEREDAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./02-pistas/IMAGEN 13.webp')">
+                            <img src="./02-pistas/IMAGEN 13.webp" alt="Obra INFRAESTRUCTURA VIAL: PISTAS Y VEREDAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./02-pistas/IMAGEN 14.webp')">
+                            <img src="./02-pistas/IMAGEN 14.webp" alt="Obra INFRAESTRUCTURA VIAL: PISTAS Y VEREDAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./02-pistas/IMAGEN 15.webp')">
+                            <img src="./02-pistas/IMAGEN 15.webp" alt="Obra INFRAESTRUCTURA VIAL: PISTAS Y VEREDAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./02-pistas/IMAGEN 16.webp')">
+                            <img src="./02-pistas/IMAGEN 16.webp" alt="Obra INFRAESTRUCTURA VIAL: PISTAS Y VEREDAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./02-pistas/IMAGEN 17.webp')">
+                            <img src="./02-pistas/IMAGEN 17.webp" alt="Obra INFRAESTRUCTURA VIAL: PISTAS Y VEREDAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./02-pistas/IMAGEN 18.webp')">
+                            <img src="./02-pistas/IMAGEN 18.webp" alt="Obra INFRAESTRUCTURA VIAL: PISTAS Y VEREDAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./02-pistas/IMAGEN 19.webp')">
+                            <img src="./02-pistas/IMAGEN 19.webp" alt="Obra INFRAESTRUCTURA VIAL: PISTAS Y VEREDAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./02-pistas/IMAGEN 20.webp')">
+                            <img src="./02-pistas/IMAGEN 20.webp" alt="Obra INFRAESTRUCTURA VIAL: PISTAS Y VEREDAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./02-pistas/IMAGEN 21.webp')">
+                            <img src="./02-pistas/IMAGEN 21.webp" alt="Obra INFRAESTRUCTURA VIAL: PISTAS Y VEREDAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./02-pistas/IMAGEN 22.webp')">
+                            <img src="./02-pistas/IMAGEN 22.webp" alt="Obra INFRAESTRUCTURA VIAL: PISTAS Y VEREDAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./02-pistas/IMAGEN 23.webp')">
+                            <img src="./02-pistas/IMAGEN 23.webp" alt="Obra INFRAESTRUCTURA VIAL: PISTAS Y VEREDAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./02-pistas/IMAGEN 24.webp')">
+                            <img src="./02-pistas/IMAGEN 24.webp" alt="Obra INFRAESTRUCTURA VIAL: PISTAS Y VEREDAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./02-pistas/IMAGEN 25.webp')">
+                            <img src="./02-pistas/IMAGEN 25.webp" alt="Obra INFRAESTRUCTURA VIAL: PISTAS Y VEREDAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./02-pistas/IMAGEN 26.webp')">
+                            <img src="./02-pistas/IMAGEN 26.webp" alt="Obra INFRAESTRUCTURA VIAL: PISTAS Y VEREDAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./02-pistas/IMAGEN 27.webp')">
+                            <img src="./02-pistas/IMAGEN 27.webp" alt="Obra INFRAESTRUCTURA VIAL: PISTAS Y VEREDAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./02-pistas/IMAGEN 28.webp')">
+                            <img src="./02-pistas/IMAGEN 28.webp" alt="Obra INFRAESTRUCTURA VIAL: PISTAS Y VEREDAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./02-pistas/IMAGEN 29.webp')">
+                            <img src="./02-pistas/IMAGEN 29.webp" alt="Obra INFRAESTRUCTURA VIAL: PISTAS Y VEREDAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./02-pistas/IMAGEN 30.webp')">
+                            <img src="./02-pistas/IMAGEN 30.webp" alt="Obra INFRAESTRUCTURA VIAL: PISTAS Y VEREDAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./02-pistas/IMAGEN 31.webp')">
+                            <img src="./02-pistas/IMAGEN 31.webp" alt="Obra INFRAESTRUCTURA VIAL: PISTAS Y VEREDAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./02-pistas/IMAGEN 32.webp')">
+                            <img src="./02-pistas/IMAGEN 32.webp" alt="Obra INFRAESTRUCTURA VIAL: PISTAS Y VEREDAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./02-pistas/IMAGEN 33.webp')">
+                            <img src="./02-pistas/IMAGEN 33.webp" alt="Obra INFRAESTRUCTURA VIAL: PISTAS Y VEREDAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./02-pistas/IMAGEN 34.webp')">
+                            <img src="./02-pistas/IMAGEN 34.webp" alt="Obra INFRAESTRUCTURA VIAL: PISTAS Y VEREDAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./02-pistas/IMAGEN 35.webp')">
+                            <img src="./02-pistas/IMAGEN 35.webp" alt="Obra INFRAESTRUCTURA VIAL: PISTAS Y VEREDAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./02-pistas/IMAGEN 36.webp')">
+                            <img src="./02-pistas/IMAGEN 36.webp" alt="Obra INFRAESTRUCTURA VIAL: PISTAS Y VEREDAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./02-pistas/IMAGEN 37.webp')">
+                            <img src="./02-pistas/IMAGEN 37.webp" alt="Obra INFRAESTRUCTURA VIAL: PISTAS Y VEREDAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./02-pistas/IMAGEN 38.webp')">
+                            <img src="./02-pistas/IMAGEN 38.webp" alt="Obra INFRAESTRUCTURA VIAL: PISTAS Y VEREDAS" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                
+                <div id="electromecanicas" class="mb-space-2xl scroll-mt-[140px]" data-aos="fade-up">
+                    <div class="mb-space-lg border-b-2 border-primary/30 pb-4">
+                        <div class="flex flex-col md:flex-row md:items-end justify-between gap-2">
+                            <div>
+                                <h2 class="font-headline-lg text-2xl md:text-3xl text-primary uppercase font-bold tracking-wide">OBRAS ELECTROMECÁNICAS Y TELECOMUNICACIONES</h2>
+                                <p class="text-on-surface-variant text-sm mt-1">Montaje electromecánico, tendido de redes de media y baja tensión, torres y enlaces de telecomunicaciones.</p>
+                            </div>
+                            <span class="text-xs text-primary font-technical-code uppercase tracking-widest">3 PROYECTOS / FOTOS</span>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./10-electromecanicas/1.jpg')">
+                            <img src="./10-electromecanicas/1.jpg" alt="Obra OBRAS ELECTROMECÁNICAS Y TELECOMUNICACIONES" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./10-electromecanicas/2.jpg')">
+                            <img src="./10-electromecanicas/2.jpg" alt="Obra OBRAS ELECTROMECÁNICAS Y TELECOMUNICACIONES" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./10-electromecanicas/3.jpg')">
+                            <img src="./10-electromecanicas/3.jpg" alt="Obra OBRAS ELECTROMECÁNICAS Y TELECOMUNICACIONES" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-</div>
+                <div id="mantenimiento" class="mb-space-2xl scroll-mt-[140px]" data-aos="fade-up">
+                    <div class="mb-space-lg border-b-2 border-primary/30 pb-4">
+                        <div class="flex flex-col md:flex-row md:items-end justify-between gap-2">
+                            <div>
+                                <h2 class="font-headline-lg text-2xl md:text-3xl text-primary uppercase font-bold tracking-wide">MANTENIMIENTO DE INFRAESTRUCTURA</h2>
+                                <p class="text-on-surface-variant text-sm mt-1">Mantenimiento preventivo, correctivo y puesta en valor de infraestructuras públicas y privadas.</p>
+                            </div>
+                            <span class="text-xs text-primary font-technical-code uppercase tracking-widest">16 PROYECTOS / FOTOS</span>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./03-mantenimiento/IMAGEN 1.webp')">
+                            <img src="./03-mantenimiento/IMAGEN 1.webp" alt="Obra MANTENIMIENTO DE INFRAESTRUCTURA" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./03-mantenimiento/IMAGEN 2.webp')">
+                            <img src="./03-mantenimiento/IMAGEN 2.webp" alt="Obra MANTENIMIENTO DE INFRAESTRUCTURA" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./03-mantenimiento/IMAGEN 3.webp')">
+                            <img src="./03-mantenimiento/IMAGEN 3.webp" alt="Obra MANTENIMIENTO DE INFRAESTRUCTURA" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./03-mantenimiento/IMAGEN 4.webp')">
+                            <img src="./03-mantenimiento/IMAGEN 4.webp" alt="Obra MANTENIMIENTO DE INFRAESTRUCTURA" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./03-mantenimiento/IMAGEN 5.webp')">
+                            <img src="./03-mantenimiento/IMAGEN 5.webp" alt="Obra MANTENIMIENTO DE INFRAESTRUCTURA" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./03-mantenimiento/IMAGEN 6.webp')">
+                            <img src="./03-mantenimiento/IMAGEN 6.webp" alt="Obra MANTENIMIENTO DE INFRAESTRUCTURA" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./03-mantenimiento/IMAGEN 7.webp')">
+                            <img src="./03-mantenimiento/IMAGEN 7.webp" alt="Obra MANTENIMIENTO DE INFRAESTRUCTURA" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./03-mantenimiento/IMAGEN 8.webp')">
+                            <img src="./03-mantenimiento/IMAGEN 8.webp" alt="Obra MANTENIMIENTO DE INFRAESTRUCTURA" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./03-mantenimiento/IMAGEN 9.webp')">
+                            <img src="./03-mantenimiento/IMAGEN 9.webp" alt="Obra MANTENIMIENTO DE INFRAESTRUCTURA" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./03-mantenimiento/IMAGEN 10.webp')">
+                            <img src="./03-mantenimiento/IMAGEN 10.webp" alt="Obra MANTENIMIENTO DE INFRAESTRUCTURA" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./03-mantenimiento/IMAGEN 11.webp')">
+                            <img src="./03-mantenimiento/IMAGEN 11.webp" alt="Obra MANTENIMIENTO DE INFRAESTRUCTURA" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./03-mantenimiento/IMAGEN 12.webp')">
+                            <img src="./03-mantenimiento/IMAGEN 12.webp" alt="Obra MANTENIMIENTO DE INFRAESTRUCTURA" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./03-mantenimiento/IMAGEN 13.webp')">
+                            <img src="./03-mantenimiento/IMAGEN 13.webp" alt="Obra MANTENIMIENTO DE INFRAESTRUCTURA" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./03-mantenimiento/IMAGEN 14.webp')">
+                            <img src="./03-mantenimiento/IMAGEN 14.webp" alt="Obra MANTENIMIENTO DE INFRAESTRUCTURA" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./03-mantenimiento/IMAGEN 15.webp')">
+                            <img src="./03-mantenimiento/IMAGEN 15.webp" alt="Obra MANTENIMIENTO DE INFRAESTRUCTURA" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./03-mantenimiento/IMAGEN 16.webp')">
+                            <img src="./03-mantenimiento/IMAGEN 16.webp" alt="Obra MANTENIMIENTO DE INFRAESTRUCTURA" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="primera-piedra" class="mb-space-2xl scroll-mt-[140px]" data-aos="fade-up">
+                    <div class="mb-space-lg border-b-2 border-primary/30 pb-4">
+                        <div class="flex flex-col md:flex-row md:items-end justify-between gap-2">
+                            <div>
+                                <h2 class="font-headline-lg text-2xl md:text-3xl text-primary uppercase font-bold tracking-wide">ACTOS PROTOCOLARES: PRIMERA PIEDRA</h2>
+                                <p class="text-on-surface-variant text-sm mt-1">Ceremonias oficiales de inicio de obra con autoridades gubernamentales, comités y beneficiarios.</p>
+                            </div>
+                            <span class="text-xs text-primary font-technical-code uppercase tracking-widest">7 PROYECTOS / FOTOS</span>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./04-primera-piedra/IMAGEN 1.jpeg')">
+                            <img src="./04-primera-piedra/IMAGEN 1.jpeg" alt="Obra ACTOS PROTOCOLARES: PRIMERA PIEDRA" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./04-primera-piedra/IMAGEN 2.jpeg')">
+                            <img src="./04-primera-piedra/IMAGEN 2.jpeg" alt="Obra ACTOS PROTOCOLARES: PRIMERA PIEDRA" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./04-primera-piedra/IMAGEN 3.webp')">
+                            <img src="./04-primera-piedra/IMAGEN 3.webp" alt="Obra ACTOS PROTOCOLARES: PRIMERA PIEDRA" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./04-primera-piedra/IMAGEN 4.jpeg')">
+                            <img src="./04-primera-piedra/IMAGEN 4.jpeg" alt="Obra ACTOS PROTOCOLARES: PRIMERA PIEDRA" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./04-primera-piedra/IMAGEN 5.jpeg')">
+                            <img src="./04-primera-piedra/IMAGEN 5.jpeg" alt="Obra ACTOS PROTOCOLARES: PRIMERA PIEDRA" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./04-primera-piedra/IMAGEN 6.jpeg')">
+                            <img src="./04-primera-piedra/IMAGEN 6.jpeg" alt="Obra ACTOS PROTOCOLARES: PRIMERA PIEDRA" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden border border-outline-variant/20 cursor-pointer h-64 bg-surface-dim" onclick="openLightbox('./04-primera-piedra/IMAGEN 7.jpeg')">
+                            <img src="./04-primera-piedra/IMAGEN 7.jpeg" alt="Obra ACTOS PROTOCOLARES: PRIMERA PIEDRA" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-surface/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     
@@ -564,7 +1101,7 @@
 
     <!-- Lightbox Modal -->
     <div id="lightbox" class="fixed inset-0 z-[200] bg-surface/95 hidden flex-col items-center justify-center p-4 backdrop-blur-md opacity-0 transition-opacity duration-300">
-        <button onclick="closeLightbox()" class="absolute top-6 right-6 text-white hover:text-primary transition-colors z-10">
+        <button onclick="closeLightbox()" class="absolute top-6 right-6 text-white hover:text-primary transition-colors z-10 p-2">
             <span class="material-symbols-outlined text-4xl">close</span>
         </button>
         <img id="lightbox-img" src="" alt="Zoomed Image" class="max-w-full max-h-[85vh] object-contain border border-outline-variant/30 shadow-2xl transform scale-95 transition-transform duration-300">
@@ -580,7 +1117,7 @@
         const lightboxImg = document.getElementById('lightbox-img');
         
         window.openLightbox = function(src) {
-            lightboxImg.src = src;
+            lightboxImg.src = decodeURIComponent(src);
             lightbox.classList.remove('hidden');
             setTimeout(() => {
                 lightbox.classList.remove('opacity-0');
@@ -600,11 +1137,13 @@
         };
         
         document.addEventListener('keydown', e => {
-            if(e.key === 'Escape' && !lightbox.classList.contains('hidden')) closeLightbox();
+            if(e.key === 'Escape' && lightbox && !lightbox.classList.contains('hidden')) closeLightbox();
         });
-        lightbox.addEventListener('click', e => {
-            if(e.target === lightbox) closeLightbox();
-        });
+        if(lightbox) {
+            lightbox.addEventListener('click', e => {
+                if(e.target === lightbox) closeLightbox();
+            });
+        }
     </script>
 </body>
 </html>
